@@ -266,18 +266,21 @@ def render_org_key_passages(artifact):
 
 def render_org_primary_contracts(artifact):
     """Primary Contracts section — gov-contractor only. Table with one
-    row per contract_entry. Chronologically ordered by period_start.
-    Columns: Contract | Contracting Agency | Period | Value |
-    Counterparty | Subject | Source. Deliverables (when present)
+    row per contract_entry. Chronologically ordered by period_start,
+    falling back to period_end for an end-only row (the order the
+    chronological-tables check reads from the "– {end}" Period cell).
+    Columns: Contract | Contracting Agency | Period | Signed | Value |
+    Counterparty | Subject | Source — Period is the performance period,
+    Signed the award date (date_signed). Deliverables (when present)
     render as a bulleted sub-list beneath each row."""
     items = [e for e in (artifact.get("contracts") or []) if isinstance(e, dict)]
-    items = sort_by_date(items, "period_start")
+    items = sort_by_date(items, "period_start", fallback_key="period_end")
 
     lines = ["## Primary Contracts", "",
-             "| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |",
-             "|---|---|---|---|---|---|---|"]
+             "| Contract | Contracting Agency | Period | Signed | Value | Counterparty | Subject | Source |",
+             "|---|---|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |  |  |")
         return "\n".join(lines) + "\n"
 
     deliverable_blocks = []
@@ -287,6 +290,7 @@ def render_org_primary_contracts(artifact):
             f"| {e.get('contract_number') or ''} | "
             f"{e.get('contracting_agency') or ''} | "
             f"{_format_period(e)} | "
+            f"{e.get('date_signed') or ''} | "
             f"{e.get('value') or ''} | "
             f"{counterparty} | "
             f"{e.get('subject') or ''} | "

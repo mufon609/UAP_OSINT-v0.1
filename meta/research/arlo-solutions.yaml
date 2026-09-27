@@ -1607,7 +1607,7 @@ org_relationships:
 - id: or8
   added_date: '2026-09-26'
   organization_path: /organizations/aaro
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   flagged: true
   notes: 'Arlo described a (617) Staff Officer V position and a (619) Security Officer IV position as supporting AARO. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here.'
   source:
@@ -1771,6 +1771,7 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-15'
   period_end: '2030-02-14'
+  date_signed: '2025-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
   value: '$856,000,000 — good faith estimate amount, aggregate across four BPA vendors.'
   source:
@@ -1783,6 +1784,7 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-21'
   period_end: '2026-03-27'
+  date_signed: '2025-02-21'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
   value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 per USAspending field "base_exercised_options"; 0.0 per USAspending field "total_obligation".'
   source:
@@ -1817,6 +1819,7 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2026-05-13'
   period_end: '2026-11-27'
+  date_signed: '2026-02-17'
   subject: Administrative, Policy, Operations, and Analytic Support Services — OUSD(I&S) Sensitive Activities and Special Programs (SASP)
   value: '$59,372,513.73 per USAspending field "base_and_all_options" (potential_end_date 2030-11-27); $5,694,229.63 per "total_obligation" (base award $3,500,000.00 + P00001 CHANGE ORDER 2026-06-02 $2,194,229.63). One of two BPA CALL records listed under HQ003425A0004 (hasNext false; as of the 2026-09-26 fetch). Arlo''s March 16, 2026 press release states "more than $85 million" and names no contract number.'
   source:

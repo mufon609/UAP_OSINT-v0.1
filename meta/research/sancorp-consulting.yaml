@@ -2257,8 +2257,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003418C0123
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2018-09-27'
+  period_start: '2018-09-28'
   period_end: '2020-09-27'
+  date_signed: '2018-09-27'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'CI Metrics Study Support'
   value: '$2,399,395'
@@ -2269,8 +2270,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003419C0159
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2019-09-20'
+  period_start: '2019-09-19'
   period_end: '2022-07-18'
+  date_signed: '2019-09-20'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Strengthening Insider Threat Support Services'
   value: '$4,127,203.20'
@@ -2281,8 +2283,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003420C0066
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2020-03-31'
+  period_start: '2020-04-01'
   period_end: '2021-03-31'
+  date_signed: '2020-03-31'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Artificial Intelligence Engineering and Computer Support Services'
   value: '$3,880,864'
@@ -2293,8 +2296,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003420C0167
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2020-09-25'
+  period_start: '2020-09-28'
   period_end: '2021-11-27'
+  date_signed: '2020-09-25'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Counterintelligence Analytic Studies Support Services'
   value: '$1,504,844.80'
@@ -2305,8 +2309,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003422C0064
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2022-06-09'
+  period_start: '2022-06-10'
   period_end: '2023-06-09'
+  date_signed: '2022-06-09'
   primary_counterparty_path: /organizations/ipmo
   subject: 'IPMO Support Services'
   value: '$3,026,577.70'
@@ -2319,6 +2324,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2022-08-22'
   period_end: '2024-08-31'
+  date_signed: '2022-09-01'
   primary_counterparty_path: /organizations/aaro
   subject: 'AARO Support Services'
   value: '$4,061,786.51'
@@ -2329,8 +2335,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003423C0061
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2023-05-25'
+  period_start: '2023-06-10'
   period_end: '2024-06-09'
+  date_signed: '2023-05-25'
   primary_counterparty_path: /organizations/ipmo
   subject: 'Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services'
   value: '$3,021,082'
@@ -2341,8 +2348,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: W519TC23F0545
   contracting_agency: 'Department of the Army'
-  period_start: '2023-09-25'
+  period_start: '2023-09-28'
   period_end: '2025-09-27'
+  date_signed: '2023-09-25'
   primary_counterparty_path: /organizations/cdao
   subject: 'CDAO Algorithmic Warfare and Public Affairs'
   value: '$1,592,695'
@@ -2353,8 +2361,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003424C0046
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2024-05-31'
+  period_start: '2024-06-10'
   period_end: '2026-05-27'
+  date_signed: '2024-05-31'
   primary_counterparty_path: /organizations/ipmo
   subject: 'Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services'
   value: '$5,751,921'
@@ -2365,8 +2374,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003424F0411
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2024-07-23'
+  period_start: '2024-08-01'
   period_end: '2026-12-31'
+  date_signed: '2024-07-23'
   primary_counterparty_path: /organizations/oasd-hdha
   subject: 'OASD HD&HA / OASD Nuclear and Countering WMD support (description: LABOR)'
   value: '$11,214,091'
@@ -2379,6 +2389,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2024-08-23'
   period_end: '2026-01-31'
+  date_signed: '2024-08-23'
   primary_counterparty_path: /organizations/aaro
   subject: 'Exec. Admin, Ops, Policy and PPBE Support Services (transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from P00005, 2025-07-10)'
   value: '$3,415,374.79 (2026-09-25 award record; the 2026-04-30 capture reported $3,471,829.40)'
@@ -2389,8 +2400,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003424A0023
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2024-09-18'
+  period_start: '2020-09-18'
   period_end: '2029-09-18'
+  date_signed: '2024-09-18'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Technical, Administrative and Professional Support Services to OUSD (parent BPA)'
   value: '$0 (BPA vehicle)'
@@ -2403,6 +2415,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2025-02-15'
   period_end: '2030-02-14'
+  date_signed: '2025-02-14'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Technical, Analytical, Administrative, and Professional Program Support Services (parent BPA; funding office OSD OUSD(I) per the award record (q137); Sancorp Past Performance lists it as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support" (q145))'
   value: '$0 (BPA vehicle)'
@@ -2413,8 +2426,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: W912CL25CA005
   contracting_agency: 'Department of the Army (on behalf of USSOUTHCOM)'
-  period_start: '2025-06-30'
+  period_start: '2025-07-16'
   period_end: '2026-03-15'
+  date_signed: '2025-06-30'
   primary_counterparty_path: /organizations/ussouthcom
   subject: 'USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning)'
   value: '$271,848'
@@ -2425,8 +2439,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ003425FE388
   contracting_agency: 'Washington Headquarters Services'
-  period_start: '2025-09-11'
+  period_start: '2025-09-14'
   period_end: '2027-09-13'
+  date_signed: '2025-09-11'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support (period of performance end 2027-09-13 per the 2026-09-26 award record; the 2026-04-30 capture had 2026-09-13)'
   value: '$6,666,866.85 (2026-09-26 award record; the 2026-04-30 capture reported $3,746,273.44)'
@@ -2439,6 +2454,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2025-09-30'
   period_end: '2030-06-15'
+  date_signed: '2025-09-30'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Office of the Under Secretary of Defense for Policy (OUSD(P)) — Office Management and Executive Support Services (OMESS)'
   value: '$8,410,283'
@@ -2449,8 +2465,9 @@ contracts:
   added_date: '2026-04-30'
   contract_number: HQ085926FG471
   contracting_agency: 'Missile Defense Agency'
-  period_start: '2025-12-19'
+  period_start: '2025-12-29'
   period_end: '2035-12-28'
+  date_signed: '2025-12-19'
   primary_counterparty_path: /organizations/mda
   subject: 'Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order'
   value: '$500'
@@ -2463,6 +2480,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2025-06-20'
   period_end: '2026-06-30'
+  date_signed: '2025-06-20'
   primary_counterparty_path: /organizations/oasd-st
   subject: 'OASD(ST) Technical, Analytical, Administrative, and Professional Program Support Services (BPA call under HQ003425A0001; funding office OUSD(AT & L))'
   value: '$866,143.48 obligated; $4,439,098.92 base and all options'
@@ -2475,6 +2493,7 @@ contracts:
   contracting_agency: 'Washington Headquarters Services'
   period_start: '2026-01-28'
   period_end: '2027-07-31'
+  date_signed: '2026-01-28'
   primary_counterparty_path: /organizations/ousd-is
   subject: 'Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services (BPA call under HQ003425A0001; funding office OSD OUSD(I); potential end 2030-07-31)'
   value: '$5,317,041.31 obligated; $20,115,030.67 base and all options'
@@ -2485,21 +2504,21 @@ org_relationships:
 - id: or1
   added_date: '2026-04-30'
   organization_path: /organizations/ousd-is
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
-    path: government/usaspending-hq003422c0094.txt
-    location: '"funding_agency" office_agency_name "OSD OUSD(I)" (q139)'
+    path: government/usaspending-hq003424a0023.txt
+    location: '"description" field, CONT_IDV_HQ003424A0023_9700'
 - id: or2
   added_date: '2026-04-30'
   organization_path: /organizations/aaro
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'AARO contract HQ003422C0094 PWS cover page'
 - id: or3
   added_date: '2026-04-30'
   organization_path: /organizations/ipmo
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
     path: news/sancorp-careers-20260430.html
     location: 'Company News page, June 2022 entry'
@@ -2520,7 +2539,7 @@ org_relationships:
 - id: or6
   added_date: '2026-04-30'
   organization_path: /organizations/ussouthcom
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
     path: government/usaspending-w912cl25ca005.txt
     location: '"description" field'
@@ -2534,24 +2553,24 @@ org_relationships:
 - id: or8
   added_date: '2026-04-30'
   organization_path: /organizations/cdao
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
     path: government/usaspending-w519tc23f0545.txt
     location: '"description" field'
 - id: or9
   added_date: '2026-04-30'
   organization_path: /organizations/oasd-st
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
     path: government/usaspending-hq003425fe174-transactions.txt
     location: 'transaction P00001 "description" — "THE OASD(ST) REQUIRES …" (q75)'
 - id: or10
   added_date: '2026-04-30'
   organization_path: /organizations/oasd-hdha
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   source:
-    path: government/usaspending-hq003424f0411.txt
-    location: '"description" field'
+    path: news/sancorp-past-performance-20260430.html
+    location: 'Past Performance page, contract listing for HQ003424F0411'
 - id: or11
   added_date: '2026-04-30'
   organization_path: /organizations/premier-enterprise-solutions
@@ -2576,7 +2595,7 @@ org_relationships:
 - id: or14
   added_date: '2026-09-25'
   organization_path: /organizations/aaro
-  relationship_type: contracting-agency
+  relationship_type: requiring-office
   flagged: true
   notes: 'Not confirmed. The link is based only on requisition 1258, which uses the HQ003426FE050 award description phrase within OUSW(I&S) AARO and names no contract number. Neither the HQ003426FE050 award record nor its five transaction records names AARO. The "OSD OUSD(I)" funding office also appears on HQ003425FE388, HQ003424C0096 and HQ003422C0064, and requisition 1206 and requisition 1260 use the phrase without naming AARO.'
   source:

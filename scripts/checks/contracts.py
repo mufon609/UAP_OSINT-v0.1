@@ -2,13 +2,20 @@
 
 Present on gov-contractor organization artifacts (the kind whose
 existence IS a government contract). Each entry: required
-{contract_number, contracting_agency, period_start, source},
-optional {period_end, primary_counterparty_path, subject, value,
-deliverables}. ``deliverables`` (when set) is a list of
-``/documents/...`` paths the contract produced.
+{contract_number, contracting_agency, source} plus AT LEAST ONE of
+{period_start, period_end}; optional {date_signed,
+primary_counterparty_path, subject, value, deliverables}.
+``deliverables`` (when set) is a list of ``/documents/...`` paths the
+contract produced.
 
-The contract entry shape is the heaviest in the entry-list family
-(4 required + 6 optional). This check correspondingly carries more
+period_start / period_end are the performance period; date_signed is
+the award date. A row whose start no source attests (e.g. a
+bridge-notice incumbent known only by its end date) carries
+period_end alone — the renderer's end-only "– {end}" form — rather
+than an invented start. A row with neither is an ERROR.
+
+The contract entry shape is the heaviest in the entry-list family.
+This check correspondingly carries more
 validation than typical entry-list checks: deliverables list-of-paths
 shape check, primary_counterparty_path leading-slash, plus the
 universal entry-list helpers.
@@ -46,13 +53,22 @@ def check(ctx):
         if not isinstance(e, dict):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "contracts", i, CHECK_NAME)
-        for field in ("contract_number", "contracting_agency", "period_start"):
+        for field in ("contract_number", "contracting_agency"):
             if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"contracts[{i}] ({e.get('id')!r}): missing required {field!r}",
                     check_name=CHECK_NAME,
                 )
+        if not any(str(e.get(f) or "").strip()
+                   for f in ("period_start", "period_end")):
+            yield Issue(
+                ctx.rel, "error",
+                f"contracts[{i}] ({e.get('id')!r}): needs at least one of "
+                f"'period_start' / 'period_end' (an unattested start is "
+                f"omitted, not invented; the end alone is enough)",
+                check_name=CHECK_NAME,
+            )
         pcp = e.get("primary_counterparty_path")
         if pcp and (not isinstance(pcp, str) or not pcp.startswith("/")):
             yield Issue(

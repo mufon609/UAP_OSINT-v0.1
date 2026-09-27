@@ -53,7 +53,10 @@ check no-ops. Three phases sequence by data dependency:
             plus merge-fragments.py's type-aware transport (a fragment
             carrying `cited_works` into a foia artifact must have the
             field dropped with a printed warning, and the artifact must
-            still validate)
+            still validate); plus the gov-contractor contracts /
+            org_relationships fixture (a start+end+date_signed row and an
+            end-only row validate and render, a row with neither period
+            errors, an unknown relationship_type errors)
 
 Cleanup is pattern-based on the ``__smoke-*`` slug convention. Fires
 at startup (clears debris from a prior crashed run) and on exit.
@@ -773,6 +776,94 @@ def run_merge_fragments_type_aware() -> list:
     return [Result(label, True)]
 
 
+# ── gov-contractor contracts / org_relationships fixture ────────────────
+#
+# A contracts[] row carries at least one of period_start / period_end: a
+# row with both (plus date_signed) and an end-only row must validate and
+# render — the end-only row as "– {end}", sorted by its end date — while a
+# row with neither must error. ``requiring-office`` is in the closed
+# relationship_type enum; an unknown value must error.
+
+_ORG_CT = "__smoke-org-contracts"
+
+
+def run_org_contracts() -> list:
+    import yaml
+
+    label = "org contracts + relationships"
+    target = f"organizations/{_ORG_CT}"
+    artifact = f"meta/research/{_ORG_CT}.yaml"
+    node = f"{target}.md"
+    src = {"path": _FOIA_LETTER, "location": "¶2"}
+
+    rc, out, err = _call_main("new", ["organization", "--kind", "gov-contractor",
+                                      "--slug", _ORG_CT])
+    if rc != 0:
+        return [Result(label, False, f"node scaffold failed (rc={rc}): {_err_summary(out, err)}")]
+    rc, out, err = _call_main("research-scaffold", ["--target", target,
+                                                    "--sources", _FOIA_LETTER])
+    if rc != 0:
+        return [Result(label, False, f"research-scaffold failed (rc={rc}): {_err_summary(out, err)}")]
+
+    p = Path(artifact)
+    base = yaml.safe_load(p.read_text(encoding="utf-8"))
+
+    def write(contracts, relationships):
+        d = dict(base, contracts=contracts, org_relationships=relationships)
+        p.write_text(yaml.safe_dump(d, sort_keys=False, allow_unicode=True, width=9999),
+                     encoding="utf-8")
+
+    both = {"id": "c1", "added_date": "2026-01-01", "contract_number": "HQ0000-99-C-0001",
+            "contracting_agency": "WHS", "period_start": "2026-01-10",
+            "period_end": "2026-12-31", "date_signed": "2026-01-02", "source": src}
+    end_only = {"id": "c2", "added_date": "2026-01-01", "contract_number": "HQ0000-98-C-0002",
+                "contracting_agency": "WHS", "period_end": "2025-06-30", "source": src}
+    rels = [
+        {"id": "or1", "added_date": "2026-01-01", "organization_path": "/organizations/__smoke-org-gov",
+         "relationship_type": "requiring-office", "source": src},
+        {"id": "or2", "added_date": "2026-01-01", "organization_path": "/organizations/__smoke-org-private",
+         "relationship_type": "contracting-agency", "source": src},
+    ]
+
+    write([both, end_only], rels)
+    rc, out, err = _call_main("validate-research", [artifact, "--quiet"])
+    if rc != 0:
+        return [Result(f"{label} validate-research", False, _err_summary(out, err))]
+    rc, out, err = _call_main("build-from-research", [artifact, "--no-validate"])
+    if rc != 0:
+        return [Result(f"{label} build-from-research", False, _err_summary(out, err))]
+    rc, out, err = _call_main("validate", [node, "--quiet"])
+    if rc != 0:
+        return [Result(f"{label} validate", False, _err_summary(out, err))]
+    body = Path(node).read_text(encoding="utf-8")
+    contracts = _section(body, "Primary Contracts")
+    row_both = "| HQ0000-99-C-0001 | WHS | 2026-01-10 – 2026-12-31 | 2026-01-02 |"
+    row_end = "| HQ0000-98-C-0002 | WHS | – 2025-06-30 |  |"
+    if row_both not in contracts or row_end not in contracts:
+        return [Result(f"{label} render", False,
+                       f"expected {row_both!r} and {row_end!r} in ## Primary Contracts")]
+    if contracts.index(row_end) > contracts.index(row_both):
+        return [Result(f"{label} render", False,
+                       "end-only row did not sort by its end date")]
+    if "| requiring-office |" not in _section(body, "Relationships"):
+        return [Result(f"{label} render", False, "requiring-office missing from ## Relationships")]
+
+    results = [Result(label, True)]
+    neither = {k: v for k, v in end_only.items() if k != "period_end"}
+    bogus = dict(rels[0], relationship_type="customer")
+    for case, contracts_, rels_, needle in (
+        ("row with neither period errors", [both, neither], rels, "period_start"),
+        ("unknown relationship_type errors", [both], [bogus], "relationship_type"),
+    ):
+        write(contracts_, rels_)
+        rc, out, err = _call_main("validate-research", [artifact])
+        fired = any(needle in l and "ERROR" in l for l in (out + err).splitlines())
+        results.append(Result(f"{label}: {case}", rc != 0 and fired,
+                              None if rc != 0 and fired else
+                              f"expected an ERROR naming {needle!r} (rc={rc})"))
+    return results
+
+
 # ── Orchestration ──────────────────────────────────────────────────────
 
 def _run_phase(executor, jobs) -> list:
@@ -816,6 +907,7 @@ def main() -> int:
                 (run_request_state_consistency,),
                 (run_foia_letter_url_convention,),
                 (run_merge_fragments_type_aware,),
+                (run_org_contracts,),
             ]))
     finally:
         cleanup_fixtures()

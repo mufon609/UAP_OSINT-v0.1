@@ -2011,27 +2011,27 @@ _No personnel attested in primary sources to date._
 
 ## Primary Contracts
 
-| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
-|---|---|---|---|---|---|---|
-| HQ003418C0123 | Washington Headquarters Services | 2018-09-27 – 2020-09-27 | $2,399,395 | [`/organizations/ousd-is`] | CI Metrics Study Support | government/usaspending-hq003418c0123.txt |
-| HQ003419C0159 | Washington Headquarters Services | 2019-09-20 – 2022-07-18 | $4,127,203.20 | [`/organizations/ousd-is`] | Strengthening Insider Threat Support Services | government/usaspending-hq003419c0159.txt |
-| HQ003420C0066 | Washington Headquarters Services | 2020-03-31 – 2021-03-31 | $3,880,864 | [`/organizations/ousd-is`] | Artificial Intelligence Engineering and Computer Support Services | government/usaspending-hq003420c0066.txt |
-| HQ003420C0167 | Washington Headquarters Services | 2020-09-25 – 2021-11-27 | $1,504,844.80 | [`/organizations/ousd-is`] | Counterintelligence Analytic Studies Support Services | government/usaspending-hq003420c0167.txt |
-| HQ003422C0064 | Washington Headquarters Services | 2022-06-09 – 2023-06-09 | $3,026,577.70 | [`/organizations/ipmo`] | IPMO Support Services | government/usaspending-hq003422c0064.txt |
-| HQ003422C0094 | Washington Headquarters Services | 2022-08-22 – 2024-08-31 | $4,061,786.51 | [`/organizations/aaro`] | AARO Support Services | government/usaspending-hq003422c0094.txt |
-| HQ003423C0061 | Washington Headquarters Services | 2023-05-25 – 2024-06-09 | $3,021,082 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services | government/usaspending-hq003423c0061.txt |
-| W519TC23F0545 | Department of the Army | 2023-09-25 – 2025-09-27 | $1,592,695 | [`/organizations/cdao`] | CDAO Algorithmic Warfare and Public Affairs | government/usaspending-w519tc23f0545.txt |
-| HQ003424C0046 | Washington Headquarters Services | 2024-05-31 – 2026-05-27 | $5,751,921 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services | government/usaspending-hq003424c0046.txt |
-| HQ003424F0411 | Washington Headquarters Services | 2024-07-23 – 2026-12-31 | $11,214,091 | [`/organizations/oasd-hdha`] | OASD HD&HA / OASD Nuclear and Countering WMD support (description: LABOR) | government/usaspending-hq003424f0411.txt |
-| HQ003424C0096 | Washington Headquarters Services | 2024-08-23 – 2026-01-31 | $3,415,374.79 (2026-09-25 award record; the 2026-04-30 capture reported $3,471,829.40) | [`/organizations/aaro`] | Exec. Admin, Ops, Policy and PPBE Support Services (transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from P00005, 2025-07-10) | government/usaspending-hq003424c0096-20260925.txt |
-| HQ003424A0023 | Washington Headquarters Services | 2024-09-18 – 2029-09-18 | $0 (BPA vehicle) | [`/organizations/ousd-is`] | Technical, Administrative and Professional Support Services to OUSD (parent BPA) | government/usaspending-hq003424a0023.txt |
-| HQ003425A0001 | Washington Headquarters Services | 2025-02-15 – 2030-02-14 | $0 (BPA vehicle) | [`/organizations/ousd-is`] | Technical, Analytical, Administrative, and Professional Program Support Services (parent BPA; funding office OSD OUSD(I) per the award record (q137); Sancorp Past Performance lists it as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support" (q145)) | government/usaspending-hq003425a0001.txt |
-| HQ003425FE174 | Washington Headquarters Services | 2025-06-20 – 2026-06-30 | $866,143.48 obligated; $4,439,098.92 base and all options | [`/organizations/oasd-st`] | OASD(ST) Technical, Analytical, Administrative, and Professional Program Support Services (BPA call under HQ003425A0001; funding office OUSD(AT & L)) | government/usaspending-hq003425fe174.txt |
-| W912CL25CA005 | Department of the Army (on behalf of USSOUTHCOM) | 2025-06-30 – 2026-03-15 | $271,848 | [`/organizations/ussouthcom`] | USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning) | government/usaspending-w912cl25ca005.txt |
-| HQ003425FE388 | Washington Headquarters Services | 2025-09-11 – 2027-09-13 | $6,666,866.85 (2026-09-26 award record; the 2026-04-30 capture reported $3,746,273.44) | [`/organizations/ousd-is`] | CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support (period of performance end 2027-09-13 per the 2026-09-26 award record; the 2026-04-30 capture had 2026-09-13) | government/usaspending-hq003425fe388-20260926.txt |
-| HQ003425FE405 | Washington Headquarters Services | 2025-09-30 – 2030-06-15 | $8,410,283 | [`/organizations/ousd-is`] | Office of the Under Secretary of Defense for Policy (OUSD(P)) — Office Management and Executive Support Services (OMESS) | government/usaspending-hq003425fe405.txt |
-| HQ085926FG471 | Missile Defense Agency | 2025-12-19 – 2035-12-28 | $500 | [`/organizations/mda`] | Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order | government/usaspending-hq085926fg471.txt |
-| HQ003426FE050 | Washington Headquarters Services | 2026-01-28 – 2027-07-31 | $5,317,041.31 obligated; $20,115,030.67 base and all options | [`/organizations/ousd-is`] | Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services (BPA call under HQ003425A0001; funding office OSD OUSD(I); potential end 2030-07-31) | government/usaspending-hq003426fe050.txt |
+| Contract | Contracting Agency | Period | Signed | Value | Counterparty | Subject | Source |
+|---|---|---|---|---|---|---|---|
+| HQ003418C0123 | Washington Headquarters Services | 2018-09-28 – 2020-09-27 | 2018-09-27 | $2,399,395 | [`/organizations/ousd-is`] | CI Metrics Study Support | government/usaspending-hq003418c0123.txt |
+| HQ003419C0159 | Washington Headquarters Services | 2019-09-19 – 2022-07-18 | 2019-09-20 | $4,127,203.20 | [`/organizations/ousd-is`] | Strengthening Insider Threat Support Services | government/usaspending-hq003419c0159.txt |
+| HQ003420C0066 | Washington Headquarters Services | 2020-04-01 – 2021-03-31 | 2020-03-31 | $3,880,864 | [`/organizations/ousd-is`] | Artificial Intelligence Engineering and Computer Support Services | government/usaspending-hq003420c0066.txt |
+| HQ003424A0023 | Washington Headquarters Services | 2020-09-18 – 2029-09-18 | 2024-09-18 | $0 (BPA vehicle) | [`/organizations/ousd-is`] | Technical, Administrative and Professional Support Services to OUSD (parent BPA) | government/usaspending-hq003424a0023.txt |
+| HQ003420C0167 | Washington Headquarters Services | 2020-09-28 – 2021-11-27 | 2020-09-25 | $1,504,844.80 | [`/organizations/ousd-is`] | Counterintelligence Analytic Studies Support Services | government/usaspending-hq003420c0167.txt |
+| HQ003422C0064 | Washington Headquarters Services | 2022-06-10 – 2023-06-09 | 2022-06-09 | $3,026,577.70 | [`/organizations/ipmo`] | IPMO Support Services | government/usaspending-hq003422c0064.txt |
+| HQ003422C0094 | Washington Headquarters Services | 2022-08-22 – 2024-08-31 | 2022-09-01 | $4,061,786.51 | [`/organizations/aaro`] | AARO Support Services | government/usaspending-hq003422c0094.txt |
+| HQ003423C0061 | Washington Headquarters Services | 2023-06-10 – 2024-06-09 | 2023-05-25 | $3,021,082 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services | government/usaspending-hq003423c0061.txt |
+| W519TC23F0545 | Department of the Army | 2023-09-28 – 2025-09-27 | 2023-09-25 | $1,592,695 | [`/organizations/cdao`] | CDAO Algorithmic Warfare and Public Affairs | government/usaspending-w519tc23f0545.txt |
+| HQ003424C0046 | Washington Headquarters Services | 2024-06-10 – 2026-05-27 | 2024-05-31 | $5,751,921 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services | government/usaspending-hq003424c0046.txt |
+| HQ003424F0411 | Washington Headquarters Services | 2024-08-01 – 2026-12-31 | 2024-07-23 | $11,214,091 | [`/organizations/oasd-hdha`] | OASD HD&HA / OASD Nuclear and Countering WMD support (description: LABOR) | government/usaspending-hq003424f0411.txt |
+| HQ003424C0096 | Washington Headquarters Services | 2024-08-23 – 2026-01-31 | 2024-08-23 | $3,415,374.79 (2026-09-25 award record; the 2026-04-30 capture reported $3,471,829.40) | [`/organizations/aaro`] | Exec. Admin, Ops, Policy and PPBE Support Services (transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from P00005, 2025-07-10) | government/usaspending-hq003424c0096-20260925.txt |
+| HQ003425A0001 | Washington Headquarters Services | 2025-02-15 – 2030-02-14 | 2025-02-14 | $0 (BPA vehicle) | [`/organizations/ousd-is`] | Technical, Analytical, Administrative, and Professional Program Support Services (parent BPA; funding office OSD OUSD(I) per the award record (q137); Sancorp Past Performance lists it as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support" (q145)) | government/usaspending-hq003425a0001.txt |
+| HQ003425FE174 | Washington Headquarters Services | 2025-06-20 – 2026-06-30 | 2025-06-20 | $866,143.48 obligated; $4,439,098.92 base and all options | [`/organizations/oasd-st`] | OASD(ST) Technical, Analytical, Administrative, and Professional Program Support Services (BPA call under HQ003425A0001; funding office OUSD(AT & L)) | government/usaspending-hq003425fe174.txt |
+| W912CL25CA005 | Department of the Army (on behalf of USSOUTHCOM) | 2025-07-16 – 2026-03-15 | 2025-06-30 | $271,848 | [`/organizations/ussouthcom`] | USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning) | government/usaspending-w912cl25ca005.txt |
+| HQ003425FE388 | Washington Headquarters Services | 2025-09-14 – 2027-09-13 | 2025-09-11 | $6,666,866.85 (2026-09-26 award record; the 2026-04-30 capture reported $3,746,273.44) | [`/organizations/ousd-is`] | CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support (period of performance end 2027-09-13 per the 2026-09-26 award record; the 2026-04-30 capture had 2026-09-13) | government/usaspending-hq003425fe388-20260926.txt |
+| HQ003425FE405 | Washington Headquarters Services | 2025-09-30 – 2030-06-15 | 2025-09-30 | $8,410,283 | [`/organizations/ousd-is`] | Office of the Under Secretary of Defense for Policy (OUSD(P)) — Office Management and Executive Support Services (OMESS) | government/usaspending-hq003425fe405.txt |
+| HQ085926FG471 | Missile Defense Agency | 2025-12-29 – 2035-12-28 | 2025-12-19 | $500 | [`/organizations/mda`] | Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order | government/usaspending-hq085926fg471.txt |
+| HQ003426FE050 | Washington Headquarters Services | 2026-01-28 – 2027-07-31 | 2026-01-28 | $5,317,041.31 obligated; $20,115,030.67 base and all options | [`/organizations/ousd-is`] | Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services (BPA call under HQ003425A0001; funding office OSD OUSD(I); potential end 2030-07-31) | government/usaspending-hq003426fe050.txt |
 
 ---
 
@@ -2095,16 +2095,16 @@ _No personnel attested in primary sources to date._
 
 | Organization | Relationship | Source |
 |---|---|---|
-| [`/organizations/ousd-is`] | contracting-agency | government/usaspending-hq003422c0094.txt |
-| [`/organizations/aaro`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
-| [`/organizations/ipmo`] | contracting-agency | news/sancorp-careers-20260430.html |
+| [`/organizations/ousd-is`] | requiring-office | government/usaspending-hq003424a0023.txt |
+| [`/organizations/aaro`] | requiring-office | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
+| [`/organizations/ipmo`] | requiring-office | news/sancorp-careers-20260430.html |
 | [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0094.txt |
 | [`/organizations/insa`] | partner | news/sancorp-careers-20260430.html |
-| [`/organizations/ussouthcom`] | contracting-agency | government/usaspending-w912cl25ca005.txt |
+| [`/organizations/ussouthcom`] | requiring-office | government/usaspending-w912cl25ca005.txt |
 | [`/organizations/mda`] | contracting-agency | government/usaspending-hq085926fg471.txt |
-| [`/organizations/cdao`] | contracting-agency | government/usaspending-w519tc23f0545.txt |
-| [`/organizations/oasd-st`] | contracting-agency | government/usaspending-hq003425fe174-transactions.txt |
-| [`/organizations/oasd-hdha`] | contracting-agency | government/usaspending-hq003424f0411.txt |
+| [`/organizations/cdao`] | requiring-office | government/usaspending-w519tc23f0545.txt |
+| [`/organizations/oasd-st`] | requiring-office | government/usaspending-hq003425fe174-transactions.txt |
+| [`/organizations/oasd-hdha`] | requiring-office | news/sancorp-past-performance-20260430.html |
 | [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/arlo-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/gsa`] | contracting-agency | news/sancorp-update-202508-wayback-20251208.html |
@@ -2120,7 +2120,7 @@ _No personnel attested in primary sources to date._
 
 | Organization | Relationship | Source | Note |
 |---|---|---|---|
-| [`/organizations/aaro`] | contracting-agency | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | Not confirmed. The link is based only on requisition 1258, which uses the HQ003426FE050 award description phrase within OUSW(I&S) AARO and names no contract number. Neither the HQ003426FE050 award record nor its five transaction records names AARO. The "OSD OUSD(I)" funding office also appears on HQ003425FE388, HQ003424C0096 and HQ003422C0064, and requisition 1206 and requisition 1260 use the phrase without naming AARO. |
+| [`/organizations/aaro`] | requiring-office | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | Not confirmed. The link is based only on requisition 1258, which uses the HQ003426FE050 award description phrase within OUSW(I&S) AARO and names no contract number. Neither the HQ003426FE050 award record nor its five transaction records names AARO. The "OSD OUSD(I)" funding office also appears on HQ003425FE388, HQ003424C0096 and HQ003422C0064, and requisition 1206 and requisition 1260 use the phrase without naming AARO. |
 
 ---
 

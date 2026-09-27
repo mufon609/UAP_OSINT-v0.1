@@ -101,11 +101,11 @@ kind: {{kind}}
 ## Primary Contracts
 
 <!-- Populated from contracts[] in the research artifact.
-     Chronologically ordered by period_start. -->
+     Chronologically ordered by period_start (performance start). -->
 
-| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
-|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
+| Contract | Contracting Agency | Period | Signed | Value | Counterparty | Subject | Source |
+|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |  |
 
 ---
 <!-- /KIND -->

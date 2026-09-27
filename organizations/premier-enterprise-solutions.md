@@ -1427,10 +1427,10 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ## Primary Contracts
 
-| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
-|---|---|---|---|---|---|---|
-| HQ003425A0003 | WHS | 2025-02-15 – 2030-02-14 | 1856000000.0 (base and all options) | [`/organizations/premier-enterprise-solutions`] | technical, administrative and professional support services | government/usaspending-hq003425a0003.txt |
-| HQ003425F0105 | WHS | 2025-02-21 – 2026-12-27 | 16658158.42 (total obligation); 73719023.85 (base and all options) | [`/organizations/premier-enterprise-solutions`] | professional, technical & administrative support services | government/usaspending-hq003425f0105.txt |
+| Contract | Contracting Agency | Period | Signed | Value | Counterparty | Subject | Source |
+|---|---|---|---|---|---|---|---|
+| HQ003425A0003 | WHS | 2025-02-15 – 2030-02-14 | 2025-02-14 | 1856000000.0 (base and all options) | [`/organizations/premier-enterprise-solutions`] | technical, administrative and professional support services | government/usaspending-hq003425a0003.txt |
+| HQ003425F0105 | WHS | 2025-02-21 – 2026-12-27 | 2025-02-21 | 16658158.42 (total obligation); 73719023.85 (base and all options) | [`/organizations/premier-enterprise-solutions`] | professional, technical & administrative support services | government/usaspending-hq003425f0105.txt |
 
 ---
 

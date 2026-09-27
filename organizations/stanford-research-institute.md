@@ -679,7 +679,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | [`/organizations/sarnoff-corp`] | subsidiary | news/sri-international-about-20260515.html |
 | [`/organizations/parc`] | subsidiary | news/sri-international-timeline-of-innovation-20260515.html |
 | [`/organizations/cia`] | contracting-agency | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| [`/organizations/dia`] | contracting-agency | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| [`/organizations/dia`] | funder | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
 | [`/organizations/saic`] | successor | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
 
 ---

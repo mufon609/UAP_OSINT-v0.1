@@ -1180,10 +1180,10 @@ org_relationships:
 - id: or5
   added_date: '2026-05-15'
   organization_path: /organizations/dia
-  relationship_type: contracting-agency
+  relationship_type: funder
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: '¶ "The effort at SRI was discontinued"'
+    location: '¶ "CIA then provided funding to SRI"'
 
 - id: or6
   added_date: '2026-05-15'

@@ -1320,6 +1320,7 @@ contracts:
   contracting_agency: WHS
   period_start: '2025-02-15'
   period_end: '2030-02-14'
+  date_signed: '2025-02-14'
   primary_counterparty_path: /organizations/premier-enterprise-solutions
   subject: technical, administrative and professional support services
   value: 1856000000.0 (base and all options)
@@ -1332,6 +1333,7 @@ contracts:
   contracting_agency: WHS
   period_start: '2025-02-21'
   period_end: '2026-12-27'
+  date_signed: '2025-02-21'
   primary_counterparty_path: /organizations/premier-enterprise-solutions
   subject: professional, technical & administrative support services
   value: 16658158.42 (total obligation); 73719023.85 (base and all options)

@@ -337,32 +337,6 @@ drafts; the committed incident evidence remains the record.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C7 — Separate the requiring (customer) office from the contracting agency in `org_relationships`
-
-`org_relationship_entry.relationship_type_values` (`meta/schema-research-artifact.yaml`)
-has one value for the government side of a contract: `contracting-agency`, defined
-as "the other org is this org's contracting agency". The corpus uses it for two
-different things. On contractor nodes it tags the **office the work is for** (AARO,
-IPMO, USSOUTHCOM, CDAO, …) and, separately, the **office that awarded the
-contract** (WHS). Its mirror value `contractor` has the same conflation on the
-customer side: AARO's node lists Sancorp as `contractor`, although WHS awarded the
-contract. A reader of the Relationships table cannot tell which office contracted
-and which office was served — and the distinction matters, because the requiring
-office is often the evidentiary question (the award record names only the
-contracting and funding offices).
-
-Add a value for the requiring office (e.g. `customer` or `requiring-office`, with
-a mirror such as `supplier-to` if needed), define both it and `contracting-agency`
-precisely in the schema comment block, and update the `org_relationships` check's
-closed enum. Then migrate every affected row corpus-wide — list them with
-`grep -n "relationship_type: contracting-agency\|relationship_type: contractor" meta/research/*.yaml`
-— deciding each from its cited source: keep `contracting-agency` only where the
-source names the awarding office, and move customer offices to the new value.
-Flagged rows migrate the same way. Re-render the affected organization nodes.
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 
 The `foia` type is in the schema, renderer and validators and is covered by
@@ -490,25 +464,4 @@ isolated deps, oneDNN off and single-threaded. Pin a PaddlePaddle build known
 to infer on aarch64, or document that the consensus pass runs off-box.
 
 **Blocks:** C9 on the ARM64 box.
-**Blocked by:** none.
-
-### C11 — Define `contracts[].period_start` and migrate every organization row to it
-
-`period_start` on organization-artifact `contracts[]` rows has no defined
-source field, and rows disagree: in `meta/research/sancorp-consulting.yaml`
-most rows carry the USAspending `date_signed`, while others carry
-`period_of_performance.start_date` — and the two can differ by days
-(HQ003424C0046: signed 2024-05-31, performance start 2024-06-10) or by years
-(HQ003424A0023: signed 2024-09-18, performance start 2020-09-18). A reader
-cannot tell which date a row means. Decide which field `period_start` stands
-for (and whether a second field is needed), document it in
-`meta/schema-research-artifact.yaml`, and migrate every organization
-artifact's `contracts[]` rows to the one rule against their archived award
-records. Also decide how a row records an unattested start date:
-`scripts/checks/contracts.py` requires `period_start`, while the renderer's
-`_format_period` already supports an end-only form — so today a contract
-known only by its end date (e.g. a bridge-notice incumbent) cannot be a row
-without inventing a start.
-
-**Blocks:** none.
 **Blocked by:** none.

@@ -423,11 +423,13 @@ conditional_keys:
         target_node_kind_in: [gov-contractor]
     # Structured contract records on gov-contractor organization
     # artifacts. Each entry: contract_number, contracting_agency,
-    # period_start/end, counterparties, value, deliverables,
+    # period_start/end (performance period), date_signed,
+    # counterparties, value, deliverables,
     # source. Shape models a single large contract
     # producing many technical deliverables
     # as referenced docs. Renders as the `## Primary Contracts`
-    # table, chronologically ordered by period_start. Absent on
+    # table, chronologically ordered by period_start (period_end for
+    # an end-only row). Absent on
     # gov and private kinds. Entry shape: contract_entry below.
     #
     # Type+kind AND-combined for symmetry with witnesses_testimony,
@@ -437,7 +439,8 @@ conditional_keys:
       - target_node_type_in: [organization]
     # Organization-to-organization structured relationships
     # (parent, subsidiary, predecessor, successor, contractor,
-    # contracting-agency, partner, other). Renders as the
+    # contracting-agency, requiring-office, funder, partner, …; the
+    # full enum is org_relationship_entry below). Renders as the
     # `## Relationships` section with Confirmed / Flagged split.
     # Distinct from person `relationships` (person-to-person) and
     # from `key_personnel` (org-to-person). Entry shape:
@@ -988,9 +991,12 @@ key_personnel_entry:
   #   press release, published bio, etc.)
 
 contract_entry:
-  required: [contract_number, contracting_agency, period_start, source]
+  required: [contract_number, contracting_agency, source]
+  # plus at least one of period_start / period_end (see below)
   optional:
+    - period_start
     - period_end
+    - date_signed
     - primary_counterparty_path
     - subject
     - value
@@ -1005,12 +1011,26 @@ contract_entry:
   # primary_counterparty_path: optional /organizations/... path of the
   #   contract recipient (typically the node this contract sits on, but
   #   explicit for sub-contract or joint-venture cases).
-  # period_start / period_end: YYYY-MM-DD; period_end may be absent
-  #   for ongoing or open-ended contracts. For multi-year indefinite-
-  #   delivery vehicles (BPA, IDV, GSA-FSS), populate period_end from the
-  #   source's ordering-period end when attested, even when the prose layer
-  #   doesn't call out the close — otherwise the contract's establishment has
-  #   no structured counterpart for its closure.
+  # period_start / period_end: YYYY-MM-DD; the contract's PERFORMANCE
+  #   period, as the rendered Period column states. period_start is the
+  #   performance start — USAspending `period_of_performance.start_date`
+  #   (the search API's "Start Date"), or the source's equivalent (a
+  #   vendor page's "Contract Period"). It is never the signature date:
+  #   that goes in date_signed. At least one of the two is required
+  #   (the contracts check enforces it). period_end may be absent for
+  #   ongoing or open-ended contracts. period_start may be absent when no
+  #   source attests a start — e.g. a bridge-notice incumbent known only
+  #   by its end date; the row then carries period_end alone, renders as
+  #   "– {end}", and sorts by that end date. Never invent a start. For
+  #   multi-year indefinite-delivery vehicles (BPA, IDV, GSA-FSS), populate
+  #   period_end from the source's ordering-period end when attested, even
+  #   when the prose layer doesn't call out the close — otherwise the
+  #   contract's establishment has no structured counterpart for its
+  #   closure.
+  # date_signed: optional YYYY-MM-DD award / signature date where the
+  #   source gives one (USAspending `date_signed`). Rendered in the
+  #   Signed column beside Period, so a reader sees both dates. It may
+  #   precede or follow period_start; record each as the source states.
   # subject: short descriptor of the contract's stated purpose (1-6
   #   words; e.g., "Advanced Aerospace Weapon System Applications",
   #   "Cockpit video system integration"). Scanned by the prose-drift check against
@@ -1032,6 +1052,7 @@ org_relationship_entry:
     - successor
     - contractor
     - contracting-agency
+    - requiring-office
     - funder
     - fund-administrator
     - partner
@@ -1039,16 +1060,34 @@ org_relationship_entry:
   # organization_path: /organizations/... path of the other org
   # relationship_type: enum — one of
   #   [parent, subsidiary, predecessor, successor, contractor,
-  #    contracting-agency, funder, fund-administrator, partner, other]
+  #    contracting-agency, requiring-office, funder, fund-administrator,
+  #    partner, other]
   #     parent               — the other org is this org's parent
   #     subsidiary           — the other org is a subsidiary of this
   #     predecessor          — the other org preceded this one
   #                            (lineage / reorganization)
   #     successor            — the other org succeeded this one
-  #     contractor           — the other org is a contractor to this
-  #                            (this is the contracting agency)
-  #     contracting-agency   — the other org is this org's contracting
-  #                            agency (this is the contractor)
+  #     contractor           — the other org performs contracted work
+  #                            for this org, whichever office awarded
+  #                            it — the mirror of requiring-office, on
+  #                            the customer's node (AARO lists its
+  #                            support contractor as contractor
+  #                            although WHS awarded the contract).
+  #     contracting-agency   — the other org awarded or administers a
+  #                            contract this org holds (e.g. WHS
+  #                            Acquisition Directorate). On a requiring
+  #                            office's node, the other org awarded or
+  #                            administers a contract performed for this
+  #                            org. Only where a cited source names the
+  #                            awarding or administering office; the
+  #                            office the work is for is requiring-office.
+  #     requiring-office     — the other org is the office a contract
+  #                            held by this org is performed for (the
+  #                            customer), as named by a cited source.
+  #                            A funding office alone does not make an
+  #                            office the requiring office (an award
+  #                            record names the awarding and funding
+  #                            offices, not the customer).
   #     funder               — the other org funds this org
   #     fund-administrator   — the other org administers funding for this
   #     partner              — joint venture / partnership

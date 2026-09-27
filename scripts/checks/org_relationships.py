@@ -7,11 +7,15 @@ string — the qualifier a Flagged row renders in its ``Note`` column
 (prose-drift scoped via schema.yaml; checked there, not here).
 
 CLOSED relationship_type enum {parent, subsidiary, predecessor,
-successor, contractor, contracting-agency, funder, fund-administrator,
-partner, other} — same
+successor, contractor, contracting-agency, requiring-office, funder,
+fund-administrator, partner, other}, read from the schema's
+``org_relationship_entry.relationship_type_values`` — same
 pattern as ``participants.capacity``. ERROR on unknown values;
 ``other`` is the fixed miscellaneous bucket, not an extensibility
-escape.
+escape. The per-value definitions (contracting-agency = the awarding or
+administering office; requiring-office = the customer office the work
+is for; contractor = the mirror on the customer's node) live in the
+schema comment block.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.

@@ -1101,7 +1101,7 @@ org_relationships:
 - id: or2
   added_date: '2026-04-22'
   organization_path: /organizations/ccdc-ground-vehicle-systems-center
-  relationship_type: contracting-agency
+  relationship_type: partner
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: Cover page

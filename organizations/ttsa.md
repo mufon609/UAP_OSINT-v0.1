@@ -771,7 +771,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 | Organization | Relationship | Source |
 |---|---|---|
 | [`/organizations/to-the-stars-inc`] | subsidiary | government/sec-ttsa-1a-partii-20170710.html |
-| [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+| [`/organizations/ccdc-ground-vehicle-systems-center`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf |
 | [`/organizations/earthtech-international`] | other | government/sec-ttsa-1a-partii-20170710.html |
