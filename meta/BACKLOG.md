@@ -273,6 +273,38 @@ count — recount before sweeping; the number drifts).
 **Blocks:** none.
 **Blocked by:** none.
 
+### C6 — Keep every Key Passage heading to one plain sentence
+
+A quote's `significance` renders whole as its Key Passage H3 heading; the
+organization renderer does this at `scripts/build/renderers/organization.py`
+(`h3 = q.get("significance")`). Check the other renderers that read
+`significance` for the same behaviour.
+
+The reader standard is one clear sentence that names the source and states
+what the passage shows. For example: "IPMO PWS §1.2 (April 2022): USD(I&S)
+is supported by DDI (Collection and Special Programs), which is supported
+by the Director of IPMO."
+
+Many existing significances run to several sentences of analysis. The
+result is paragraph-length headings: chronology notes, pairings with other
+passages, caveats. Nothing gates heading length or form.
+
+1. **Decide the model.** Either the significance becomes a one-sentence
+   heading and the analysis moves to another field, or the renderer splits
+   heading from body. Look at what `context` already carries before adding
+   a field. Record the decision in `meta/schema-research-artifact.yaml`
+   next to the `significance` field.
+2. **Rewrite the corpus** to that model. Keep what each significance
+   asserts; move the analysis, don't drop it. Re-render. The prose-drift
+   and verbatim gates must stay clean.
+3. **Gate.** Add a check that errors on a multi-sentence or over-long
+   significance, routed and regression-tested like the other checks. Add
+   the rule to the worker and builder contracts.
+
+**Couples with C3:** both rewrite `significance` across the corpus, so do
+them in one pass, or do C3 first so entry IDs are not carried into the
+rewritten headings.
+
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 
 The `foia` type is in the schema, renderer and validators and is covered by
