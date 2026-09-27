@@ -162,21 +162,21 @@ naming_quirks:
   added_date: '2026-06-07'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Notes — "Advanced Aerospace Weapon System Applications (AAWSA) Program" (quoted in q1)'
+  location: 'Administrative Notes — "Advanced Aerospace Weapon System Applications (AAWSA) Program"'
   source_path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-07'
   observed: CO2
   canonical: CO₂
-  location: 'Chapter 2 history passage — "infrared CO2 laser" (quoted in q6); the source renders the chemical-formula subscript inconsistently, with "CO₂" appearing elsewhere (q12, References [29])'
+  location: 'Chapter 2 history passage — "infrared CO2 laser"; the source renders the chemical-formula subscript inconsistently, with "CO₂" appearing elsewhere (Chapter 5 Conclusion, References [29])'
   source_path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-07'
   observed: Frank Mead
   canonical: Franklin Mead (/people/franklin-mead)
-  location: 'Chapter 5 Conclusion closing paragraph — "originally proposed by Dr. Frank Mead [34]" (quoted in q13)'
+  location: 'Chapter 5 Conclusion closing paragraph — "originally proposed by Dr. Frank Mead [34]"'
   source_path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   resolution: preserve-as-sic-in-quotes
 description: |-

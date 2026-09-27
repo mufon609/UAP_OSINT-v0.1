@@ -135,7 +135,7 @@ quotes:
     path: government/dird-29-negative-mass-propulsion-2010.pdf
     location: 'section "13. Conclusion"'
   significance: "States the document's preferred propulsion mechanism — macroscopic ultra-light matter (positive bound to negative) approaching zero rest mass, drastically reducing spacecraft energy requirements."
-  context: 'Conclusion section, immediately following q7.'
+  context: 'Conclusion section, immediately following the rejection of the Forward-style drive.'
   statement_date: '2011-01-03'
   claim_group: conclusion-feasibility
 - id: q9

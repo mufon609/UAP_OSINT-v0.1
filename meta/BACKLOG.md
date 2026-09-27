@@ -171,55 +171,31 @@ convention and record the rationale.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C3 — Purge internal entry-ID references from artifact prose, and gate against them
+### C3 — Stop rendering raw entry IDs from ID-typed fields into node bodies
 
-Artifact free-text fields cite internal entry IDs (`q39`, `cw2`, `nq4`,
-`or10`, `t8`, `kp1`, cross-artifact forms like "aaro q13", "0446 q1") as if
-they were stable pointers. They are not:
+The prose checks keep entry IDs out of free text, but two renderers still
+print the values of ID-typed pointer fields straight into the body, where a
+reader cannot resolve them:
 
-- IDs are positional and shift across merges and rebuilds.
-- No gate checks that a prose reference resolves to the entry the author
-  meant, so the references rot silently.
-- They also render into node bodies (Key Passage headings, Location rows),
-  where a reader cannot resolve them.
+- **Finding "Contradictions" table** (`scripts/build/renderers/finding.py`,
+  `render_finding_contradictions`). It prints `q1`… as a column, e.g.
+  `findings/pax-river-scif-fiscal-triangulation.md`.
+- **Investigation entity anchors** (`scripts/build/renderers/investigation.py`).
+  It prints `[`/people/david-grusch`] q36 — …`, e.g.
+  `investigations/lockheed-martin-uap-materials.md`.
 
-A confirmed instance: two aaro Key Passage significances cited `q39`/`q40`
-as FOIA 24-F-0894 rollout emails, but those IDs are Shellenberger
-testimony quotes. The intended passages carry other IDs.
+The IDs currently resolve. The problem is that they are positional and
+render as bare labels.
 
-The plain-reader rule: prose names the source (document, date, section),
-never an entry ID. The structured lifecycle pointers (`superseded_by` /
-`contradicted_by` / `corroborated_by`) are exempt; they are ID-typed fields
-that `scripts/checks/cross_refs.py` resolves.
-
-The ipmo, ousd-is and aaro `significance` and `description` fields are
-already clean; the rest of the corpus has not been swept.
-
-1. **Inventory.** Scan every free-text field in every `meta/research/*.yaml`
-   for ID tokens, including cross-artifact forms: `description`, quote
-   `significance` / `context` / `source.location`, `naming_quirks[].location`,
-   timeline `event`, relationship `location`, and any other prose field.
-   Also scan rendered node bodies, `meta/topic/working-notes/` and
-   `meta/topic/research-queue.md`, and decide explicitly whether the
-   working-note convention of citing quote IDs stays. Exclude the lifecycle
-   pointer fields.
-2. **Adjudicate each hit.** Read the surrounding prose and the entry the ID
-   currently points at, and classify the reference as correct or stale.
-   Replace it with the source's name. Where it was stale, identify the entry
-   actually meant and check that the prose claim still holds against it.
-   Stale hits are evidentiary defects, not wording fixes. Record each one in
-   the commit message.
-3. **Gate.** Add a check module under `scripts/checks/` that errors on ID
-   tokens in prose fields. Dispatch it from `validate-research.py` at the
-   phase that owns the field, register it with `route_failure.py` /
-   phase-routing parity, and add a regression test under `scripts/tests/`.
-   Drive the existing corpus to zero before enabling it as an error.
-4. **Stop the source.** Worker and builder output introduces these
-   references: a worker significance ending "(q6)", builder
-   naming-quirk locations "(q52)" / "quoted in q40". Add the rule to the
-   worker and builder contracts in `.claude/agents/` and to `build-protocol`
-   so no role emits an ID into prose. Also check the templates and prompts
-   under `prompts/` for examples that model the habit.
+1. **Render a reader-resolvable label.** Resolve each ID at render time to
+   the entry's source: document plus date or section, or the quote's
+   significance heading. Keep the ID in the artifact, where
+   `cross_refs.py` checks it.
+2. **Survey every renderer.** Check each one that reads an ID-typed field
+   (`anchor`, `evidence_id`, `hypothesis_id`, `against_hypothesis_id`,
+   lifecycle pointers) for the same leak.
+3. **Add renderer coverage.** Assert that no rendered body line carries a
+   bare entry ID, as a renderer-coverage or regression test.
 
 ### C4 — Harden the Worker extraction step against large-source timeouts and over-exploration
 
@@ -301,9 +277,8 @@ passages, caveats. Nothing gates heading length or form.
    significance, routed and regression-tested like the other checks. Add
    the rule to the worker and builder contracts.
 
-**Couples with C3:** both rewrite `significance` across the corpus, so do
-them in one pass, or do C3 first so entry IDs are not carried into the
-rewritten headings.
+The prose-entry-ID checks already bar entry IDs from every significance, so
+the rewritten headings cannot carry them.
 
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 

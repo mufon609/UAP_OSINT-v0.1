@@ -191,7 +191,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 16"
-  significance: Clearance scope — self-description of compartmented access and institutional trust (parallels written q9)
+  significance: Clearance scope — self-description of compartmented access and institutional trust (as in written ¶10)
   context: opening statement
   statement_date: '2023-07-26'
 - id: q10

@@ -524,7 +524,7 @@ relationships:
 - id: r14
   added_date: '2026-04-29'
   person_path: /people/christopher-mellon
-  relationship: Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released April 18 2024 under FOIA 24-F-0266); see Statements q36 and q37 for verbatim Kirkpatrick lines from the exchange
+  relationship: Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released April 18 2024 under FOIA 24-F-0266); Statements carry verbatim Kirkpatrick lines from the exchange
   source:
     path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
     location: release page
@@ -977,7 +977,7 @@ timeline:
   added_date: '2026-04-29'
   date: '2023-06-11'
   end_date: '2023-06-13'
-  event: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) on Mellon's effort to mediate between Grusch and AARO; the exchange was released April 18 2024 under FOIA 24-F-0266 (BlackVault). Verbatim Kirkpatrick lines from the exchange are registered as Statements q36 and q37
+  event: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) on Mellon's effort to mediate between Grusch and AARO; the exchange was released April 18 2024 under FOIA 24-F-0266 (BlackVault). Verbatim Kirkpatrick lines from the exchange are registered as Statements
   category: testimony
   source:
     path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
@@ -1666,7 +1666,7 @@ quotes:
   source:
     path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
     location: '¶ "While being interviewed by New York Post reporter-turned-UFO-debunker Steven Greenstreet on May 8"'
-  significance: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission (q40) that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
+  significance: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
   context: Greenstreet interview May 8 2024, paraphrased with embedded verbatim phrases in Unknown Country article June 12 2024 — Kirkpatrick denying pre-AARO UAP duties
 - id: q42
   claim_group: "Historical Record Report Volume 1"

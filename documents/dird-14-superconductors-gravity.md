@@ -240,7 +240,7 @@ The Conclusion: although the payoff of the discovery of a superconductor-mediate
 
 ---
 
-### The document's single most extraordinary specific claim — the high-voltage YBCO "gravity beam" discharge allegedly toppling a pencil in an adjoining room behind a thick concrete wall. q12 names the "gravity beam" but the node otherwise never describes it.
+### The document's single most extraordinary specific claim — the high-voltage YBCO "gravity beam" discharge allegedly toppling a pencil in an adjoining room behind a thick concrete wall; the closing timeline verdict names the beam but never describes it.
 
 > When the static machine was operated, a light blue planar "discharge" was seen to pass from the superconductor array to the annulus. At this instant, a pencil standing upright on a table in an adjoining room and separated from the experiment by a thick concrete wall fell over.
 

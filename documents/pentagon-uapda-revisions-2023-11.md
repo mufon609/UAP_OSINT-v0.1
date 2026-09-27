@@ -95,7 +95,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9004(a)(1)(C) Collection scope — "all unclassified" inserted to restrict the UAP Records Collection to unclassified U.S. Government, Government-provided, or Government-funded agency records. The original Schumer-Rounds text covered the full Collection without classification restriction; the OUSD(I&S) markup excludes classified records from the disclosure framework entirely. Combined with the §9006(3) Senior Agency Official withdrawal authority (q9), classified UAP records exit the framework at two points.
+### §9004(a)(1)(C) Collection scope — "all unclassified" inserted to restrict the UAP Records Collection to unclassified U.S. Government, Government-provided, or Government-funded agency records. The original Schumer-Rounds text covered the full Collection without classification restriction; the OUSD(I&S) markup excludes classified records from the disclosure framework entirely. Combined with the §9006(3) Senior Agency Official withdrawal authority, classified records exit the framework at two points.
 
 > (C) The Collection shall consist of record copies of all unclassified U.S. Government, Government provided, or Government funded agency records following their transfer to the National Archives relating to unidentified anomalous phenomena, or technologies of unknown origin, and non-human intelligence
 
@@ -119,7 +119,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9005(c)(2)(H) Intermediating layer — "via the All-domain Anomaly Resolution Office" inserted to route agency transmissions to ODNI through AARO. The original Schumer-Rounds text had agencies serve the Review Board directly; the OUSD(I&S) markup inserts AARO as the intermediating layer between any originating agency and the disclosure framework. Combined with the §9005(b)(1) Review Board → AARO substitution (q7), AARO sits both as the gatekeeper and as the routing intermediary.
+### §9005(c)(2)(H) Intermediating layer — "via the All-domain Anomaly Resolution Office" inserted to route agency transmissions to ODNI through AARO. The original Schumer-Rounds text had agencies serve the Review Board directly; the OUSD(I&S) markup inserts AARO as the intermediating layer between any originating agency and the disclosure framework. Combined with the §9005(b)(1) Review Board → AARO substitution, AARO sits both as the gatekeeper and as the routing intermediary.
 
 > Director of National Intelligence via the All-domain Anomaly Resolution Office any additional information and records
 
@@ -143,7 +143,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9006(3) Senior Agency Official withdrawal authority — newly-inserted section with no counterpart in the Schumer-Rounds Senate-passed text. Allows Senior Agency Officials designated under E.O. 13526 or successor Orders to withdraw records from the disclosure framework upon a determination that the record is "both not related to unidentified anomalous phenomena and properly classified". Single largest structural carveout in the markup — combined with §9004(a)(1)(C) "all unclassified" restriction (q6), classified UAP records can exit the framework either by exclusion (Collection scope) or by senior-official withdrawal.
+### §9006(3) Senior Agency Official withdrawal authority — newly-inserted section with no counterpart in the Schumer-Rounds Senate-passed text. Allows Senior Agency Officials designated under E.O. 13526 or successor Orders to withdraw records from the disclosure framework upon a determination that the record is "both not related to unidentified anomalous phenomena and properly classified". Single largest structural carveout in the markup — combined with §9004(a)(1)(C) "all unclassified" restriction, classified records can exit the framework either by exclusion (Collection scope) or by senior-official withdrawal.
 
 > (3) WITHDRAWAL OF RECORDS – Senior Agency Officials designated in accordance with E.O. 13526 or any successor Orders may withdraw records in the collection that are determined to be both not related to unidentified anomalous phenomena and properly classified. The Senior Agency Official must notify the congressional defense and intelligence committees 60 days before each record is withdrawn.
 
@@ -167,7 +167,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9005(e) Transmission requirement — track-changes weakening of the agency-head transmission obligation to the National Archives. "shall" struck through, "should" inserted in the head of the provision applying to "Each head of a Government office". The original Schumer-Rounds text required ("shall") agency heads to transmit unidentified anomalous phenomena records to the Archivist; the OUSD(I&S) markup demotes the obligation to advisory ("should"). Same shall→should weakening pattern as §9010(a) eminent domain (q11) — both lower the imperative on disclosure-pipeline transmission.
+### §9005(e) Transmission requirement — track-changes weakening of the agency-head transmission obligation to the National Archives. "shall" struck through, "should" inserted in the head of the provision applying to "Each head of a Government office". The original Schumer-Rounds text required ("shall") agency heads to transmit unidentified anomalous phenomena records to the Archivist; the OUSD(I&S) markup demotes the obligation to advisory ("should"). Same shall→should weakening pattern as §9010(a) eminent domain — both lower the imperative on disclosure-pipeline transmission.
 
 > (e) TRANSMISSION TO THE NATIONAL ARCHIVES.— Each head of a Government office shall should—
 

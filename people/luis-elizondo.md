@@ -163,7 +163,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo's time at AATIP. First half of Q7 response (the response splits across a PDF page break; second half captured in q16). 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo's time at AATIP. First half of Q7 response (the response splits across a PDF page break; the second half names Hoyer and Elizondo's facility visit). 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (first half — pre-page-break) |
 
@@ -171,7 +171,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility. 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from the first half) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility. 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (second half — post-page-break) |
 

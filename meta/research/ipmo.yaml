@@ -503,7 +503,7 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'OSD OUSD(I)'
   canonical: 'OUSD(I&S)'
-  location: 'FPDS HQ003424C0046 entry modNumber P00008, element fundingRequestingOfficeID name attribute (office code HQ0208), quoted in q39; the FPDS record does not expand it'
+  location: 'FPDS HQ003424C0046 entry modNumber P00008, element fundingRequestingOfficeID name attribute (office code HQ0208); the FPDS record does not expand it'
   source_path: government/fpds-hq003424c0046.txt
   resolution: preserve-as-sic-in-quotes
 - id: nq5
@@ -652,7 +652,7 @@ org_relationships:
   relationship_type: partner
   source:
     path: government/osd-op5-fy24-20260501.pdf
-    location: 'OUSD(I&S) program section, sub-office cluster, AARO bullet (q15)'
+    location: 'OUSD(I&S) program section, sub-office cluster, AARO bullet'
 - id: or4
   added_date: '2026-05-02'
   organization_path: /organizations/dmdpo

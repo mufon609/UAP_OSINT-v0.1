@@ -383,7 +383,7 @@ timeline:
 - id: t16
   added_date: '2026-04-22'
   date: '2019'
-  event: Fall 2019 first contact from a senior-credentialed official alleging a multi-decade UAP crash retrieval and reverse-engineering program, initiating the inquiry that became Grusch's PPD-19 filing (per Grusch's JRE account — "that was like fall of 2019", q31b)
+  event: Fall 2019 first contact from a senior-credentialed official alleging a multi-decade UAP crash retrieval and reverse-engineering program, initiating the inquiry that became Grusch's PPD-19 filing (per Grusch's JRE account — "that was like fall of 2019")
   category: other
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
@@ -495,7 +495,7 @@ timeline:
 - id: t27
   added_date: '2026-04-24'
   date: '2021-07'
-  event: Confidential disclosure of UAP-related classified information to the [`/organizations/dod`] Inspector General — Grusch's first formal protected communication, predating the PPD-19 Urgent Concern filing by ten months (per PPD-19 filing ¶4, q164)
+  event: Confidential disclosure of UAP-related classified information to the [`/organizations/dod`] Inspector General — Grusch's first formal protected communication, predating the PPD-19 Urgent Concern filing by ten months (per PPD-19 filing ¶4)
   category: filing
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
@@ -503,7 +503,7 @@ timeline:
 - id: t28
   added_date: '2026-04-24'
   date: '2022-05-25'
-  event: Formal PPD-19 Urgent Concern filing with the [`/organizations/icig`] — the canonical date Grusch became a whistleblower under federal law; filing drafted by attorneys Irvin Charles McCullough, III, and Andrew P. Bakaj and sworn-adopted by Grusch under penalty of perjury ([`/documents/grusch-ppd-19-procedural-filing`], q162/q163/q164/q165)
+  event: Formal PPD-19 Urgent Concern filing with the [`/organizations/icig`] — the canonical date Grusch became a whistleblower under federal law; filing drafted by attorneys Irvin Charles McCullough, III, and Andrew P. Bakaj and sworn-adopted by Grusch under penalty of perjury ([`/documents/grusch-ppd-19-procedural-filing`])
   category: filing
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
@@ -519,7 +519,7 @@ timeline:
 - id: t30
   added_date: '2026-04-24'
   date: '2022-12'
-  event: First classified congressional testimony — per Grusch's JRE account, "11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate" ([`/transcripts/jre-2065-grusch-2023`], q47); predates the 2023-07-26 public hearing by seven months
+  event: First classified congressional testimony — per Grusch's JRE account, "11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate" ([`/transcripts/jre-2065-grusch-2023`]); predates the 2023-07-26 public hearing by seven months
   category: testimony
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
@@ -916,7 +916,7 @@ quotes:
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
     location: "[12:42]"
-  significance: Verbatim source anchor for the "fall of 2019" date attached to the first senior-IC whistleblower contact. Grusch's own framing of the date in his JRE account. Supports timeline entry t16.
+  significance: Verbatim source anchor for the "fall of 2019" date attached to the first senior-IC whistleblower contact. Grusch's own JRE framing of the date; supports the 2019 timeline entry.
   context: Joe Rogan Experience
   observation_type: relayed
   category: filed-claim
@@ -1771,7 +1771,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "Q&A with Rep. Burchett, p. 35"
-  significance: Grusch attests to an 11½-hour classified testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. Cross-references with his JRE account ("it's 11 and a half to 12 hours" of classified testimony, q47).
+  significance: Grusch attests to an 11½-hour classified testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. Cross-references with his JRE account ("about 11 and a half to 12 hours" of classified testimony).
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -2232,7 +2232,7 @@ quotes:
   source:
     path: news/thedebrief-grusch-2023.html
     location: ¶15 (Kean/Blumenthal quote attribution of Grusch's DOPSR-cleared statements from April 2023)
-  significance: Shorter-form restatement of the structural-concealment claim, with "SAP/CAP programs" rendered as "secret access programs." Attributed by Kean/Blumenthal to Grusch's April 2023 DOPSR-cleared written statements. Treated as a near-verbatim paraphrase of q149 rather than an independent second statement — the specific SAP/CAP acronym in q149 is Grusch's, and the ¶15 rendering appears to be the Debrief's editorial simplification of the same underlying thought. Retained to preserve the April 2023 DOPSR-cleared publication footprint.
+  significance: Shorter-form restatement of the structural-concealment claim, with "SAP/CAP programs" rendered as "secret access programs." Attributed by Kean/Blumenthal to Grusch's April 2023 DOPSR-cleared written statements. Treated as a near-verbatim paraphrase of Grusch's ¶29 quote rather than an independent statement — the specific SAP/CAP acronym in ¶29 is Grusch's, and the ¶15 rendering appears to be the Debrief's editorial simplification of the same thought. Retained to preserve the April 2023 DOPSR-cleared publication footprint.
   context: DOPSR-cleared Grusch statements (April 2023), as paraphrased/shortened in The Debrief article
   observation_type: relayed
   category: filed-claim

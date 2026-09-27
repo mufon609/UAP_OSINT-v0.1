@@ -2289,7 +2289,7 @@ org_relationships:
   notes: 'Not confirmed. The Washington Headquarters Services notice NUFOHRC_20260731, on behalf of AARO, is a notice of intent to award a sole-source, firm-fixed-price contract to NUFOHRC for a data subscription; it is not a request for competitive proposals, and it does not record an award.'
   source:
     path: government/samgov-nufohrc-20260731-notice.json
-    location: '"description" body, ¶ "This is a notice of intent to award"; ¶ "The Washington Headquarters Services, on behalf of" (q123, q125)'
+    location: '"description" body, ¶ "This is a notice of intent to award"; ¶ "The Washington Headquarters Services, on behalf of"'
 - id: or13
   added_date: '2026-09-27'
   organization_path: /organizations/osd-red-team
@@ -2423,7 +2423,7 @@ timeline:
 - id: t12a
   added_date: '2026-05-01'
   date: '2024-11-19'
-  event: 'Kosloski''s first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Cases: Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax; object closer to 13,000 ft), Mt. Etna 2018 (slide deck: 170 km from volcano, moderate confidence; oral: 170 m from plume; nq4 disputed).'
+  event: 'Kosloski''s first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Cases: Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax; object closer to 13,000 ft), Mt. Etna 2018 (slide deck: 170 km from volcano, moderate confidence; oral: 170 m from plume; discrepancy disputed).'
   category: testimony
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
@@ -2451,7 +2451,7 @@ timeline:
   category: contract
   source:
     path: government/usaspending-hq003424c0096-20260925.txt
-    location: '"date_signed" / "total_obligation" / "period_of_performance" fields, 2026-09-25 capture (q79, q80); earlier total from the 2026-04-30 capture, government/usaspending-hq003424c0096.txt'
+    location: '"date_signed" / "total_obligation" / "period_of_performance" fields, 2026-09-25 capture; earlier total from the 2026-04-30 capture, government/usaspending-hq003424c0096.txt'
   node_link: /organizations/sancorp-consulting
 - id: t13a
   added_date: '2026-05-03'
@@ -2588,7 +2588,7 @@ timeline:
   category: contract
   source:
     path: government/usaspending-hq003424c0096-transactions-20260925.txt
-    location: 'transaction P00005 "action_date" / "description" (q84; P00004 contrast q83)'
+    location: 'transaction P00005 "action_date" / "description"; transaction P00004 "description" for contrast'
   node_link: /organizations/sancorp-consulting
 - id: t28
   added_date: '2026-09-26'
@@ -2597,7 +2597,7 @@ timeline:
   category: contract
   source:
     path: government/usaspending-hq003424c0096-transactions-20260925.txt
-    location: 'transaction P00007 "action_date" / "federal_action_obligation" (q86)'
+    location: 'transaction P00007 "action_date" / "federal_action_obligation"'
   node_link: /organizations/sancorp-consulting
 - id: t29
   added_date: '2026-09-26'
@@ -2606,7 +2606,7 @@ timeline:
   category: hiring
   source:
     path: news/sancorp-adp-req1258-staff-officer-iii-20260925.json
-    location: '"postDate" field (q96)'
+    location: '"postDate" field'
   node_link: /organizations/sancorp-consulting
 - id: t30
   added_date: '2026-09-26'
@@ -2615,7 +2615,7 @@ timeline:
   category: hiring
   source:
     path: news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html
-    location: '¶ The Staff Officer V will support (q97, q98)'
+    location: '¶ The Staff Officer V will support; ¶ This key personnel position serves as a senior-level SME'
   node_link: /organizations/arlo-solutions
 - id: t31
   added_date: '2026-09-26'
@@ -2624,7 +2624,7 @@ timeline:
   category: hiring
   source:
     path: news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html
-    location: '¶ Job Application for (617) Staff Officer V (q103, q104)'
+    location: '¶ Job Application for (617) Staff Officer V; ¶ The Staff Officer V will support'
   node_link: /organizations/arlo-solutions
 - id: t32
   added_date: '2026-09-26'
@@ -2633,7 +2633,7 @@ timeline:
   category: hiring
   source:
     path: news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html
-    location: '¶ The Security Officer IV serves as the primary security professional (q105)'
+    location: '¶ The Security Officer IV serves as the primary security professional'
   node_link: /organizations/arlo-solutions
 - id: t33
   added_date: '2026-09-26'
@@ -2643,7 +2643,7 @@ timeline:
   category: reporting-period
   source:
     path: government/aaro-fy25-consolidated-annual-report-uap.pdf
-    location: 'p. 3, ¶1–¶2; p. 5, ¶7 (q136, q139, q140)'
+    location: 'p. 3, ¶1–¶2; p. 5, ¶7'
   node_link: /documents/aaro-fy25-consolidated-annual-report-uap
 - id: t34
   added_date: '2026-09-26'
@@ -2652,7 +2652,7 @@ timeline:
   category: contract
   source:
     path: government/samgov-nufohrc-20260731-notice.json
-    location: 'top-level "postedDate" field; "description" body, ¶ "The Washington Headquarters Services, on behalf of" (q122, q125)'
+    location: 'top-level "postedDate" field; "data2" "title" field; "description" body, ¶ "The Washington Headquarters Services, on behalf of"'
   node_link: /documents/samgov-nufohrc-20260731-notice
 - id: t35
   added_date: '2026-09-26'
@@ -2661,7 +2661,7 @@ timeline:
   category: publication
   source:
     path: news/time-america-taking-extraterrestrials-seriously-20260806.html
-    location: '¶ Not everyone is persuaded by the reports. (q180)'
+    location: '¶ Not everyone is persuaded by the reports.'
   node_link: /people/jonathan-kosloski
 - id: t36
   added_date: '2026-09-26'
@@ -2670,7 +2670,7 @@ timeline:
   category: publication
   source:
     path: news/defensescoop-aaro-nufohrc-subscription-20260902.html
-    location: '¶ Details about the All-domain Anomaly Resolution Office’s plans; ¶ They declined to disclose (q130–q134)'
+    location: '¶ Details about the All-domain Anomaly Resolution Office’s plans; ¶ They declined to disclose'
   node_link: /organizations/nufohrc
 - id: t37
   added_date: '2026-09-26'
@@ -2679,7 +2679,7 @@ timeline:
   category: other
   source:
     path: news/defensescoop-pursue-waiver-legal-relief-20260914.html
-    location: '¶ The new waiver notably supersedes; ¶ “Binding law protects individuals who share information with AARO (q181)'
+    location: '¶ The new waiver notably supersedes; ¶ “Binding law protects individuals who share information with AARO'
   node_link: /organizations/pursue
 - id: t38
   added_date: '2026-09-26'
@@ -2688,14 +2688,14 @@ timeline:
   category: government-action
   source:
     path: government/crec-20260722-house-hr8800-ndaa-fy2027.htm
-    location: '¶ "Amendments en bloc No. 5 consisting of" (Record page H5077); SEC. 1746(f)(6) (Record page H5120); SEC. 1750(b) (Record page H5121); en bloc No. 5 disposition (Record page H5123); ¶ "Accordingly, the Committee rose" (Record page H5127) (q182–q185)'
+    location: '¶ "Amendments en bloc No. 5 consisting of" (Record page H5077); SEC. 1746(f)(6) (Record page H5120); SEC. 1750(b) (Record page H5121); en bloc No. 5 disposition (Record page H5123); ¶ "Accordingly, the Committee rose" (Record page H5127)'
   node_link: /documents/ndaa-fy2027-amendment-315-burlison
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
   observed: All-Domain
   canonical: All-domain
-  location: 'SAM.gov notice of intent to sole source NUFOHRC_20260731 (q125, "on behalf of the All-Domain Anomaly Resolution Office (AARO)"); the same capitalization appears in the Arlo Solutions (617) Staff Officer V and (619) Security Officer IV postings (q97, q104, q105) and Sancorp job requisition 1258 (q93). The canonical form "All-domain Anomaly Resolution Office" is the one the Hicks establishment memorandum and document_intrinsic.full_name carry.'
+  location: 'SAM.gov notice of intent to sole source NUFOHRC_20260731 ("on behalf of the All-Domain Anomaly Resolution Office (AARO)"); the same capitalization appears in the Arlo Solutions (617) Staff Officer V (2025-12-17 and 2026-01-19 captures) and (619) Security Officer IV postings and Sancorp job requisition 1258. The canonical form "All-domain Anomaly Resolution Office" is the one the Hicks establishment memorandum and document_intrinsic.full_name carry.'
   source_path: government/samgov-nufohrc-20260731-notice.json
   resolution: preserve-as-sic-in-quotes
 - id: nq3
@@ -2744,7 +2744,7 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'OSD OUSD(I)'
   canonical: 'OUSD(I&S)'
-  location: 'USAspending "funding_agency" office_agency_name on HQ003424C0096 (2026-09-25 capture), HQ003426FE050, and HQ003422C0064 (q110); USD(I) is the pre-redesignation form of USD(I&S) (Section 1621 of Public Law 116-92, per CRS In Focus IF10523, government/crs-if10523-defense-primer-usdis.html, q115); the award records themselves do not expand it'
+  location: 'USAspending "funding_agency" office_agency_name on HQ003424C0096 (2026-09-25 capture), HQ003426FE050, and HQ003422C0064; USD(I) is the pre-redesignation form of USD(I&S) (Section 1621 of Public Law 116-92, per CRS In Focus IF10523, government/crs-if10523-defense-primer-usdis.html); the award records themselves do not expand it'
   source_path: government/usaspending-hq003426fe050.txt
   resolution: preserve-as-sic-in-quotes
 - id: nq9
@@ -2772,49 +2772,49 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'DOW'
   canonical: 'Department of Defense (DoD)'
-  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Policy and Procedural Development — "DOW and Intelligence Community-wide processes" (q119); the posting expands it as "Department of War (DOW)"; Department of War secondary name per EO 14347 Sec. 2(b)'
+  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Policy and Procedural Development — "DOW and Intelligence Community-wide processes"; the posting expands it as "Department of War (DOW)"; Department of War secondary name per EO 14347 Sec. 2(b)'
   source_path: news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html
   resolution: preserve-as-sic-in-quotes
 - id: nq13
   added_date: '2026-09-26'
   observed: 'Secretary of War'
   canonical: 'Secretary of Defense'
-  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Strategic Program Development and Analysis — "the priorities of the Secretary of War" (q118); Secretary of War secondary title per EO 14347 Sec. 2(a)'
+  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Strategic Program Development and Analysis — "the priorities of the Secretary of War"; Secretary of War secondary title per EO 14347 Sec. 2(a)'
   source_path: news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html
   resolution: preserve-as-sic-in-quotes
 - id: nq14
   added_date: '2026-09-26'
   observed: 'Under Secretary of War for Intelligence and Security'
   canonical: 'Under Secretary of Defense for Intelligence and Security'
-  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Strategic Program Development and Analysis — "Under Secretary of War for Intelligence and Security Technical Advisory and Guidance" (q118); Under Secretary of War secondary title for subordinate officials per EO 14347 Sec. 2(c)'
+  location: 'Arlo (617) Staff Officer V posting (2025-12-17 capture), Strategic Program Development and Analysis — "Under Secretary of War for Intelligence and Security Technical Advisory and Guidance"; Under Secretary of War secondary title for subordinate officials per EO 14347 Sec. 2(c)'
   source_path: news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html
   resolution: preserve-as-sic-in-quotes
 - id: nq15
   added_date: '2026-09-26'
   observed: 'section 3373k'
   canonical: 'section 3373(k)'
-  location: 'AARO FY 2025 Consolidated Annual Report, Executive Summary p. 3, ¶1 (q136) — "section 3373k of Title 50, United States Code"; the same report''s Scope section (p. 3, ¶10, q137) prints "section 3373(k)(1)(A)"'
+  location: 'AARO FY 2025 Consolidated Annual Report, Executive Summary p. 3, ¶1 — "section 3373k of Title 50, United States Code"; the same report''s Scope section (p. 3, ¶10) prints "section 3373(k)(1)(A)"'
   source_path: government/aaro-fy25-consolidated-annual-report-uap.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq16
   added_date: '2026-09-26'
   observed: '(Figure 3)'
   canonical: 'Figure 2'
-  location: 'AARO FY 2025 Consolidated Annual Report p. 7, ¶2 (q156) — the morphology paragraph points to "Figure 3"; the morphology chart on p. 8 is captioned "Figure 2: UAP Characterization by Morphology", and "Figure 3" (p. 9) is the altitude chart'
+  location: 'AARO FY 2025 Consolidated Annual Report p. 7, ¶2 — the morphology paragraph points to "Figure 3"; the morphology chart on p. 8 is captioned "Figure 2: UAP Characterization by Morphology", and "Figure 3" (p. 9) is the altitude chart'
   source_path: government/aaro-fy25-consolidated-annual-report-uap.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq17
   added_date: '2026-09-26'
   observed: 'Department of War (DoW)'
   canonical: 'Department of Defense (DoD)'
-  location: 'AARO FY 2025 Consolidated Annual Report — title block "DEPARTMENT OF WAR" (q135), p. 3, ¶1 "The Department of War (DoW)" (q136), and "DoW" in q137, q138, q155, q167, q168, q170; Department of War secondary name per EO 14347 Sec. 2(b)'
+  location: 'AARO FY 2025 Consolidated Annual Report — title block "DEPARTMENT OF WAR", p. 3, ¶1 "The Department of War (DoW)", and "DoW" at p. 3, ¶10; p. 5, ¶6; p. 7, ¶1; p. 11, ¶3, ¶4, ¶6; Department of War secondary name per EO 14347 Sec. 2(b)'
   source_path: government/aaro-fy25-consolidated-annual-report-uap.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq18
   added_date: '2026-09-26'
   observed: 'all-domain anomaly resolution office'
   canonical: 'All-domain Anomaly Resolution Office'
-  location: 'Congressional Record (House), July 22, 2026, Amendment No. 315, SEC. 1746(f)(6) paragraph heading "(6) Briefing the all-domain anomaly resolution office.--" (q182, Record page H5120); the GPO HTML rendition sets the Record''s small-caps headings in lowercase, and the same paragraph''s operative clause prints "All-domain Anomaly Resolution Office"'
+  location: 'Congressional Record (House), July 22, 2026, Amendment No. 315, SEC. 1746(f)(6) paragraph heading "(6) Briefing the all-domain anomaly resolution office.--" (Record page H5120); the GPO HTML rendition sets the Record''s small-caps headings in lowercase, and the same paragraph''s operative clause prints "All-domain Anomaly Resolution Office"'
   source_path: government/crec-20260722-house-hr8800-ndaa-fy2027.htm
   resolution: preserve-as-sic-in-quotes
 - id: nq19

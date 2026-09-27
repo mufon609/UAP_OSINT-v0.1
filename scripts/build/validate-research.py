@@ -56,6 +56,11 @@ Per-artifact checks (after parse + ResearchContext construction):
   - ownership_timeline, top_scope_activity, location_relationships
                                        — location-conditional
   - cross_refs, prose_drift           — whole-artifact
+  - quote_prose_entry_ids, synthesis_prose_entry_ids,
+    link_prose_entry_ids              — whole-artifact; no internal entry
+                                         IDs in prose, one dispatch per
+                                         owning phase (extract / organize /
+                                         link)
 
 Each check self-gates on target type/archetype/kind so the orchestrator
 runs the full step list against every artifact and the check decides
@@ -150,7 +155,9 @@ from checks import primary_sources as ck_primary_sources
 from checks import program_involvement as ck_program_involvement
 from checks import prose_drift as ck_prose_drift
 from checks import publication_record as ck_publication_record
+from checks import link_prose_entry_ids as ck_link_prose_entry_ids
 from checks import quote_location_page as ck_quote_location_page
+from checks import quote_prose_entry_ids as ck_quote_prose_entry_ids
 from checks import quotes as ck_quotes
 from checks import records_sought as ck_records_sought
 from checks import relationships as ck_relationships
@@ -160,6 +167,7 @@ from checks import resolution_history as ck_resolution_history
 from checks import speaker_attribution_consistency as ck_speaker_attribution_consistency
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
 from checks import speakers as ck_speakers
+from checks import synthesis_prose_entry_ids as ck_synthesis_prose_entry_ids
 from checks import timeline as ck_timeline
 from checks import ocr_sibling_presence as ck_ocr_sibling_presence
 from checks import quote_ocr_corroboration as ck_quote_ocr_corroboration
@@ -329,6 +337,10 @@ _ARTIFACT_CHECKS = [
     ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks
     ck_cross_refs,
+    # No internal entry IDs in prose — one dispatch per owning phase
+    ck_quote_prose_entry_ids,      # quotes[] prose (extract)
+    ck_synthesis_prose_entry_ids,  # top-level synthesis prose (organize)
+    ck_link_prose_entry_ids,       # structured-entry prose (link)
     ck_associated_entities,  # associated_entities content: shape + prose-wrap superset (presence via iff_section)
     ck_extrinsic_authorship,  # context_extrinsic.extrinsic_authorship carries no link wraps (metadata-only)
     ck_prose_drift,

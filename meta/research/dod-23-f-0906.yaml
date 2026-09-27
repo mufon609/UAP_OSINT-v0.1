@@ -412,56 +412,56 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'OSD/JS FOIA Office'
   canonical: 'Freedom of Information Division'
-  location: 'q36 location (subject "PAL Acknowledgement by OSD/JS FOIA Office"); agency messages of 05/21/2023 and 05/24/2023'
+  location: 'MuckRock page, 05/21/2023 agency message subject "PAL Acknowledgement by OSD/JS FOIA Office"; agency messages of 05/21/2023 and 05/24/2023'
   source_path: news/muckrock-foia-23-f-0906-wayback-20260430.html
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-09-26'
   observed: 'FOID'
   canonical: 'Freedom of Information Division'
-  location: 'Sheet title FOID_FOIA_Log-FY23; framed in q39 / q40 / q41 location'
+  location: 'Sheet title FOID_FOIA_Log-FY23; log # 1244 (Request ID 23-F-0906)'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-09-26'
   observed: 'OUSD(I&S)'
   canonical: 'Office of the Under Secretary of Defense for Intelligence and Security'
-  location: 'q25 (request title in the Subject line)'
+  location: 'MuckRock page, 05/19/2023 request letter header (request title in the Subject line)'
   source_path: news/muckrock-foia-23-f-0906-wayback-20260430.html
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-09-26'
   observed: 'Office of the Under Secretary of Defense For Intelligence and Security'
   canonical: 'Office of the Under Secretary of Defense for Intelligence and Security'
-  location: 'q2 / q27 / q40 (capitalized "For" in the request scope paragraph)'
+  location: 'request letter p. 1, ¶2; MuckRock copy of the 05/19/2023 letter; FOID log # 1244 Request Description cell (capitalized "For" in the request scope paragraph)'
   source_path: government/foia-23-f-0906-request-description.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-09-26'
   observed: 'Sancorp'
   canonical: 'Sancorp Consulting, LLC'
-  location: 'q7 / q8 / q9 (short form in the public-interest paragraphs)'
+  location: 'request letter p. 2, ¶3–¶4 (short form in the public-interest paragraphs)'
   source_path: government/foia-23-f-0906-request-description.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq6
   added_date: '2026-09-26'
   observed: '5 U.S.C. subsection 552'
   canonical: '5 U.S.C. § 552'
-  location: 'q1 / q26 (the same letter uses the § form at p. 2, ¶2)'
+  location: 'request letter p. 1, ¶1 and its MuckRock copy (the same letter uses the § form at p. 2, ¶2)'
   source_path: government/foia-23-f-0906-request-description.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq7
   added_date: '2026-09-26'
   observed: 'Skvarla, Robert'
   canonical: 'Robert Skvarla, Jr.'
-  location: 'q39 (FOID log # 1244, Requester Name cell, surname-first)'
+  location: 'FOID log # 1244, Requester Name cell, surname-first'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq8
   added_date: '2026-09-26'
   observed: 'Dr. Robert Skvarla'
   canonical: 'Robert Skvarla, Jr.'
-  location: 'q15 context (interim response address block); the requester signs his own letter "Robert Skvarla, Jr." without an honorific'
+  location: 'interim response p. 1 address block; the requester signs his own letter "Robert Skvarla, Jr." without an honorific'
   source_path: government/foia-23-f-0906-interim-response.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq9

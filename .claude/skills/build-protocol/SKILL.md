@@ -147,6 +147,37 @@ then yields. The same holds for every required-but-emptyable
 source-anchored section: an empty list is correct only when the source
 genuinely lacks that material, never as a discretionary skip.
 
+## Prose names the source — never an entry ID
+
+Every prose field an artifact carries — a quote's `significance` / `context` /
+`source.location`, a `naming_quirks` location, a timeline `event` or location,
+a relationship cell, `description`, `background`, `establishes`, … — names
+the **source** (document or outlet, date, section / page / timestamp), never an
+internal entry ID: not `q39`, `nq4`, `or10`, `t8`, `kp1`, `cw2`, a slug id, or
+a cross-artifact form like "aaro q13". Write "the 2026-03-12 Liberation Times
+update", not "q4"; drop a trailing "(q97, q98)" from a location that already
+names its anchor.
+
+- **Why.** IDs are positional — they shift across merges and rebuilds — and
+  nothing checks that a prose reference still resolves to the entry meant, so
+  it rots silently: the claim ends up pointing at a different passage. They
+  also render into node bodies (Key Passage headings, Location rows, Timeline
+  cells) where a reader cannot resolve them.
+- **Not prose.** The ID-typed pointer fields (`superseded_by` /
+  `contradicted_by` / `corroborated_by`, `speaker_id`, `evidence_id`,
+  `hypothesis_id` / `against_hypothesis_id`, a source entry's `anchor`) carry
+  IDs by design. A source's own labels (a QFR's "Q7", a Congressional Record
+  page "H5120") and the hypothesis labels an investigation displays ("H1")
+  are not entry IDs.
+- **Enforced** by the prose-entry-ID checks, one per owning phase —
+  `quote_prose_entry_ids` (extract), `synthesis_prose_entry_ids` (organize),
+  `link_prose_entry_ids` (link); the token rule and exempt fields live in
+  `scripts/checks/_entry_id_prose.py`.
+- **A hit is an evidence question first.** Read the entry the ID points at.
+  If it is not the passage the prose means, the claim was built on the wrong
+  passage: find the passage meant, check the claim against it, and correct the
+  data — not just the wording.
+
 ## Tier linking contract — references run downward (check before you link)
 
 Four tiers; a node references only *lower* tiers, never a greater one. The

@@ -167,7 +167,7 @@ naming_quirks:
   added_date: '2026-06-08'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Notes — "Advanced Aerospace Weapon System Applications (AAWSA) Program" (quoted in q1)'
+  location: 'Administrative Notes — "Advanced Aerospace Weapon System Applications (AAWSA) Program"'
   source_path: government/dird-28-cockpits-breakthrough-flight-20101101.pdf
   resolution: preserve-as-sic-in-quotes
 description: |-

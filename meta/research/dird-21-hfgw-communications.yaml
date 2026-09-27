@@ -529,42 +529,42 @@ naming_quirks:
   added_date: '2026-06-06'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" (quoted in q6)'
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager"'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-06'
   observed: '[(b)(6)]'
   canonical: '[author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA AAWSAP products list is Dr. Robert M L Baker, Jr. / GravWave]'
-  location: 'Prepared by / Author block, Author line (quoted in q4)'
+  location: 'Prepared by / Author block, Author line'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-06'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'Prepared by / Author block and Administrative Note (quoted in q4, q6)'
+  location: 'Prepared by / Author block and Administrative Note'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-06-06'
   observed: once centimeter
   canonical: one centimeter
-  location: 'Section 3.4 — "changing once centimeter in height" (quoted in q30)'
+  location: 'Section 3.4 — "changing once centimeter in height"'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-06-06'
   observed: right had side
   canonical: right hand side
-  location: 'Section 3.1.1 — "as shown on the right had side of Figure 16" (quoted in q31)'
+  location: 'Section 3.1.1 — "as shown on the right had side of Figure 16"'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq6
   added_date: '2026-06-06'
   observed: is itself is the source
   canonical: is itself the source
-  location: 'Section 4.4 — "the gravitational wave is itself is the source of some additional gravitational field" (quoted in q36)'
+  location: 'Section 4.4 — "the gravitational wave is itself is the source of some additional gravitational field"'
   source_path: government/dird-21-hfgw-communications-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq7

@@ -65,7 +65,7 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### BAMS Test and Evaluation Facility line item — a $42,211,000 hangar at Naval Air Station, Patuxent River for the Navy ([`/organizations/us-navy`])'s Broad Area Maritime Surveillance Program. Source-attested context distinguishing the Atlantic Test Range Addition ($10,160,000, q3, SCIF areas) from the BAMS hangar (q4, $42,211,000, Unmanned Air Vehicle hangar) — the press release announces both in the same bill but they are distinct line items at distinct dollar magnitudes.
+### BAMS Test and Evaluation Facility line item — a $42,211,000 hangar at Naval Air Station, Patuxent River for the Navy ([`/organizations/us-navy`])'s Broad Area Maritime Surveillance Program. Source-attested context distinguishing the Atlantic Test Range Addition ($10,160,000, SCIF areas) from the BAMS hangar ($42,211,000, Unmanned Air Vehicle hangar) — the press release announces both in the same bill but they are distinct line items at distinct dollar magnitudes.
 
 > BAMS Test and Evaluation Facility,  Naval Air Station, Patuxent River – $42,211,000 Funding will be used to construct a hangar that will house Unmanned Air Vehicles and provide administrative space, communications rooms, lab spaces, and a mission control system.  This facility will directly support the Navy's Broad Area Maritime Surveillance Program which is critical to ensuring the Navy has persistent maritime Intelligence, Surveillance, and Reconnaissance data collection and dissemination capability.
 
@@ -77,7 +77,7 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### Hoyer's own pull-quote framing the four line items as continued military investment in Pax River and Indian Head. The general framing — military investment in highly valued facilities — gives no UAP-specific or SCIF-specific motivation; the press release attests the SCIF specification in q3 as a routine Atlantic Test Range addition feature.
+### Hoyer's own pull-quote framing the four line items as continued military investment in Pax River and Indian Head. The general framing — military investment in highly valued facilities — gives no UAP-specific or SCIF-specific motivation; the press release attests the SCIF specification as a routine Atlantic Test Range addition feature.
 
 > "The work done at Pax and Indian Head is highly valued by the military, and the continued investment in the facilities reflect that," stated Rep. Hoyer.
 

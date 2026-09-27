@@ -93,6 +93,7 @@ CHECK_PHASE = {
     "transcript_sibling_presence": "extract",  # label-less / unclassified transcript source ⇒ verified sibling must exist
     "ocr_sibling_presence": "extract",  # ocr-scan / extraction-lossy PDF ⇒ verified sibling + stamped content_block
     "quote_ocr_corroboration": "extract",  # quoted sibling-backed PDF ⇒ fresh quote_corroboration stamp (corroborate-quotes)
+    "quote_prose_entry_ids": "extract",  # no entry IDs in quotes[] prose (significance / context / location)
 
     # organize (role 5) — free-prose synthesis (incl. claim-group quote organization)
     "top_scope_activity": "organize",
@@ -102,6 +103,7 @@ CHECK_PHASE = {
     "open_questions": "organize",
     "establishes": "organize",
     "does_not_establish": "organize",
+    "synthesis_prose_entry_ids": "organize",  # no entry IDs in top-level synthesis prose
 
     # link (role 5) — cross-reference surfaces + structured entries.
     # prose_drift lives here (not organize): it scans the per-entry
@@ -131,6 +133,7 @@ CHECK_PHASE = {
     "associated_entities": "link",  # associated_entities content: shape + prose-wrap superset (presence via iff_section)
     "extrinsic_authorship": "link",  # ban link wraps inside the metadata-only field
     "cross_refs": "link",
+    "link_prose_entry_ids": "link",  # no entry IDs in structured-entry prose (timeline / naming_quirks / …)
     "cited_findings": "link",
     "contradictions": "link",
     "closure_path": "link",

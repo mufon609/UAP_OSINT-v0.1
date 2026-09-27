@@ -200,7 +200,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's rhetorical pivot on the Tic Tac-is-it-ours question — "You think we wouldn't see some evidence of that machine now?" Continues the counterfactual argument from PART 2 q24/q9 that if Tic Tac were 22-year-old US technology it would be implemented on aircraft today.
+### Lacatski's rhetorical pivot on the Tic Tac-is-it-ours question — "You think we wouldn't see some evidence of that machine now?" Continues the counterfactual from PART 2 at 36:11 that if Tic Tac were 22-year-old US technology it would be implemented on aircraft today.
 
 > [1:00:48] >> Well, I think you're you're you're right asking the right questions. I'm not the right one to answer on some of them, others I am. But what do you think? Do you think that that that such a machine from 20 5 years ago was when it was seen? Not 25 uh 22
 

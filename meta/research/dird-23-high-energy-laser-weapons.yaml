@@ -255,7 +255,7 @@ naming_quirks:
   added_date: '2026-06-07'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" (quoted in q5)'
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager"'
   source_path: government/dird-23-laser-weapons-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 description: |-

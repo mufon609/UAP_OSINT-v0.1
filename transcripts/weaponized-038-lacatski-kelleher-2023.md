@@ -63,7 +63,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the same procedural framing he uses in the 2021 Mystery Wire interview at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q1.
+### Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the procedural framing he uses at 0:46 of the 2021 Mystery Wire interview [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`].
 
 > [3:19] not to uh Bob Bigelow's bass created specifically and that was so important to DIA specifically to address our needs in this program and when I say needs we used a new method of putting out this request for proposal we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it and that's how this program was created and had specifically all the right components
 
@@ -193,7 +193,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q4 ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
+### Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
 
 > [49:20] emphasiz something I said on my first and only interview it was a close osed program it operated very similar to a sap the director the director of analysis and my office Chief and of course division Chief knew about this program no one else did now I was also protected by the stove pipe nature of that I did not have to D address political type questions I I I was insulated but but they were too they there was no one else people in the surrounding cubicles didn't know nothing was purposely being hid it was a closed stovepipe system and it needed to be it needed to be operated that way
 

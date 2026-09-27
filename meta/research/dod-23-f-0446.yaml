@@ -108,49 +108,49 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: Greenewald, John
   canonical: John Greenewald
-  location: 'q1 (FOID FY23 log # 620, Requester Name cell, surname-first)'
+  location: 'FOID FY23 log # 620, Requester Name cell, surname-first'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-09-26'
   observed: Department of Defense OIG office
   canonical: DoD Office of the Inspector General
-  location: 'q2 (FOID FY23 log # 620, Request Description cell, opening sentence)'
+  location: 'FOID FY23 log # 620, Request Description cell, opening sentence'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-09-26'
   observed: DoD/OIG
   canonical: DoD Office of the Inspector General
-  location: 'q6 (headline), q8 and q9 (second paragraph); the same post uses the canonical form in q7'
+  location: 'Black Vault timeline post headline and second body paragraph; the same post uses the canonical form in its first body paragraph'
   source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-09-26'
   observed: Director for Defense Intelligence, Collection and Special Programs
   canonical: Director for Defense Intelligence (Collection and Special Programs)
-  location: 'q2 (FOID FY23 log # 620, Request Description cell, opening sentence); canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
+  location: 'FOID FY23 log # 620, Request Description cell, opening sentence; canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-09-26'
   observed: Director for Defense Intelligence, Collection and Special Programs
   canonical: Director for Defense Intelligence (Collection and Special Programs)
-  location: 'q7 (first body paragraph); canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
+  location: 'Black Vault timeline post, first body paragraph; canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
   source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
   resolution: preserve-as-sic-in-quotes
 - id: nq6
   added_date: '2026-09-26'
   observed: OSD/JS
   canonical: Office of the Secretary of Defense / Joint Staff
-  location: 'q7 ("as OSD/JS"); the post does not expand the abbreviation'
+  location: 'Black Vault timeline post, first body paragraph ("as OSD/JS"); the post does not expand the abbreviation'
   source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
   resolution: preserve-as-sic-in-quotes
 - id: nq7
   added_date: '2026-09-26'
   observed: FOID
   canonical: Freedom of Information Division
-  location: 'Sheet title FOID_FOIA_Log-FY23, framed in the q1-q5 location'
+  location: 'Sheet title FOID_FOIA_Log-FY23, framed in the log # 620 row locations'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 description: 'FOIA case 23-F-0446 is a request by John Greenewald ([`/people/john-greenewald`]) of The Black Vault, Inc. ([`/organizations/the-black-vault`]) for ALL emails to or from the DoD Office of the Inspector General ([`/organizations/dod-inspector-general`]) and Neill Tipton ([`/people/neill-tipton`]), Director for Defense Intelligence (Collection and Special Programs) ([`/organizations/ousd-is-ddi-csp`]). The records sought, the search scope and the date window come from the requester''s own request text, as it appears in the Request Description cell of the Freedom of Information Division ([`/organizations/dod-freedom-of-information-division`]) FOIA log for fiscal year 2023 ([`/documents/whs-foid-foia-log-fy23`]), log # 620. They are the requester''s description, not an agency finding. The requester requests a search of all classified and unclassified systems, and requests all emails rather than keywords, in the belief that the responsive material is likely not voluminous. The log shows the Final Disposition as Granted / Denied in Part.

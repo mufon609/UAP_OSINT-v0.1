@@ -481,28 +481,28 @@ naming_quirks:
   added_date: '2026-06-07'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" (quoted in q7)'
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager"'
   source_path: government/dird-22-metamaterials-aerospace-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-07'
   observed: '[REDACTED: (b)(6)]'
   canonical: '[author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA AAWSAP products list is Dr. G. Shvets / University of Texas–Austin]'
-  location: 'Prepared by / Author block, Author line (quoted in q5)'
+  location: 'Prepared by / Author block, Author line'
   source_path: government/dird-22-metamaterials-aerospace-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-07'
   observed: '[REDACTED: (b)(3):10 USC 424]'
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'Prepared by / Author block and Administrative Note (quoted in q5, q7)'
+  location: 'Prepared by / Author block and Administrative Note'
   source_path: government/dird-22-metamaterials-aerospace-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-06-07'
   observed: if course
   canonical: of course
-  location: 'Metamaterials for Energy Harvesting — "The challenge, if course, is to design a true impedance-matched optical metamaterial" (quoted in q44)'
+  location: 'Metamaterials for Energy Harvesting — "The challenge, if course, is to design a true impedance-matched optical metamaterial"'
   source_path: government/dird-22-metamaterials-aerospace-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5

@@ -516,10 +516,12 @@ conditional_keys:
     required_when_any_of:
       - target_node_type_in: [finding]
     # List of prose strings — explicit claims about what the
-    # convergence in evidence[] proves, each anchored to specific
-    # evidence quote ids in inline references (e.g. "Anchored claim
-    # citing q1 + q2"). Cluster-neutral. Renders as the `## What
-    # the Record Establishes` section as a bullet list.
+    # convergence in evidence[] proves, each anchored to the evidence
+    # rows it rests on, named by source (e.g. "Hoyer's 2010 press
+    # release and Elizondo's 2024 QFR both place the facility at
+    # Patuxent River") — never by entry id: the Evidence cards do not
+    # display ids. Cluster-neutral. Renders as the `## What the Record
+    # Establishes` section as a bullet list.
   does_not_establish:
     required_when_any_of:
       - target_node_type_in: [finding]
@@ -696,7 +698,9 @@ quote_entry:
   # text: verbatim quote, YAML literal block (|) preserves multi-line
   # source: object with path + location (single source per quote)
   # significance: short H3 header summarizing why this quote matters;
-  #   renders as the quote's heading above the blockquote. When a quote's
+  #   renders as the quote's heading above the blockquote. Names sources,
+  #   never entry ids (every prose field — build-protocol "Prose names the
+  #   source — never an entry ID"; the prose-entry-ID checks). When a quote's
   #   evidentiary weight is below the artifact's median (claim-of-record,
   #   self-attested, secondary-source, contested) and chronological order
   #   would otherwise promote it without caveat, carry an explicit hedge

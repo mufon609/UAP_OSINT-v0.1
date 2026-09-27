@@ -103,35 +103,35 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'DoD/OIG'
   canonical: 'DoD Office of the Inspector General'
-  location: 'Request Description cell, log # 518 (quotes q2, q5)'
+  location: 'Request Description cell, log # 518 (the request text and its itemized scope)'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-09-26'
   observed: 'DoD/OIG'
   canonical: 'DoD Office of the Inspector General'
-  location: '¶ "The email, sent by a person" (quote q8) and the page headline; the expanded form is in ¶ "According to FOIA case DODOIG-2023-000021" (quote q7)'
+  location: '¶ "The email, sent by a person" and the page headline; the expanded form is in ¶ "According to FOIA case DODOIG-2023-000021"'
   source_path: news/blackvault-timeline-oig-meets-tipton-20211019.html
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-09-26'
   observed: 'OUSD'
   canonical: null
-  location: 'Request Description cell, log # 518 (quote q2, "Neill Tipton, OUSD"); neither source on this node states which Under Secretary office; the calendar excerpt (government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png, no verified sibling yet) is the route to resolve it'
+  location: 'Request Description cell, log # 518 ("Neill Tipton, OUSD"); neither source on this node states which Under Secretary office; the calendar excerpt (government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png, no verified sibling yet) is the route to resolve it'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: unresolved
 - id: nq4
   added_date: '2026-09-26'
   observed: 'OSD/JS'
   canonical: 'Office of the Secretary of Defense / Joint Staff'
-  location: 'Request Description cell, log # 518 (quote q5, "internal at the OSD/JS")'
+  location: 'Request Description cell, log # 518 ("internal at the OSD/JS")'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-09-26'
   observed: 'FOID'
   canonical: 'Freedom of Information Division'
-  location: 'sheet title FOID_FOIA_Log-FY23 (named in the q1-q6 location lines)'
+  location: 'sheet title FOID_FOIA_Log-FY23 (the log # 518 row)'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 description: 'FOIA case 23-F-0377 was filed by John Greenewald ([`/people/john-greenewald`]) of The Black Vault ([`/organizations/the-black-vault`]). The FOID ([`/organizations/dod-freedom-of-information-division`]) FOIA log ([`/documents/whs-foid-foia-log-fy23`]) of the DoD ([`/organizations/dod`]) records the request as received via PAL on 2023-01-19 and closed on 2023-06-23, with the Final Disposition Granted / Denied in Part.
@@ -245,4 +245,4 @@ released_records:
   document_path: /documents/foia-23-f-0377-tipton-calendar-20211019
   source:
     path: news/blackvault-timeline-oig-meets-tipton-20211019.html
-    location: '¶ "OSD/JS FOIA Case 23-F-0377" (quote q9; the requester''s account of the release)'
+    location: '¶ "OSD/JS FOIA Case 23-F-0377" (third paragraph of the timeline entry; the requester''s account of the release)'

@@ -192,6 +192,13 @@ In order, with a check after each (build-protocol → run
      an extraction artifact (HTML element-boundary concatenation, a page-footer
      wedged into a page-spanning quote) is fixed at the extraction layer, never
      accepted as a standing error.
+   - **No entry IDs in prose.** Every prose field you write — free prose,
+     `establishes` / `does_not_establish`, and at the Link step `naming_quirks`
+     locations, timeline events, relationship cells — names the source
+     (document, date, section), never an entry ID: not "(q52)", "quoted in
+     q40", "timeline t16", "affiliation a2". Rule and exemptions:
+     build-protocol "Prose names the source — never an entry ID"; gated at
+     organize and link.
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize **every** worker cross-ref candidate into a canonical
    `[`/path`]` link — in the structured field it belongs to (`relationships` /

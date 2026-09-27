@@ -49,7 +49,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues in q2b on p. 5.
+### Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues on p. 5.
 
 > 1. Question: “Does any branch of the United States government, or defense contractors (aerospace and otherwise), possess technology derived from a non-human source?”
 >
@@ -63,7 +63,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split from q2 at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.
+### Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.
 
 > indicated that they could no longer glean additional insight from such material, they initially agreed to allow AATIP/AAWSAP to take custody of the material.
 
@@ -133,7 +133,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is quoted as q2b per pdftotext page-footer artifact discipline.
+### Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues across the p. 6 / p. 7 break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is not quoted here.
 
 > Response: Yes. I can confirm that specific facilities were identified to enable Bigelow Aerospace to acquire and securely store recovered UAP materials as the new custodian, following their transfer from Lockheed Martin. These facilities included locations in the Las Vegas area and a newly built hangar at the Patuxent River Naval Air Station (“PAX”). Specifically, the PAX River hangar was designed to facilitate the transfer of future materials via air and river. The hangar was purpose-built to meet the requirements of a Special Access Program Facility (“SAP-F”) and was capable of accommodating materials at any classification level.
 
@@ -141,11 +141,11 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 6, Q7 response opening (before p. 2/p. 3 page-break interruption) |
+| Location | p. 6, Q7 response opening (before the p. 6 / p. 7 page break) |
 
 ---
 
-### Q9 — Elizondo confirms CIA passive resistance and U.S. Air Force ([`/organizations/us-air-force`]) active suppression campaigns against UAP inquiries during his AATIP tenure. Narrows the institutional opposition the Lockheed-to-Bigelow transfer encountered (q6) to two specific agencies and characterizes each: CIA passive, Air Force active.
+### Q9 — Elizondo confirms CIA passive resistance and U.S. Air Force ([`/organizations/us-air-force`]) active suppression campaigns against UAP inquiries during his AATIP tenure. Narrows the institutional opposition the Lockheed-to-Bigelow transfer encountered (Q6) to two specific agencies and characterizes each: CIA passive, Air Force active.
 
 > 9. Question: “Were you aware of any efforts by the CIA to block the transfer of UAP-related materials or information during tenure at AATIP?
 >
@@ -171,7 +171,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in q3 / q7 names the program as the destination context but not as the funding source for the transfer itself.
+### Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in Q1 / Q7 names the program as the destination context but not as the funding source for the transfer itself.
 
 > Response: The $22 million dollars that funded AAWSAP/AATIP was directed to a variety of programmatic needs, including commissioning academic studies on advanced physics concepts, funding civilian personnel and contractors, and conducting field research. As a result, thirty-seven of these academic studies were published as Defense Intelligence Agency Defense Intelligence Reference Documents (“DIRDs”). See Attachment 3 for a complete list of published DIRDs.
 

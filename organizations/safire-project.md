@@ -454,7 +454,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role (q16).
+### Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role.
 
 > PAUL ANDERSON, Ph.D, a chemist by training who works with high energy reactions, manages and oversees the Design of Experiments, chemical studies, and statistical analysis and modeling.
 
@@ -598,7 +598,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements q16 (Anderson's DoD lead-scientist role on the same page).
+### Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements Anderson's DoD lead-scientist role on the same page.
 
 > Dr. Anderson holds 4 patents and has authored 18 peer-reviewed publications and over 40 government technical reports and proceedings. He is a member of the IEEE and NDIA and holds a Ph.D. in Physical Chemistry from Northeastern University.
 

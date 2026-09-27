@@ -62,7 +62,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ## Key Passages
 
-### SRI's own first-party attestation of the 1946 founding events: Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the prior founding-year-only attestation (q2, q3) with specific institutional steps. Specific within-1946 date for incorporation not attested.
+### SRI's own first-party attestation of the 1946 founding events: Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the sri.com founding-year-only attestations with specific institutional steps. Specific within-1946 date for incorporation not attested.
 
 > 1946: Stanford University trustees approve the proposal for a research institute in principle. Articles of incorporation for Stanford Research Institute are signed and filed with the state of California. SRI is granted a nonprofit status, and Stanford University trustees elect eleven SRI directors.
 
@@ -74,7 +74,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of Douglas Engelbart's December 1968 personal computing demonstration at the Fall Joint Computer Conference — historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the computer-mouse SRI claim already in tl2b. Specific December date not attested on this page.
+### SRI's own first-party attestation of Douglas Engelbart's December 1968 personal computing demonstration at the Fall Joint Computer Conference — historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the sri.com Timeline computer-mouse claim. Specific December date not attested on this page.
 
 > 1968: Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco.
 
@@ -86,7 +86,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of Charles A. Anderson's 1968 elevation to the SRI presidency, from the 2004-era SRI history page. Anchors key_personnel kp14 and timeline tl1b. Succeeded by William F. Miller in 1979 (q40). Specific within-1968 date not attested.
+### SRI's own first-party attestation of Charles A. Anderson's 1968 elevation to the SRI presidency, from the 2004-era SRI history page. Anchors the Anderson presidency entries. Succeeded by William F. Miller in 1979. Specific within-1968 date not attested.
 
 > 1968: Charles A. Anderson becomes SRI's president.
 
@@ -98,7 +98,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI's ARPANET role at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.
+### SRI's own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI's ARPANET role to a more specific event than the sri.com Timeline entry. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.
 
 > 1969: SRI receives the first login on the ARPANET, the world's first computer network with flexible routing, and the predecessor to today's Internet.
 
@@ -134,7 +134,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com per q4; the Nature byline corroborates Puthoff at SRI alongside Targ).
+### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com; the Nature byline corroborates Puthoff at SRI alongside Targ).
 
 > Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025  RUSSELL TARG & HAROLD PUTHOFF
 
@@ -146,7 +146,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Peer-reviewed Targ + Puthoff statement of the SRI parapsychology investigation's evidentiary claim — the existence of perceptual modalities through which individuals obtain environmental information not presented to any known sense, studyable under laboratory conditions. Adds methodological framing to the existing author-affiliation attestation (q6).
+### Peer-reviewed Targ + Puthoff statement of the SRI parapsychology investigation's evidentiary claim — the existence of perceptual modalities through which individuals obtain environmental information not presented to any known sense, studyable under laboratory conditions. Adds methodological framing to the Nature author-affiliation attestation.
 
 > WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
 
@@ -206,7 +206,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described in q14. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ's IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus.
+### CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described by AIR 1995. The "third sensitive subject" framing implies first and second exist: Kress describes the magnetometer subject and a later second subject without naming either; Targ's IRVA 2002 retrospective names Ingo Swann as the 1972 subject.
 
 > Interest was translated into action when ORD requested an increase in the scope of the effort and transferred funds to OTS. About this time, a third sensitive subject, Pat Price, became available at SRI, and the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest.
 
@@ -218,7 +218,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of the formalization of the August 1972 $874 demonstration contract (q9) into OTS Contract 8473 — a $50,000 expanded effort dated 1 October 1972 — and of Kress himself becoming Project Officer by October 1972 due to his physics background. Footnote 4 of the Kress paper carries the contract citation: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)". Anchors timeline tl5 with primary-source citation rather than the prior summary-only reference.
+### CIA primary-source attestation of the formalization of the August 1972 $874 demonstration contract into OTS Contract 8473 — a $50,000 expanded effort dated 1 October 1972 — and of Kress himself becoming Project Officer by October 1972 due to his physics background. Footnote 4 of the Kress paper carries the contract citation: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)". Anchors the Contract 8473 timeline entry to a primary-source citation.
 
 > By October, 1972, I was the Project Officer. I was chosen because of my physics background to work with the physicists from SRI. The Office of Technical Service funded a $50,000 expanded effort in parapsychology.
 
@@ -242,7 +242,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of William F. Miller's 1979 elevation to the SRI presidency, succeeding Charles A. Anderson (q39), from the 2004-era SRI history page. Anchors key_personnel kp15 and timeline tl9b. Specific within-1979 date not attested.
+### SRI's own first-party attestation of William F. Miller's 1979 elevation to the SRI presidency, succeeding Charles A. Anderson, from the 2004-era SRI history page. Anchors the Miller presidency entries. Specific within-1979 date not attested.
 
 > 1979: William F. Miller becomes SRI's president.
 
@@ -254,7 +254,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI. Source-form artifact: the hyphenated form "SRI-International" appears here (DIA's own document) where the canonical form is "SRI International" — preserved as-source; see naming_quirks nq8.
+### DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI. Source-form artifact: the hyphenated form "SRI-International" appears here (DIA's own document) where the canonical form is "SRI International" — preserved as-source.
 
 > In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
 
@@ -266,7 +266,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park, CA. Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document — see q12c for the verbatim Figure 1 row attestation). Source-form artifact: the DIA document writes "Systems Applications International Corporation" — a documented writing error against the canonical company name "Science Applications International Corporation" — preserved as-source; see naming_quirks nq12.
+### DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park, CA. Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document). Source-form artifact: the DIA document writes "Systems Applications International Corporation" — a documented writing error against the canonical company name "Science Applications International Corporation" — preserved as-source.
 
 > The effort at SRI was discontinued in 1990. However, as a result of Congressional direction in FY 1991 for DIA, new research in this area was established with the Systems Applications International Corporation (SAIC), in Menlo Park, CA.
 
@@ -284,13 +284,13 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 | Field | Value |
 |---|---|
-| Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from q11, 1993-04-30 |
+| Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from the early-1970s SRI remote viewing paragraph, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
 | Location | ¶ "Then funding was discontinued in 1975;" |
 
 ---
 
-### DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound previously referenced parenthetically in q12 significance to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 (q8) — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.
+### DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.
 
 > 1970-1990     -- SRI INTERNATIONAL, MENLO PARK, CA
 
@@ -302,7 +302,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### DIA characterization of the SRI program leadership: "headed by Dr. H. Puthoff" over the eleven-year window referenced. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Kress 1977 (q7) corroborates Puthoff's broader role at SRI (two laser physicists who re-awakened CIA research in parapsychology, alongside Targ) but does not specifically characterize Puthoff as program leader; AIR 1995 (q15) attests the 1973-1988 experimental scale (154 experiments, 26,000+ trials, 227 subjects) but does not separately attest Puthoff's program-leadership role.
+### DIA characterization of the SRI program leadership: "headed by Dr. H. Puthoff" over the eleven-year window referenced. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Kress 1977 corroborates Puthoff's broader role at SRI (two laser physicists who re-awakened CIA research in parapsychology, alongside Targ) but does not specifically characterize Puthoff as program leader; AIR 1995 attests the 1973-1988 experimental scale (154 experiments, 26,000+ trials, 227 subjects) but does not separately attest Puthoff's program-leadership role.
 
 > For the past eleven years, a small group headed by Dr. H. Puthoff has sought evidence that would support the case for extrasensory perception.
 
@@ -350,7 +350,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### AIR independent evaluation's headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments (q15): the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.
+### AIR independent evaluation's headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments: the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.
 
 > The statistical results were so overwhelming that results that extreme or more so would occur only about once in every 1020 such instances if chance alone is the explanation (i.e., the p-value was less than 10-20). Obviously some explanation other than chance must be found.
 
@@ -362,7 +362,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced (via ProPublica) attestation of Ellen Ochoa's SRI board membership with a February 1, 2023 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors key_personnel kp9.
+### IRS-sourced (via ProPublica) attestation of Ellen Ochoa's SRI board membership with a February 1, 2023 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors her board entry.
 
 > Ellen Ochoa (Board Member Start 2/1/23)
 
@@ -386,7 +386,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced (via ProPublica) attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors key_personnel kp13.
+### IRS-sourced (via ProPublica) attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors his officer entry.
 
 > Suresh Sunderrajan (Chief Financial Officer From 1/19/24)
 
@@ -410,7 +410,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced attestation of SRI International FY2024 institutional scale: revenue $437.9M, expenses $433.2M, net income $4.8M. Anchors current-scale claims at field-precise granularity (the sri.com About page q2 attests only headcount, patents, and spin-offs; this is the first dollar-figure attestation in the archived corpus).
+### IRS-sourced attestation of SRI International FY2024 institutional scale: revenue $437.9M, expenses $433.2M, net income $4.8M. Anchors current-scale claims at field-precise granularity (the sri.com About page attests only staff, patent, spin-off, project counts; this is the first dollar-figure attestation in the corpus).
 
 > Revenue $437,926,151 Expenses $433,169,251 Net Income $4,756,900
 
@@ -422,7 +422,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The cause of the going-concern flag (q25) is not attested in the archived sources — the balance-sheet numbers alone do not establish it.
+### IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The cause of the going-concern flag is not attested in the archived sources — the balance-sheet numbers alone do not establish it.
 
 > Total Assets $409,624,782 Total Liabilities $231,589,878 Net Assets $178,034,904
 
@@ -434,7 +434,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced (via ProPublica) attestation of Ellen Pawlikowski as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp10; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.
+### IRS-sourced (via ProPublica) attestation of Ellen Pawlikowski as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors her board entry; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.
 
 > Ellen Pawlikowski (Board Member)
 
@@ -446,7 +446,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced (via ProPublica) attestation of John J. Young Jr. as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp11; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.
+### IRS-sourced (via ProPublica) attestation of John J. Young Jr. as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors his board entry; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.
 
 > John J Young Jr (Board Member)
 
@@ -458,7 +458,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### IRS-sourced (via ProPublica) attestation of John P. McIntire as SRI Chief Legal Officer, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp12. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.
+### IRS-sourced (via ProPublica) attestation of John P. McIntire as SRI Chief Legal Officer, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors his officer entry. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.
 
 > John Mcintire (Chief Legal Officer)
 
@@ -494,7 +494,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Tightens the sri.com About-page founding attestation (q2) by explicitly naming "Stanford University" as the 1946 founder. Also tightens the PARC acquisition to "received as a donation" (PARC was a 2023 donation, not a purchase). Independent corroboration of the 1987 Sarnoff acquisition and 1970 independence facts attested in q2.
+### Tightens the sri.com About-page founding attestation by explicitly naming "Stanford University" as the 1946 founder. Also tightens the PARC acquisition to "received as a donation" (PARC was a 2023 donation, not a purchase). Independent corroboration of the 1987 Sarnoff acquisition and 1970 independence facts attested there.
 
 > Founded in 1946 by Stanford University as the Stanford Research Institute, and independent since 1970, we’ve created technologies, services, and ideas that have had a meaningful impact on every one of our lives throughout our history. In 1987, we acquired Sarnoff Corp. (formerly RCA Labs), and in 2023, we received as a donation the Palo Alto Research Center (PARC) — two iconic organizations with extraordinary legacies of their own.
 
@@ -506,7 +506,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Targ's first-party self-attestation of the Stanford Research Institute parapsychology investigation in the 1970s and 1980s, cofounded by Targ. Co-cofounder Harold E. Puthoff established via the 1974 Nature paper byline (q6).
+### Targ's first-party self-attestation of the Stanford Research Institute parapsychology investigation in the 1970s and 1980s, cofounded by Targ. Co-cofounder Harold E. Puthoff established via the 1974 Nature paper byline.
 
 > Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
 
@@ -518,7 +518,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Third-party (IRVA) biographical attestation that characterizes SRI as "a research and development think tank in Menlo Park, California" — independent corroboration of the sri.com institutional-shape attestation (q1, q2) and frames the SRI investigation explicitly as "remote viewing". Names three peer-reviewed publication venues for the SRI program's output (Nature, IEEE Proceedings, AAAS Proceedings).
+### Third-party (IRVA) biographical attestation that characterizes SRI as "a research and development think tank in Menlo Park, California" — independent corroboration of the sri.com institutional-shape attestation and frames the SRI investigation explicitly as "remote viewing". Names three peer-reviewed publication venues for the SRI program's output (Nature, IEEE Proceedings, AAAS Proceedings).
 
 > Russell Targ is a physicist and author, a pioneer in the development of the laser and laser applications, and a cofounder of the Stanford Research Institute (SRI) investigation of psychic abilities in the 1970s and 1980s. SRI is a research and development think tank in Menlo Park, California. Called remote viewing, his work in the psychic area has been published in Nature, The Proceedings of the Institute of Electronic and Electrical Engineers (IEEE), and the Proceedings of the American Association the Advancement of Science (AAAS).
 
@@ -530,7 +530,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).
+### Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).
 
 > At Stanford Research Institute (SRI), in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory. The following year, retired police commissioner, Pat Price showed us how to do this with great reliability and accuracy. With these data, and the education provided by Pat and Ingo, we were able to initiate a twenty-million dollar program in research and applications of remote viewing that lasted more than twenty years – a paranormal feat in itself.
 
@@ -542,7 +542,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Targ first-person retrospective attesting Hella Hammid's ten-year SRI tenure (1974–1984) as the CIA-requested "control" subject brought in to supplement Pat Price and Ingo Swann. Anchors Hammid's SRI involvement to 1974 (two years after the program's 1972 start). Independent corroboration of the Swann + Price foundational-subject pair attested by q17.
+### Targ first-person retrospective attesting Hella Hammid's ten-year SRI tenure (1974–1984) as the CIA-requested "control" subject brought in to supplement Pat Price and Ingo Swann. Anchors Hammid's SRI involvement to 1974 (two years after the program's 1972 start). Corroborates the Swann + Price foundational-subject pair named in his IRVA 2002 abstract.
 
 > In 1974 Hal Puthoff and I were then two years into our remote viewing program at SRI, and our sponsors from the CIA wanted us to find an inexperienced “control” subject to supplement Pat Price and Ingo Swann who were life-long practitioners of remote viewing. Hella, who had just moved to Los Angeles thought it would be very entertaining to be part of a government sponsored ESP program, and she promised us that she had no previous experience in that area. In her ten years with the program, she became our most reliable viewer.
 
@@ -602,7 +602,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Sol Foundation institutional attestation of Jacques Vallée as a staff engineer at SRI's Augmentation Research Center (ARC) under Douglas Engelbart, working on the ARPANET network information center. Identifies Vallée's SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ (q7–q10) — same parent institution, different division. Sol page does not attest specific years of Vallée's ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol's descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division's historical name. Preserved verbatim per source-form-preservation discipline; see naming_quirks nq15.
+### Sol Foundation institutional attestation of Jacques Vallée as a staff engineer at SRI's Augmentation Research Center (ARC) under Douglas Engelbart, working on the ARPANET network information center. Identifies Vallée's SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ — same parent institution, different division. Sol page does not attest specific years of Vallée's ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol's descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division's historical name. Preserved verbatim per source-form-preservation discipline.
 
 > He later worked on the network information center for the ARPANET, a precursor to the modern Internet, as a staff engineer of Stanford Research Institute’s International Augmentation Research Center, under Douglas Engelbart.
 
@@ -614,7 +614,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Targ first-person attestation of Hella Hammid's pre-SRI profession — a distinguished LIFE magazine photographer — establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure is attested in q18. Complements q18 (the CIA-requested control-subject role) with the photographer descriptor that q18 does not carry.
+### Targ first-person attestation of Hella Hammid's pre-SRI profession — a distinguished LIFE magazine photographer — establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure the same abstract attests. Complements its CIA-requested control-subject passage with the photographer descriptor it lacks.
 
 > Hella Hammid was a brilliant and cultivated woman, and a distinguished photographer for LIFE magazine and many other US and international publications.
 
@@ -632,7 +632,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|---|---|---|
 | 1946 | SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Stanford University trustees approve the proposal in principle; Articles of incorporation signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Specific within-1946 date not attested. | founding | news/sri-com-about-history-1940s-wayback-2004.html |  |
 | 1949-03 | IRS grants 501(c)(3) tax-exempt status to Stanford Research Institute per ProPublica Nonprofit Explorer (EIN 94-1160950). | governance | news/propublica-sri-international-941160950-20260515.html |  |
-| 1960s | Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2 (one of nine IEEE Milestones cohort per q23). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
+| 1960s | Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1960s | The computer mouse and interactive computing — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1960s | ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI's ARPANET role (body-text attestation now in place from sri.com self-attestation). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1968 | Douglas Engelbart [`/people/douglas-engelbart`] and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco — the "Mother of All Demos". | innovation | news/sri-com-about-history-1960s-wayback-2004.html |  |

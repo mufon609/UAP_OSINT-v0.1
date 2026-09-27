@@ -153,7 +153,7 @@ There are a number of different techniques available to detect hypersonic object
 
 ---
 
-### Explicit development recommendation for radio-reflection detection (non-adjacent to q10 within the same paragraph; emitted separately per the contiguous-span rule).
+### Explicit development recommendation for radio-reflection detection (closes the network proposal non-adjacently; emitted separately per the contiguous-span rule).
 
 > This detection technology should be further developed.
 

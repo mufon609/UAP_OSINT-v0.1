@@ -152,21 +152,21 @@ naming_quirks:
     added_date: '2026-06-06'
     observed: AAWSA
     canonical: AAWSAP (Advanced Aerospace Weapon System Applications Program)
-    location: Administrative Note — 'Advanced Aerospace Weapon System Applications (AAWSA) Program' and 'AAWSA Program Manager' lines (quote q1)
+    location: Administrative Note — 'Advanced Aerospace Weapon System Applications (AAWSA) Program' and 'AAWSA Program Manager' lines
     source_path: government/dird-17-maverick-inventor-20100330.pdf
     resolution: preserve-as-sic-in-quotes
   - id: nq2
     added_date: '2026-06-06'
     observed: (b)(6)
     canonical: '[author identity withheld under FOIA exemption (b)(6)]'
-    location: title-page Author block / Administrative Note (Document Summary classification markings; quote q1 area)
+    location: title-page Author block / Administrative Note (Document Summary classification markings)
     source_path: government/dird-17-maverick-inventor-20100330.pdf
     resolution: preserve-as-sic-in-quotes
   - id: nq3
     added_date: '2026-06-06'
     observed: (b)(3):10 USC 424
     canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-    location: title-page Prepared-by line / Administrative Note (Document Summary classification markings; quote q1)
+    location: title-page Prepared-by line / Administrative Note (Document Summary classification markings)
     source_path: government/dird-17-maverick-inventor-20100330.pdf
     resolution: preserve-as-sic-in-quotes
 associated_entities:

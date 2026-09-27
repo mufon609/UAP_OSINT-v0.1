@@ -665,7 +665,7 @@ quotes:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶10"
-  significance: Self-attestation of the Capitol Building briefing of US Senators and National Security Executives — anchors the about-uri Mind Over Missile teaser (q7) and the 1987 US News & World Report "Washington Whispers" item
+  significance: Self-attestation of the Capitol Building briefing of US Senators and National Security Executives — anchors the about-uri Mind Over Missile teaser and the 1987 US News & World Report "Washington Whispers" item
   context: Uri Geller's biography page on urigeller.com, ¶10
 
 - id: q7
@@ -689,7 +689,7 @@ quotes:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶25"
-  significance: Geller's first-person book quote from Mind Medicine (Element Books, 1999) transcribed by Brendan Burton in his November 24, 2007 article — Geller's own framing of "mindpower" as inherited wisdom. Source-form artifacts "form" (for "from") and "out" (for "our") preserved as-source per Brendan Burton's transcription; see naming_quirks nq8, nq9
+  significance: Geller's first-person book quote from Mind Medicine (Element Books, 1999) transcribed by Brendan Burton in his November 24, 2007 article — Geller's own framing of "mindpower" as inherited wisdom. Source-form artifacts "form" (for "from") and "out" (for "our") preserved as-source per Brendan Burton's transcription
   context: 'Brendan Burton article "Uri Geller – UFOs, metal-bending and the PSI war" (November 24, 2007) ¶25 — transcription of Geller''s Mind Medicine (Element Books, 1999)'
 
 - id: q9
@@ -785,7 +785,7 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ first-spoon
-  significance: Geller's first-person Tablet account of his first spoon-bend at age 5 in Tel Aviv — first-person extended recall adding monetary motive (stop his mother from working) and additional powers discovered (telepathy, mind-reading, compass-needle moving, seed-sprouting) beyond the third-person biography-page account in q3
+  significance: Geller's first-person Tablet account of his first spoon-bend at age 5 in Tel Aviv — first-person extended recall adding monetary motive (stop his mother from working) and additional powers discovered (telepathy, mind-reading, compass-needle moving, seed-sprouting) beyond the third-person biography-page account
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q17

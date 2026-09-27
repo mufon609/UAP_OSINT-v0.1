@@ -267,7 +267,7 @@ Two concepts are of great importance for the envisioned deuterium fusion-driven 
 
 ---
 
-### The Los Alamos parallel (classified November 1970, declassified July 1979) and the shared expendable-laser launch technique — the laser material itself becoming part of the propellant — the alternative-launch detail beyond the author's own 1970/2007 provenance (already captured in q-lifting-payloads-task).
+### The Los Alamos parallel (classified November 1970, declassified July 1979) and the shared expendable-laser launch technique — the laser material itself becoming part of the propellant — the alternative-launch detail beyond the author's own 1970/2007 provenance stated earlier in the same ¶1.
 
 > A similar idea was proposed in a classified Los Alamos report, dated November 1970 (Reference 18) and declassified in July 1979. In both cases the idea is to use an expendable laser for the ignition of each nuclear explosion, with the laser material thereafter becoming part of the propellant.
 

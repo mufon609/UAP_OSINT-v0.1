@@ -337,7 +337,7 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'Response to Q7, ¶1 (first half — pre-page-break)'
-  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo''s time at AATIP. First half of Q7 response (the response splits across a PDF page break; second half captured in q16).'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo''s time at AATIP. First half of Q7 response (the response splits across a PDF page break; the second half names Hoyer and Elizondo''s facility visit).'
   observation_type: relayed
   statement_date: '2024-12-19'
   significance: 'Sworn affirmation that specific facilities — Las Vegas locations and a newly built Patuxent River Naval Air Station hangar — were identified to enable Bigelow Aerospace to receive UAP materials transferred from Lockheed Martin. The PAX River hangar is described as purpose-built to meet Special Access Program Facility (SAP-F) requirements and capable of accommodating materials at any classification level. The hangar funding is stated as approximately $10 million.'
@@ -351,10 +351,10 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'Response to Q7, ¶1 (second half — post-page-break)'
-  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo''s personal visit to the facility.'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from the first half) — names Hoyer as the source of the $10M funding allocation and attests Elizondo''s personal visit to the facility.'
   observation_type: direct
   statement_date: '2024-12-19'
-  significance: 'Direct first-hand testimony — Elizondo states "I have visited this facility" — naming then-Representative Steny Hoyer ([`/people/steny-hoyer`]) as the source of the funding-allocation request for the Patuxent River SAP-F hangar described in q6. The "no materials had yet been transferred" closing clause constrains the historical material-custody question to "facility ready, no materials in custody at time of visit."'
+  significance: 'First-hand testimony — Elizondo states "I have visited this facility" — naming then-Representative Steny Hoyer ([`/people/steny-hoyer`]) as the source of the funding-allocation request for the Patuxent River SAP-F hangar described earlier in Q7. The "no materials had yet been transferred" clause constrains the historical material-custody question to "facility ready, no materials in custody at time of visit."'
 
 - id: q7
   claim_group: "CIA & Air Force Obstruction"
@@ -440,7 +440,7 @@ quotes:
   context: 'NYT December 16, 2017; NYT-reported quotation from Elizondo''s October 4, 2017 resignation letter to Defense Secretary Jim Mattis.'
   observation_type: relayed
   statement_date: '2017-10-04'
-  significance: 'NYT-mediated verbatim excerpt of Elizondo''s resignation-letter framing of "the many accounts from the Navy and other services" and "beyond-next-generation capabilities." Pairs with q11 to bound the resignation-letter rhetorical content per NYT reporting; resignation letter itself remains unarchived in the corpus.'
+  significance: 'NYT-mediated verbatim excerpt of Elizondo''s resignation-letter framing of "the many accounts from the Navy and other services" and "beyond-next-generation capabilities." Pairs with NYT''s other letter excerpt to bound the resignation-letter rhetorical content; the letter itself remains unarchived in the corpus.'
 
 - id: q13
   claim_group: "AATIP Role & Recruitment"

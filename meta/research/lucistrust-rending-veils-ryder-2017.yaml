@@ -254,6 +254,6 @@ naming_quirks:
   added_date: '2026-05-25'
   observed: Lauren
   canonical: Lawrence
-  location: '[54:48] (Whisper renders the moderator''s name "Lauren" here; "Lawrence" at [04:55], [05:36], [34:48] — same person, the s1 moderator)'
+  location: '[54:48] (Whisper renders the moderator''s name "Lauren" here; "Lawrence" at [04:55], [05:36], [34:48] — same person, the moderator)'
   source_path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
   resolution: use-canonical

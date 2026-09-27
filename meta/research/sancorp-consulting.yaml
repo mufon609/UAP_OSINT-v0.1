@@ -577,7 +577,7 @@ quotes:
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
     location: 'PWS title block'
-  significance: 'IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). The PWS itself states no set-aside; the 8(a) sole-source designation for HQ003422C0064 comes from its USAspending award record (timeline t10). The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).'
+  significance: 'IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). The PWS itself states no set-aside; the 8(a) sole-source designation for HQ003422C0064 comes from its USAspending award record. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).'
   context: 'IPMO Performance Work Statement title block, FOIA 23-F-0906 release'
   statement_date: '2022-04-25'
 - id: q36
@@ -641,7 +641,7 @@ quotes:
   source:
     path: government/usaspending-w519tc23f0545.txt
     location: '"description" field, CONT_AWD_W519TC23F0545_9700_W519TC23G0042_9700'
-  significance: 'USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).'
+  significance: 'USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship.'
   statement_date: '2023-09-25'
 - id: q43
   added_date: '2026-05-22'
@@ -650,7 +650,7 @@ quotes:
   source:
     path: government/usaspending-hq003424f0411.txt
     location: '"description" field, CONT_AWD_HQ003424F0411_9700_47QRAA22D00C4_4732'
-  significance: 'USAspending HQ003424F0411 description field — "LABOR" (the only scope text the record carries). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $11,214,090.66, date_signed 2024-07-23, solicitation HQ003424Q0020. Per Sancorp Past Performance the customers are OASD Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction (or10 basis).'
+  significance: 'USAspending HQ003424F0411 description field — "LABOR" (the only scope text the record carries). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $11,214,090.66, date_signed 2024-07-23, solicitation HQ003424Q0020. Per Sancorp Past Performance the customers are OASD Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.'
   statement_date: '2024-07-23'
 - id: q44
   added_date: '2026-05-22'
@@ -659,7 +659,7 @@ quotes:
   source:
     path: government/usaspending-hq003424c0096.txt
     location: '"description" field, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE-'
-  significance: 'USAspending HQ003424C0096 description field (2026-04-30 capture) — Exec. Admin, Ops, Policy & PPBE Sppt Svc; AARO label on transaction records from P00005 (q85). Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, date_signed 2024-08-23, solicitation HQ003424R0324. Total obligation is $3,415,374.79 per the 2026-09-25 award record (q77); this 2026-04-30 capture reported $3,471,829.40, and the difference equals the -$56,454.61 obligation of modification P00007 (2026-05-06, q87).'
+  significance: 'USAspending HQ003424C0096 description field (2026-04-30 capture) — Exec. Admin, Ops, Policy & PPBE Sppt Svc; AARO label on transaction records from P00005. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, date_signed 2024-08-23, solicitation HQ003424R0324. Total obligation is $3,415,374.79 per the 2026-09-25 award record; this 2026-04-30 capture reported $3,471,829.40, and the difference equals the -$56,454.61 obligation of modification P00007 (2026-05-06).'
   statement_date: '2024-08-23'
 - id: q45
   added_date: '2026-05-22'
@@ -686,7 +686,7 @@ quotes:
   source:
     path: government/usaspending-hq003425fe388.txt
     location: '"description" field, CONT_AWD_HQ003425FE388_9700_HQ003425A0001_9700'
-  significance: 'USAspending HQ003425FE388 description field — Policy, Operations, Analytic and Business Operations (POABO) Support Services to Counterintelligence, Law Enforcement and Security (CLS). Type BPA CALL, awarding subtier Washington Headquarters Services, parent IDV HQ003425A0001, total_obligation $3,746,273.44 in this 2026-04-30 capture ($6,666,866.85 per the 2026-09-26 award record, q149), date_signed 2025-09-11, solicitation HQ003425QE111. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Intelligence and Security (see q32).'
+  significance: 'USAspending HQ003425FE388 description field — Policy, Operations, Analytic and Business Operations (POABO) Support Services to Counterintelligence, Law Enforcement and Security (CLS). Type BPA CALL, awarding subtier Washington Headquarters Services, parent IDV HQ003425A0001, total_obligation $3,746,273.44 in this 2026-04-30 capture ($6,666,866.85 per the 2026-09-26 award record), date_signed 2025-09-11, solicitation HQ003425QE111. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Intelligence and Security.'
   statement_date: '2025-09-11'
 - id: q48
   added_date: '2026-05-22'
@@ -695,7 +695,7 @@ quotes:
   source:
     path: government/usaspending-hq003425fe405.txt
     location: '"description" field, CONT_AWD_HQ003425FE405_9700_47QRAA22D00C4_4732'
-  significance: 'USAspending HQ003425FE405 description field — Office Management and Executive Support Services (OMESS) to the Office of the Under Secretary of Defense for Policy (OUSD(P)). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $8,410,282.72, date_signed 2025-09-30. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy (see q26).'
+  significance: 'USAspending HQ003425FE405 description field — Office Management and Executive Support Services (OMESS) to the Office of the Under Secretary of Defense for Policy (OUSD(P)). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $8,410,282.72, date_signed 2025-09-30. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy.'
   statement_date: '2025-09-30'
 - id: q49
   added_date: '2026-05-22'
@@ -713,7 +713,7 @@ quotes:
   source:
     path: government/usaspending-hq003422c0094.txt
     location: '"awarding_agency" object — toptier_agency / subtier_agency, CONT_AWD_HQ003422C0094_9700_-NONE-_-NONE-'
-  significance: 'USAspending HQ003422C0094 awarding_agency object — toptier Department of Defense (code 097), subtier Washington Headquarters Services (code 97F5, abbreviation WHS). Documentary basis for OUSD(I&S) as primary contracting counterparty via the WHS subtier (or1) and for WHS as the issuing subtier agency (or4). The same WHS subtier issues the AARO, IPMO, CIT, and Counterintelligence Analytical prime contracts.'
+  significance: 'USAspending HQ003422C0094 awarding_agency object — toptier Department of Defense (code 097), subtier Washington Headquarters Services (code 97F5, abbreviation WHS). Documentary basis for WHS as the issuing subtier agency; the object does not name OUSD(I&S). The same WHS subtier issues the AARO, IPMO, CIT, and Counterintelligence Analytical prime contracts.'
   statement_date: '2022-09-01'
 - id: q51
   added_date: '2026-05-22'
@@ -722,7 +722,7 @@ quotes:
   source:
     path: government/usaspending-hq085926fg471.txt
     location: '"awarding_agency" object — toptier_agency / subtier_agency, CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700'
-  significance: 'USAspending HQ085926FG471 awarding_agency object — toptier Department of Defense (code 097), subtier Missile Defense Agency (code 97JC, abbreviation MDA). Documentary basis for MDA as the awarding subtier / customer of the SHIELD initial order (or7).'
+  significance: 'USAspending HQ085926FG471 awarding_agency object — toptier Department of Defense (code 097), subtier Missile Defense Agency (code 97JC, abbreviation MDA). Documentary basis for MDA as the awarding subtier / customer of the SHIELD initial order.'
   statement_date: '2025-12-19'
 - id: q52
   added_date: '2026-09-25'
@@ -1074,7 +1074,7 @@ quotes:
   source:
     path: government/usaspending-hq003425a0002.txt
     location: '"date_signed" / "base_and_all_options" fields, CONT_IDV_HQ003425A0002_9700'
-  significance: 'BPA HQ003425A0002 date_signed 2025-02-14 with base_and_all_options 956000000.0 ($956M ceiling) and total_obligation 0.0 (IDV vehicle; obligation flows through orders). The date_signed is the same 2025-02-14 recorded for Sancorp''s HQ003425A0001 (see q46).'
+  significance: 'BPA HQ003425A0002 date_signed 2025-02-14 with base_and_all_options 956000000.0 ($956M ceiling) and total_obligation 0.0 (IDV vehicle; obligation flows through orders). The date_signed is the same 2025-02-14 recorded for Sancorp''s HQ003425A0001.'
   claim_group: ousd-is-tapss-bpa-2025-02-14-peer-award
   statement_date: '2025-02-14'
 - id: q91
@@ -1309,7 +1309,7 @@ quotes:
   source:
     path: news/sancorp-adp-req1258-staff-officer-iii-20260925.json
     location: '"requisitionDescription" field, closing boilerplate ¶2'
-  significance: 'Sancorp self-describes as an SDVOSB and SBA 8(a) company; posted after the 8(a) graduation date HigherGov records (2026-03-11, q31).'
+  significance: 'Sancorp self-describes as an SDVOSB and SBA 8(a) company; posted after the 8(a) graduation date HigherGov records (2026-03-11).'
   claim_group: sancorp-small-business-status
   statement_date: '2026-08-10'
 - id: q117
@@ -1995,7 +1995,7 @@ naming_quirks:
   added_date: '2026-09-25'
   observed: 'OSD OUSD(I)'
   canonical: 'OUSD(I&S)'
-  location: 'USAspending "funding_agency" office_agency_name on HQ003426FE050, HQ003424C0096 (2026-09-25 capture), HQ003425A0002, HQ003425A0003 (also HQ003425A0001, HQ003425FE388, HQ003422C0094); USD(I) is the pre-redesignation form of USD(I&S) (Section 1621 of Public Law 116-92, per CRS In Focus IF10523, government/crs-if10523-defense-primer-usdis.html, q146); the award records themselves do not expand it'
+  location: 'USAspending "funding_agency" office_agency_name on HQ003426FE050, HQ003424C0096 (2026-09-25 capture), HQ003425A0002, HQ003425A0003 (also HQ003425A0001, HQ003425FE388, HQ003422C0094); USD(I) is the pre-redesignation form of USD(I&S) (Section 1621 of Public Law 116-92, per CRS In Focus IF10523, government/crs-if10523-defense-primer-usdis.html); the award records themselves do not expand it'
   source_path: government/usaspending-hq003426fe050.txt
   resolution: preserve-as-sic-in-quotes
 - id: nq16
@@ -2016,7 +2016,7 @@ naming_quirks:
   added_date: '2026-09-25'
   observed: 'OUSW(I&S)'
   canonical: 'OUSD(I&S)'
-  location: 'Sancorp job requisitions 1258, 1206, 1260 — "Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))" (raw record stores the ampersand as an escaped &amp; entity); Under Secretary of War secondary title for subordinate officials per EO 14347 Sec. 2(c) (q147)'
+  location: 'Sancorp job requisitions 1258, 1206, 1260 — "Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))" (raw record stores the ampersand as an escaped &amp; entity); Under Secretary of War secondary title for subordinate officials per EO 14347 Sec. 2(c)'
   source_path: news/sancorp-adp-req1258-staff-officer-iii-20260925.json
   resolution: preserve-as-sic-in-quotes
 - id: nq19
@@ -2030,14 +2030,14 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: 'USD(I)'
   canonical: 'USD(I&S)'
-  location: 'CRS In Focus IF10523, ¶ Congress redesignated the position (q146) — "Under Secretary of Defense for Intelligence (USD(I))", the title before the FY2020 NDAA redesignation (Section 1621 of Public Law 116-92)'
+  location: 'CRS In Focus IF10523, ¶ Congress redesignated the position — "Under Secretary of Defense for Intelligence (USD(I))", the title before the FY2020 NDAA redesignation (Section 1621 of Public Law 116-92)'
   source_path: government/crs-if10523-defense-primer-usdis.html
   resolution: preserve-as-sic-in-quotes
 - id: nq21
   added_date: '2026-09-26'
   observed: 'OUSD (I&S)'
   canonical: 'OUSD(I&S)'
-  location: 'SAM.gov notice TR011720251116, "description[0].body" field, ¶ These Contractors are required (q162) — spaced form in "Enterprise Blanket Purchase Agreement for OUSD (I&S)"; the unspaced OUSD(I&S) appears in the same paragraph (raw record stores the ampersand as an escaped &amp; entity)'
+  location: 'SAM.gov notice TR011720251116, "description[0].body" field, ¶ These Contractors are required — spaced form in "Enterprise Blanket Purchase Agreement for OUSD (I&S)"; the unspaced OUSD(I&S) appears in the same paragraph (raw record stores the ampersand as an escaped &amp; entity)'
   source_path: government/samgov-tr011720251116-notice.json
   resolution: preserve-as-sic-in-quotes
 timeline:
@@ -2180,7 +2180,7 @@ timeline:
 - id: t43
   added_date: '2026-09-26'
   date: '2024-04'
-  event: 'The individual GAO refers to as "X" — later proposed by Sancorp for a staff officer key personnel position on the SASP call order — joined Sancorp, per X''s resume in Sancorp''s quotation, which states X "currently supports OUSD(I&S)" under an incumbent effort (q154, q155).'
+  event: 'The individual GAO refers to as "X" — later proposed by Sancorp for a staff officer key personnel position on the SASP call order — joined Sancorp, per X''s resume in Sancorp''s quotation, which states X "currently supports OUSD(I&S)" under an incumbent effort.'
   category: personnel
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -2212,7 +2212,7 @@ timeline:
 - id: t20
   added_date: '2026-04-30'
   date: '2024-08-23'
-  event: 'HQ003424C0096 awarded — Exec. Admin, Ops, Policy & PPBE Support Services; its transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" ([`/organizations/aaro`]) from modification P00005 (2025-07-10) (q85). Total obligation $3,415,374.79 per the 2026-09-25 award record ($3,471,829.40 in the 2026-04-30 capture).'
+  event: 'HQ003424C0096 awarded — Exec. Admin, Ops, Policy & PPBE Support Services; its transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" ([`/organizations/aaro`]) from modification P00005 (2025-07-10). Total obligation $3,415,374.79 per the 2026-09-25 award record ($3,471,829.40 in the 2026-04-30 capture).'
   category: contract
   source:
     path: government/usaspending-hq003424c0096-20260925.txt
@@ -2228,7 +2228,7 @@ timeline:
 - id: t44
   added_date: '2026-09-26'
   date: '2025-02-07'
-  event: 'X''s letter of resignation from Sancorp, dated February 7, 2025 — before the agency issued the SASP call order; in the protest Sancorp confirms X "resigned from Sancorp in February 2025" (q156, q158).'
+  event: 'X''s letter of resignation from Sancorp, dated February 7, 2025 — before the agency issued the SASP call order; in the protest Sancorp confirms X "resigned from Sancorp in February 2025".'
   category: personnel
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -2244,7 +2244,7 @@ timeline:
 - id: t45
   added_date: '2026-09-26'
   date: '2025-02-14'
-  event: 'X''s last official day at Sancorp, per X''s resignation letter ("my last official day will be 14 February 2025"); GAO: X "subsequently left Sancorp’s employ later that month" (q158). The protester asserts that X had "left Sancorp amicably" (q157).'
+  event: 'X''s last official day at Sancorp, per X''s resignation letter ("my last official day will be 14 February 2025"); GAO: X "subsequently left Sancorp’s employ later that month". The protester asserts that X had "left Sancorp amicably."'
   category: personnel
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -2252,7 +2252,7 @@ timeline:
 - id: t23
   added_date: '2026-04-30'
   date: '2025-06-11'
-  event: 'GAO B-422985.4, B-422985.5 on Sancorp''s protest under RFQ No. HQ003424R0178 ([`/documents/rfq-hq003424r0178`]): "The protest is denied." Call Order 1 (EXDIR, Premier Enterprise Solutions) challenges denied; SASP call order (Call Order 2, Arlo Solutions) challenges dismissed — Sancorp''s quotation was rendered unacceptable because Sancorp knew key person "X" was unavailable and failed to advise the agency (q154–q159).'
+  event: 'GAO B-422985.4, B-422985.5 on Sancorp''s protest under RFQ No. HQ003424R0178 ([`/documents/rfq-hq003424r0178`]): "The protest is denied." Call Order 1 (EXDIR, Premier Enterprise Solutions) challenges denied; SASP call order (Call Order 2, Arlo Solutions) challenges dismissed — Sancorp''s quotation was rendered unacceptable because Sancorp knew key person "X" was unavailable and failed to advise the agency.'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -2260,7 +2260,7 @@ timeline:
 - id: t46
   added_date: '2026-09-26'
   date: '2025-06-11'
-  event: 'Counsel for the protester (Sancorp) in GAO B-422985.4, B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]) (q153).'
+  event: 'Counsel for the protester (Sancorp) in GAO B-422985.4, B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]).'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -2268,7 +2268,7 @@ timeline:
 - id: t47
   added_date: '2026-09-26'
   date: '2025-03-11'
-  event: 'SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) for OUSD(I&S) ([`/organizations/ousd-is`]): intent to award Sancorp a short-term, sole source extension of HQ003424C0046 (services concluding March 27, 2025), March 28 to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A) ([`/documents/federal-acquisition-regulations`]) (q160, q161, q162).'
+  event: 'SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) for OUSD(I&S) ([`/organizations/ousd-is`]): intent to award Sancorp a short-term, sole source extension of HQ003424C0046 (services concluding March 27, 2025), March 28 to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A) ([`/documents/federal-acquisition-regulations`]).'
   category: contract
   source:
     path: government/samgov-tr011720251116-notice.json
@@ -2276,7 +2276,7 @@ timeline:
 - id: t48
   added_date: '2026-09-26'
   date: '2025-03-27'
-  event: 'FPDS ([`/organizations/fpds`]) modification P00002 to HQ003424C0046, a CHANGE ORDER signed 2025-03-27 with the requirement description "IPMO SUPPORT SERVICES", extended the completion date from 2025-03-27 to 2025-07-27, the end of the bridge period in SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]); the FPDS record does not name the notice (q174, q165).'
+  event: 'FPDS ([`/organizations/fpds`]) modification P00002 to HQ003424C0046, a CHANGE ORDER signed 2025-03-27 with the requirement description "IPMO SUPPORT SERVICES", extended the completion date from 2025-03-27 to 2025-07-27, the end of the bridge period in SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]); the FPDS record does not name the notice.'
   category: contract
   source:
     path: government/fpds-hq003424c0046.txt
@@ -2284,7 +2284,7 @@ timeline:
 - id: t49
   added_date: '2026-09-26'
   date: '2025-07-25'
-  event: 'FPDS ([`/organizations/fpds`]) modification P00006 to HQ003424C0046, a CHANGE ORDER signed 2025-07-25, extended the completion date from 2025-07-27 to 2026-05-27; P00007 and P00008 leave it at 2026-05-27 (q178, q179, q180).'
+  event: 'FPDS ([`/organizations/fpds`]) modification P00006 to HQ003424C0046, a CHANGE ORDER signed 2025-07-25, extended the completion date from 2025-07-27 to 2026-05-27; P00007 and P00008 leave it at 2026-05-27.'
   category: contract
   source:
     path: government/fpds-hq003424c0046.txt
@@ -2432,7 +2432,7 @@ timeline:
   category: contract
   source:
     path: government/usaspending-hq003426fe050-transactions.txt
-    location: 'transaction P00002 "action_date" / "action_type_description" / "federal_action_obligation" (q141)'
+    location: 'transaction P00002 "action_date" / "action_type_description" / "federal_action_obligation"'
 key_personnel: []
 contracts:
 - id: c1
@@ -2577,7 +2577,7 @@ contracts:
   value: '$3,415,374.79 (2026-09-25 award record; the 2026-04-30 capture reported $3,471,829.40)'
   source:
     path: government/usaspending-hq003424c0096-20260925.txt
-    location: '"total_obligation" field, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture); AARO label per transactions file P00005 (q85)'
+    location: '"total_obligation" field, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture); AARO label per the 2026-09-25 transactions capture, transaction P00005'
 - id: c12
   added_date: '2026-04-30'
   contract_number: HQ003424A0023
@@ -2599,7 +2599,7 @@ contracts:
   period_end: '2030-02-14'
   date_signed: '2025-02-14'
   primary_counterparty_path: /organizations/ousd-is
-  subject: 'Technical, Analytical, Administrative, and Professional Program Support Services (parent BPA; funding office OSD OUSD(I) per the award record (q137); Sancorp Past Performance lists it as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support" (q145))'
+  subject: 'Technical, Analytical, Administrative, and Professional Program Support Services (parent BPA; funding office OSD OUSD(I) per the award record; Sancorp Past Performance lists it as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support")'
   value: '$0 (BPA vehicle)'
   source:
     path: government/usaspending-hq003425a0001.txt
@@ -2745,7 +2745,7 @@ org_relationships:
   relationship_type: requiring-office
   source:
     path: government/usaspending-hq003425fe174-transactions.txt
-    location: 'transaction P00001 "description" — "THE OASD(ST) REQUIRES …" (q75)'
+    location: 'transaction P00001 "description" — "THE OASD(ST) REQUIRES …"'
 - id: or10
   added_date: '2026-04-30'
   organization_path: /organizations/oasd-hdha

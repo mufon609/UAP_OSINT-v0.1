@@ -1114,7 +1114,7 @@ quotes:
   source:
     path: government/usaspending-hq003422c0127.txt
     location: 'field "latest_transaction_contract_data.solicitation_procedures_description" … "other_than_full_and_open_description"'
-  significance: 'Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value (q170). Neither record explains the difference; both are kept as published.'
+  significance: 'Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value. Neither record explains the difference; both are kept as published.'
   claim_group: 'HQ003422C0127 incumbent contract (award record)'
   statement_date: '2026-05-06'
 - id: q122
@@ -1429,7 +1429,7 @@ quotes:
   source:
     path: government/fpds-hq003422c0127-start10.txt
     location: 'entry modNumber P00011, awardID + relevantContractDates block'
-  significance: 'P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry''s competition block (q170) gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.'
+  significance: 'P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry''s competition block gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.'
   claim_group: 'HQ003422C0127 period-of-performance extensions (FPDS)'
   statement_date: '2025-03-27'
 - id: q157

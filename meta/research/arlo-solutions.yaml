@@ -181,7 +181,7 @@ quotes:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: DISCUSSION section — Arlo's request for dismissal (key personnel X unavailability)
-  significance: 'Mechanics of Sancorp''s SASP-call-order loss: Sancorp''s proposed staff officer key personnel "X" submitted a resignation letter dated February 7, 2025 (last day February 14, 2025, per the resignation letter as quoted in q60), before WHS issued the SASP call order. Sancorp argued it lacked actual knowledge of X''s unavailability; GAO did not accept this defense.'
+  significance: 'Mechanics of Sancorp''s SASP-call-order loss: Sancorp''s proposed staff officer key personnel "X" submitted a resignation letter dated February 7, 2025 (last day February 14, 2025, per the resignation letter as GAO quotes it), before WHS issued the SASP call order. Sancorp argued it lacked actual knowledge of X''s unavailability; GAO did not accept this defense.'
   statement_date: '2025-06-11'
 - id: q7
   added_date: '2026-05-03'
@@ -645,7 +645,7 @@ quotes:
     path: government/gao-b-422985-wayback-20250708.html
     location: '¶ The agency summarized the results of the reevaluation as follows: (BACKGROUND section, lead-in to the reevaluation results tables)'
   significance: 'Lead-in sentence introducing the two reevaluation results tables (Call Order 1 EXDIR: Sancorp vs. Premier; Call Order 2 SASP: Sancorp vs. Arlo). Attributes the tabulated ratings and prices to the agency (WHS) summary; the sentence that follows the tables cites AR, Tab 45, SSDD at 21, 36 as the record source.'
-  context: 'Immediately precedes the Call Order 1 (EXDIR) table and then the Call Order 2 (SASP) table; the two tables sit between this sentence and the "AR, Tab 45, Source Selection Decision Document (SSDD) at 21, 36.[3]" paragraph (already quoted as q5). Not contiguous with the SASP table, because the EXDIR table intervenes.'
+  context: 'Immediately precedes the Call Order 1 (EXDIR) table and then the Call Order 2 (SASP) table; the two tables sit between this sentence and the "AR, Tab 45, Source Selection Decision Document (SSDD) at 21, 36.[3]" paragraph (quoted separately from the same GAO decision). Not contiguous with the SASP table, because the EXDIR table intervenes.'
   claim_group: 'GAO B-422985.4/.5: WHS reevaluation results — SASP Call Order 2 (Arlo vs. Sancorp)'
   statement_date: '2025-06-11'
 - id: q54
@@ -654,7 +654,7 @@ quotes:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: 'BACKGROUND section — reevaluation results table, ¶ Call Order 2 (SASP) (second table, following the Call Order 1 (EXDIR) table)'
-  significance: 'Reevaluation results for Call Order 2 (SASP), as the agency summarized them. The table has two columns, in the order Sancorp then Arlo. Technical: Sancorp Outstanding, Arlo Outstanding. Past performance: Sancorp Satisfactory Confidence, Arlo Satisfactory Confidence. Price: Sancorp $91,450,294, Arlo $87,748,037. Arlo tied Sancorp on both non-price factors and quoted the lower price. The SSA then found Arlo''s quotation the best value for the SASP call order (q5).'
+  significance: 'Reevaluation results for Call Order 2 (SASP), as the agency summarized them. The table has two columns, in the order Sancorp then Arlo. Technical: Sancorp Outstanding, Arlo Outstanding. Past performance: Sancorp Satisfactory Confidence, Arlo Satisfactory Confidence. Price: Sancorp $91,450,294, Arlo $87,748,037. Arlo tied Sancorp on both non-price factors and quoted the lower price. The SSA then found Arlo''s quotation the best value for the SASP call order.'
   context: 'The HTML table cells appear on separate lines in the extracted scratch file, separated by tabs and blank lines. This quote is the same cell sequence with its whitespace collapsed; the verbatim check''s normalize_for_compare also collapses whitespace. The span begins at the table''s header cell "Call Order 2 (SASP)" and ends at Arlo''s price cell.'
   claim_group: 'GAO B-422985.4/.5: WHS reevaluation results — SASP Call Order 2 (Arlo vs. Sancorp)'
   statement_date: '2025-06-11'
@@ -694,7 +694,7 @@ quotes:
     path: government/gao-b-422985-wayback-20250708.html
     location: 'DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ Citing “public information,” the intervenor asserts'
   significance: 'Arlo''s assertion, as the intervenor, quoted by GAO from Arlo''s Request for Dismissal at 4. Citing "public information," Arlo asserted that X left Sancorp in February 2025 to work for another company as an Operations Officer/Research Analyst, which left X unavailable for the key position. The ". . ." ellipsis is in the GAO text; the other company is not named in the source.'
-  context: 'In the next sentence, GAO directed Sancorp to respond to the dismissal request (Electronic Protest Docketing System No. 38). Sancorp''s response is already captured as q6.'
+  context: 'In the next sentence, GAO directed Sancorp to respond to the dismissal request (Electronic Protest Docketing System No. 38). Sancorp''s response (Supp. Comments at 3) is quoted separately.'
   claim_group: 'GAO B-422985.4/.5: Arlo dismissal request — Sancorp key person X unavailability'
   statement_date: '2025-06-11'
 - id: q59
@@ -713,7 +713,7 @@ quotes:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: 'DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ By contrast, X was--as touted by Sancorp in its quotation--employed by Sancorp'
-  significance: 'GAO''s record finding: X submitted a resignation letter on February 7 (2025) and left Sancorp later that month. The letter, Supp. Comments exh. B at 1, states "my last official day will be 14 February 2025." On that basis GAO found that Sancorp had actual knowledge of X''s unavailability, which rendered Sancorp''s SASP quotation unacceptable (see q7).'
+  significance: 'GAO''s record finding: X submitted a resignation letter on February 7 (2025) and left Sancorp later that month. The letter, Supp. Comments exh. B at 1, states "my last official day will be 14 February 2025." On that basis GAO found that Sancorp had actual knowledge of X''s unavailability, which rendered Sancorp''s SASP quotation unacceptable.'
   context: 'Earlier in the same paragraph, GAO notes that X had signed a letter of commitment in July 2024, when quotations were submitted.'
   claim_group: 'GAO B-422985.4/.5: Arlo dismissal request — Sancorp key person X unavailability'
   statement_date: '2025-06-11'
@@ -795,7 +795,7 @@ quotes:
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: 'USAspending API record — "latest_transaction_contract_data" object — solicitation / offers / set-aside fields, CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700'
-  significance: 'HQ003425F0104 records solicitation HQ003424R0178, number_of_offers_received "1", extent_competed F (described in the same record as "COMPETED UNDER SAP"), and type_set_aside NONE / "NO SET ASIDE USED." The GAO decision (q2) describes RFQ HQ003424R0178 as set aside for 8(a) small businesses; this record''s set-aside field reads otherwise. Both stand as recorded; neither source addresses the other.'
+  significance: 'HQ003425F0104 records solicitation HQ003424R0178, number_of_offers_received "1", extent_competed F (described in the same record as "COMPETED UNDER SAP"), and type_set_aside NONE / "NO SET ASIDE USED." The GAO decision describes RFQ HQ003424R0178 as set aside for 8(a) small businesses; this record''s set-aside field reads otherwise. Both stand as recorded; neither source addresses the other.'
   claim_group: hq003425f0104-award-record
   statement_date: '2025-02-21'
 - id: q70
@@ -1429,7 +1429,7 @@ quotes:
   source:
     path: news/arlo-greenhouse-516-operations-manager-iii-wayback-20260227.html
     location: '¶ Oversee and manage daily operations within the Influence and Perception Management Office'
-  significance: 'Among the Operations Manager III responsibilities, the (516) posting — which names SASP as the supported office (q135) — lists overseeing and managing daily operations within the Influence and Perception Management Office. The posting does not otherwise describe the relation between the Influence and Perception Management Office and SASP.'
+  significance: 'Among the Operations Manager III responsibilities, the (516) posting — which names SASP as the supported office — lists overseeing and managing daily operations within the Influence and Perception Management Office. The posting does not otherwise describe the relation between the Influence and Perception Management Office and SASP.'
   context: 'Arlo Solutions Greenhouse posting 4660859007 "(516) Operations Manager III"; published 2025-02-24, Wayback capture 2026-02-27. First bullet under "Operational Leadership" in Job Responsibilities and/or Success Factors.'
   claim_group: 'Arlo postings naming the OUSD(I&S) Sensitive Activities & Special Programs (SASP) office'
   statement_date: '2026-02-27'
@@ -1488,7 +1488,7 @@ naming_quirks:
 - id: nq4
   observed: Department of War
   canonical: Department of Defense
-  location: 'Full form, not quoted on this node: Arlo SASP press release context paragraph ("senior Department of War (DoW) leaders"); Arlo Greenhouse posting (514) minimum qualifications ("within the Department of War"); also spelled out in the (467), (500), and (617) posting pages. The quoted acronym "DoW" is recorded as nq15'
+  location: 'Full form, not quoted on this node: Arlo SASP press release context paragraph ("senior Department of War (DoW) leaders"); Arlo Greenhouse posting (514) minimum qualifications ("within the Department of War"); also spelled out in the (467), (500), and (617) posting pages. The quoted acronym "DoW" is recorded as a separate naming quirk'
   source_path: news/arlo-press-85m-sasp-20260503.html
   resolution: off-node-variant
   added_date: '2026-05-03'
@@ -1558,14 +1558,14 @@ naming_quirks:
 - id: nq14
   observed: 'Office of the Under Secretary of War for Intelligence and Security'
   canonical: 'Office of the Under Secretary of Defense for Intelligence and Security'
-  location: 'Arlo Greenhouse posting (467) HUMINT Policy Staff Officer III (2026-05-14 capture), Position Overview — spelled-out "War" form with no acronym, run directly into "Sensitive Activities & Special Programs (SASP)"; the same spelled-out form, followed by an acronym, is in the (495), (497), (499), (500), (504), (506), (510), and (516) postings (acronym OUSW(I&S), see nq3) and the (514) posting (acronym OUSD(I&S), see nq5); the canonical form is spelled out in the Arlo (183) Budget Analyst IV posting, Position Overview'
+  location: 'Arlo Greenhouse posting (467) HUMINT Policy Staff Officer III (2026-05-14 capture), Position Overview — spelled-out "War" form with no acronym, run directly into "Sensitive Activities & Special Programs (SASP)"; the same spelled-out form, followed by an acronym, is in the (495), (497), (499), (500), (504), (506), (510), and (516) postings (acronym OUSW(I&S)) and the (514) posting (acronym OUSD(I&S)); the canonical form is spelled out in the Arlo (183) Budget Analyst IV posting, Position Overview'
   source_path: news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html
   resolution: preserve-as-sic-in-quotes
   added_date: '2026-09-26'
 - id: nq15
   observed: 'DoW'
   canonical: 'DoD'
-  location: 'Quoted acronym "DoW": q9 (Arlo SASP press release, Lonye Ford CEO quote — "DoW leadership"); Arlo Greenhouse postings (497) q115, q116 ("DoW Components", "DoW leadership"); (499) q120 ("DoW quarterly reports"); (500) q122, q123 ("DoW sensitive activities"); (506) q127 ("within DoW"); (514) q132 ("DoW influence"); (467) q139 ("DoW Components"). The canonical acronym is in the (498) posting (2025-07-12 capture), q117 — "DoD Senior Executives"'
+  location: 'Quoted acronym "DoW": Arlo SASP press release, Lonye Ford CEO quote ("DoW leadership"); Arlo Greenhouse postings (497) ("DoW Components", "DoW leadership"); (499) ("DoW quarterly reports"); (500) ("DoW sensitive activities"); (506) ("within DoW"); (514) ("DoW influence"); (467) ("DoW Components"). The canonical acronym is in the (498) posting (2025-07-12 capture), Position Overview — "DoD Senior Executives"'
   source_path: news/arlo-press-85m-sasp-20260503.html
   resolution: preserve-as-sic-in-quotes
   added_date: '2026-09-26'
@@ -1667,7 +1667,7 @@ timeline:
   id: t11b
   added_date: '2026-05-03'
 - date: '2024-05-23'
-  event: 'Arlo''s Greenhouse posting "(183) Budget Analyst IV" is published (embedded published_at), before the 2025-02-21 signing of HQ003425F0104: "This opportunity is contingent upon award"; the position supports the SASP office ([`/organizations/ousd-is-sasp`]) and executes the SASP budget with the OUSD(I&S) FMA office ([`/organizations/ousd-is-financial-management-and-accounting`]) (q105–q107).'
+  event: 'Arlo''s Greenhouse posting "(183) Budget Analyst IV" is published (embedded published_at), before the 2025-02-21 signing of HQ003425F0104: "This opportunity is contingent upon award"; the position supports the SASP office ([`/organizations/ousd-is-sasp`]) and executes the SASP budget with the OUSD(I&S) FMA office ([`/organizations/ousd-is-financial-management-and-accounting`]).'
   category: posting
   source:
     path: news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html
@@ -1691,7 +1691,7 @@ timeline:
   id: t13
   added_date: '2026-05-03'
 - date: '2025-02-07'
-  event: 'Sancorp''s proposed staff officer (subject matter expert level IV) key person "X" submitted a letter of resignation on February 7, 2025 ([`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]): "my last official day will be 14 February 2025" — before WHS issued the SASP call order (q6, q60). Sancorp did not advise WHS of X''s unavailability.'
+  event: 'Sancorp''s proposed staff officer (subject matter expert level IV) key person "X" submitted a letter of resignation on February 7, 2025 ([`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]): "my last official day will be 14 February 2025" — before WHS issued the SASP call order. Sancorp did not advise WHS of X''s unavailability.'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -1739,7 +1739,7 @@ timeline:
   id: t16
   added_date: '2026-05-03'
 - date: '2025-02-21'
-  event: 'USAspending transaction record for the HQ003425F0104 base award (modification 0): BPA CALL under BPA HQ003425A0004, federal_action_obligation 6327156.07, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES." The transaction record does not name the recipient (q61).'
+  event: 'USAspending transaction record for the HQ003425F0104 base award (modification 0): BPA CALL under BPA HQ003425A0004, federal_action_obligation 6327156.07, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES." The transaction record does not name the recipient.'
   category: contract
   source:
     path: government/usaspending-hq003425f0104-transactions.txt
@@ -1747,7 +1747,7 @@ timeline:
   id: t33
   added_date: '2026-09-26'
 - date: '2025-02-24'
-  event: 'Greenhouse postings (498), (504), (510), (514), and (516) carry embedded published_at 2025-02-24. In their Wayback captures ((498) 2025-07-12; (504) 2026-03-12; (510, 516) 2026-02-27; (514) 2026-08-04), they name SASP ([`/organizations/ousd-is-sasp`]), including C-WMD (510), influence, deception, and perception management (514), and Influence and Perception Management Office ([`/organizations/ipmo`]) operations (516) (q117, q124, q128–q137). No contract number is named.'
+  event: 'Greenhouse postings (498), (504), (510), (514), and (516) carry embedded published_at 2025-02-24. In their Wayback captures ((498) 2025-07-12; (504) 2026-03-12; (510, 516) 2026-02-27; (514) 2026-08-04), they name SASP ([`/organizations/ousd-is-sasp`]), including C-WMD (510), influence, deception, and perception management (514), and Influence and Perception Management Office ([`/organizations/ipmo`]) operations (516). No contract number is named.'
   category: posting
   source:
     path: news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html
@@ -1755,7 +1755,7 @@ timeline:
   id: t45
   added_date: '2026-09-26'
 - date: '2025-02-24'
-  event: 'Arlo Greenhouse postings (495), (497), (499), (500), and (506) carry embedded published_at 2025-02-24. In their 2026-02-27 Wayback captures, they name the HUMINT & Sensitive Activities Directorate ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]) within OUSW(I&S) and do not name SASP; (499) names the Sensitive Activities Executive Council (SA-EXCON) ([`/organizations/sensitive-activities-executive-council`]) (q111–q116, q118–q123, q125–q127). No contract number is named.'
+  event: 'Arlo Greenhouse postings (495), (497), (499), (500), and (506) carry embedded published_at 2025-02-24. In their 2026-02-27 Wayback captures, they name the HUMINT & Sensitive Activities Directorate ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]) within OUSW(I&S) and do not name SASP; (499) names the Sensitive Activities Executive Council (SA-EXCON) ([`/organizations/sensitive-activities-executive-council`]). No contract number is named.'
   category: posting
   source:
     path: news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html
@@ -1763,7 +1763,7 @@ timeline:
   id: t46
   added_date: '2026-09-26'
 - date: '2025-02-26'
-  event: 'Arlo Greenhouse posting 4663123007 "OUSD(I&S) SASP Incumbent" carries embedded published_at 2025-02-26. In its 2025-08-30 Wayback capture, it states Arlo "has recently been awarded" the OUSD(I&S) SASP contract ([`/organizations/ousd-is-sasp`]); only current employees serving as incumbents on this contract are eligible to apply (q108–q110). No contract number is named.'
+  event: 'Arlo Greenhouse posting 4663123007 "OUSD(I&S) SASP Incumbent" carries embedded published_at 2025-02-26. In its 2025-08-30 Wayback capture, it states Arlo "has recently been awarded" the OUSD(I&S) SASP contract ([`/organizations/ousd-is-sasp`]); only current employees serving as incumbents on this contract are eligible to apply. No contract number is named.'
   category: posting
   source:
     path: news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html
@@ -1771,7 +1771,7 @@ timeline:
   id: t47
   added_date: '2026-09-26'
 - date: '2025-03-11'
-  event: 'Notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) from WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) as incumbent on Task Order HQ003419F0506 (WHS-AD TEAMS BPA, HQ003415A0010), services concluding March 27, 2025; bridge period March 28 to July 27, 2025. USAspending records another recipient (q91). Arlo is not named.'
+  event: 'Notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) from WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) as incumbent on Task Order HQ003419F0506 (WHS-AD TEAMS BPA, HQ003415A0010), services concluding March 27, 2025; bridge period March 28 to July 27, 2025. USAspending records another recipient. Arlo is not named.'
   category: contract
   source:
     path: government/samgov-tr011720251116-notice.json
@@ -1780,7 +1780,7 @@ timeline:
   id: t38
   added_date: '2026-09-26'
 - date: '2025-03-13'
-  event: 'USAspending records modification P00001 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q62).'
+  event: 'USAspending records modification P00001 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0.'
   category: contract
   source:
     path: government/usaspending-hq003425f0104-transactions.txt
@@ -1796,7 +1796,7 @@ timeline:
   id: t22
   added_date: '2026-09-26'
 - date: '2025-06-10'
-  event: 'USAspending records modification P00002 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q63).'
+  event: 'USAspending records modification P00002 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0.'
   category: contract
   source:
     path: government/usaspending-hq003425f0104-transactions.txt
@@ -1812,7 +1812,7 @@ timeline:
   id: t17a
   added_date: '2026-05-03'
 - date: '2025-06-11'
-  event: 'Per the GAO decision, Arlo (intervenor) filed, on a date the decision does not state, a request to dismiss the SASP protest arguments ([`/documents/arlo-request-for-dismissal-b-422985-4`]), citing "public information" that X left Sancorp in February 2025 (q58). X had been proposed in Sancorp''s technical quotations ([`/documents/sancorp-technical-quotations-hq003424r0178`]) (q57). The protester asserted X had "left Sancorp amicably" (q59).'
+  event: 'Per the GAO decision, Arlo (intervenor) filed, on a date the decision does not state, a request to dismiss the SASP protest arguments ([`/documents/arlo-request-for-dismissal-b-422985-4`]), citing "public information" that X left Sancorp in February 2025. X had been proposed in Sancorp''s technical quotations ([`/documents/sancorp-technical-quotations-hq003424r0178`]). The protester asserted X had "left Sancorp amicably."'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -1820,7 +1820,7 @@ timeline:
   id: t32
   added_date: '2026-09-26'
 - date: '2025-06-11'
-  event: 'Counsel for the intervenor Arlo Solutions, LLC in GAO B-422985.4 / B-422985.5: Olivia L. Lynch ([`/people/olivia-l-lynch`]), Cherie J. Owen ([`/people/cherie-j-owen`]), and Emily P. Golchini ([`/people/emily-p-golchini`]), Crowell & Moring LLP ([`/organizations/crowell-moring`]) (q55).'
+  event: 'Counsel for the intervenor Arlo Solutions, LLC in GAO B-422985.4 / B-422985.5: Olivia L. Lynch ([`/people/olivia-l-lynch`]), Cherie J. Owen ([`/people/cherie-j-owen`]), and Emily P. Golchini ([`/people/emily-p-golchini`]), Crowell & Moring LLP ([`/organizations/crowell-moring`]).'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -1828,7 +1828,7 @@ timeline:
   id: t28
   added_date: '2026-09-26'
 - date: '2025-06-11'
-  event: 'Counsel for the intervenor Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) in GAO B-422985.4 / B-422985.5: Jonathan D. Perrone ([`/people/jonathan-d-perrone`]), Joshua M. Sather ([`/people/joshua-m-sather`]), and Timothy J. Turner ([`/people/timothy-j-turner`]), Whitcomb, Selinsky, P.C. ([`/organizations/whitcomb-selinsky`]), and Sharon O. Steele ([`/people/sharon-o-steele`]), Steele Law Offices, LLC ([`/organizations/steele-law-offices`]) (q55).'
+  event: 'Counsel for the intervenor Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) in GAO B-422985.4 / B-422985.5: Jonathan D. Perrone ([`/people/jonathan-d-perrone`]), Joshua M. Sather ([`/people/joshua-m-sather`]), and Timothy J. Turner ([`/people/timothy-j-turner`]), Whitcomb, Selinsky, P.C. ([`/organizations/whitcomb-selinsky`]), and Sharon O. Steele ([`/people/sharon-o-steele`]), Steele Law Offices, LLC ([`/organizations/steele-law-offices`]).'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
@@ -1852,7 +1852,7 @@ timeline:
   id: t31
   added_date: '2026-09-26'
 - date: '2025-07-25'
-  event: 'HQ003419F0506 modification P00035 (CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction described "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" ([`/organizations/ousd-is-sasp`]), through P00040 (2026-04-01); P00034 is described "TRAVEL INCREASE". 2024 records P00023 (2024-05-24) and P00024 (2024-07-09) have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". No recipient is named (q96–q104).'
+  event: 'HQ003419F0506 modification P00035 (CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction described "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" ([`/organizations/ousd-is-sasp`]), through P00040 (2026-04-01); P00034 is described "TRAVEL INCREASE". 2024 records P00023 (2024-05-24) and P00024 (2024-07-09) have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". No recipient is named.'
   category: contract
   source:
     path: government/usaspending-hq003419f0506-transactions.txt
@@ -1860,7 +1860,7 @@ timeline:
   id: t39
   added_date: '2026-09-26'
 - date: '2025-07-28'
-  event: 'USAspending records modification P00003 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation -6327156.07. Its description field is "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE" ([`/organizations/ousd-is-exdir`]); no reason is stated (q64).'
+  event: 'USAspending records modification P00003 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation -6327156.07. Its description field is "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE" ([`/organizations/ousd-is-exdir`]); no reason is stated.'
   category: contract
   source:
     path: government/usaspending-hq003425f0104-transactions.txt
@@ -1868,7 +1868,7 @@ timeline:
   id: t36
   added_date: '2026-09-26'
 - date: '2025-08-19'
-  event: 'USAspending records modification P00004 to HQ003425F0104 as TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL), federal_action_obligation 0.0 — the last transaction listed (page_metadata hasNext false). The record does not state whether the action was complete or partial (q65).'
+  event: 'USAspending records modification P00004 to HQ003425F0104 as TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL), federal_action_obligation 0.0 — the last transaction listed (page_metadata hasNext false). The record does not state whether the action was complete or partial.'
   category: contract
   source:
     path: government/usaspending-hq003425f0104-transactions.txt
@@ -1908,7 +1908,7 @@ timeline:
   id: t26
   added_date: '2026-09-26'
 - date: '2026-02-17'
-  event: 'WHS ([`/organizations/whs`]) signed HQ003426FE011, a BPA CALL under HQ003425A0004, recipient ARLO SOLUTIONS L.L.C., described as "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" support ([`/organizations/ousd-is-sasp`]); 4 offers; "8A COMPETED"; base_and_all_options 59372513.73 (q77–q85). USAspending lists two BPA CALL records under HQ003425A0004: HQ003426FE011 and HQ003425F0104 (hasNext false, as of the 2026-09-26 fetch; q88–q90).'
+  event: 'WHS ([`/organizations/whs`]) signed HQ003426FE011, a BPA CALL under HQ003425A0004, recipient ARLO SOLUTIONS L.L.C., described as "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" support ([`/organizations/ousd-is-sasp`]); 4 offers; "8A COMPETED"; base_and_all_options 59372513.73. USAspending lists two BPA CALL records under HQ003425A0004: HQ003426FE011 and HQ003425F0104 (hasNext false, as of the 2026-09-26 fetch).'
   category: contract
   source:
     path: government/usaspending-hq003426fe011.txt
@@ -1932,7 +1932,7 @@ timeline:
   id: t18
   added_date: '2026-05-03'
 - date: '2026-04-15'
-  event: 'Arlo Greenhouse posting "(467) HUMINT Policy Staff Officer III" carries embedded published_at 2026-04-15. In its 2026-05-14 Wayback capture, it names a contractor position supporting SASP ([`/organizations/ousd-is-sasp`]), with liaison to Defense HUMINT Executors ([`/organizations/defense-humint-executors`]) (q138, q139). No contract number is named.'
+  event: 'Arlo Greenhouse posting "(467) HUMINT Policy Staff Officer III" carries embedded published_at 2026-04-15. In its 2026-05-14 Wayback capture, it names a contractor position supporting SASP ([`/organizations/ousd-is-sasp`]), with liaison to Defense HUMINT Executors ([`/organizations/defense-humint-executors`]). No contract number is named.'
   category: posting
   source:
     path: news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html
@@ -1940,7 +1940,7 @@ timeline:
   id: t48
   added_date: '2026-09-26'
 - date: '2026-05-13'
-  event: 'HQ003426FE011 period_of_performance start_date; end_date 2026-11-27, potential_end_date 2030-11-27 (q79).'
+  event: 'HQ003426FE011 period_of_performance start_date; end_date 2026-11-27, potential_end_date 2030-11-27.'
   category: contract
   source:
     path: government/usaspending-hq003426fe011.txt
@@ -1949,7 +1949,7 @@ timeline:
   id: t41
   added_date: '2026-09-26'
 - date: '2026-05-27'
-  event: 'USAspending records a period_of_performance end_date of 2026-05-27 (potential_end_date 2026-05-27; record last modified 2026-04-01) for HQ003419F0506, a BPA CALL under BPA HQ003415A0010 whose recipient USAspending records as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (q91–q95). The record does not name Arlo.'
+  event: 'USAspending records a period_of_performance end_date of 2026-05-27 (potential_end_date 2026-05-27; record last modified 2026-04-01) for HQ003419F0506, a BPA CALL under BPA HQ003415A0010 whose recipient USAspending records as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION. The record does not name Arlo.'
   category: contract
   source:
     path: government/usaspending-hq003419f0506.txt
@@ -1957,7 +1957,7 @@ timeline:
   id: t42
   added_date: '2026-09-26'
 - date: '2026-06-02'
-  event: 'USAspending records modification P00001 to HQ003426FE011 as a CHANGE ORDER, federal_action_obligation 2194229.63. The two transactions listed (hasNext false), the base award (3500000.0) and P00001, sum to the award-level total_obligation of 5694229.63. The transaction records do not name the recipient and state no reason for the change order (q86, q87, q77).'
+  event: 'USAspending records modification P00001 to HQ003426FE011 as a CHANGE ORDER, federal_action_obligation 2194229.63. The two transactions listed (hasNext false), the base award (3500000.0) and P00001, sum to the award-level total_obligation of 5694229.63. The transaction records do not name the recipient and state no reason for the change order.'
   category: contract
   source:
     path: government/usaspending-hq003426fe011-transactions.txt

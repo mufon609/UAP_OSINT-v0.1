@@ -68,7 +68,7 @@ without transforming content.
 | `finalize-attribution.py` | Deterministic finalizer for a verifier-passed attribution sibling — sets `verification_status: verified` + `verifier_session` and strips draft-phase scaffolding (`rationale` / `verifier_notes` / `needs_image_verification`), leaving a structured-only committed artifact. Idempotent on an already-verified sibling. **Active-speaker fold gate:** requires `--video PATH` (runs `spot-check-attribution.py` across all turns; any `contested-fold` BLOCKS finalize and routes back) or `--no-video` (explicit opt-out for a genuinely audio-only source) — no graceful skip by omission. **Fold-gate adjudication:** `--resolve-turn {line_range} --speaker sX --resolution confirmed\|corrected\|ambiguous --resolved-by agent-verifier\|contributor [--write]` applies one adjudication mechanically — relabels the turn's `speaker_id` (corrected/ambiguous; mixed exchange via `--speaker s1,s2`) and upserts the structured `image_verification[]` entry, validating turn existence, speaker ids, and resolution↔relabel agreement. The judgment is the agent's/contributor's; the write is the tool's (the sibling skill carries no Edit tool). Dry-run default. |
 | `associate.py` | Regenerate `## Associated Nodes` sections from body `[`/…`]` wraps **unioned with** the backing artifact's `associated_entities` field (the complete source-named-entity list; carries entities named only inside verbatim quotes, which can't be wrapped) |
 | `build-state.py` | Refresh the auto-generated `meta/build-state.md` snapshot |
-| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `.claude/skills/build-protocol/SKILL.md` |
+| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, every canonical phase is documented in `.claude/skills/build-protocol/SKILL.md`, and every check module under `scripts/checks/` is registered in `_phases.CHECK_PHASE` (so `route_failure.py` routes it deliberately) |
 | `renderer-coverage.py` | Coverage gate — every schema required/optional/conditional section is renderer-producible (schema sections ⊆ renderer `EMITS`). A blocking gate in `pre-commit.sh`. |
 
 ---
@@ -127,6 +127,24 @@ vocabulary and the check → phase → role routing map (consumed by
 `python3 scripts/checks/_phases.py --list-phases` for the live list with
 descriptions.
 
+**Prose-entry-ID checks** — `quote_prose_entry_ids` (extract),
+`synthesis_prose_entry_ids` (organize), `link_prose_entry_ids` (link),
+dispatched by `validate-research.py`. Each ERRORS on an internal entry ID
+(`q39`, `nq4`, `t8`, slug ids, cross-artifact "aaro q13") in the artifact
+prose its phase owns — quote `significance` / `context` / `source.location`;
+top-level synthesis prose and `establishes`-type lists; structured entry
+lists (timeline, naming_quirks, relationships, …). Prose names the source,
+never an ID: IDs are positional, rot silently across merges, and render
+where a reader cannot resolve them. The shared scanner
+`checks/_entry_id_prose.py` owns the token rule (lowercase, case-sensitive,
+so a source's own "Q7" / "H5120" labels and the displayed hypothesis labels
+pass), the section → phase derivation from `_phases.CHECK_PHASE`, and the
+exempt fields: ID-typed pointers (`superseded_by` / `contradicted_by` /
+`corroborated_by`, `speaker_id`, `evidence_id`, `hypothesis_id`,
+`against_hypothesis_id`, `anchor`), verbatim payload, `primary_sources`
+stamps, and paths / URLs / link wraps. Rule owner: build-protocol "Prose
+names the source — never an entry ID".
+
 ---
 
 ## Tests — `scripts/tests/`
@@ -137,6 +155,7 @@ descriptions.
 | `help-check.sh` | Confirms every `scripts/{build,tools}/*.py --help` exits 0 with no traceback — catches syntax errors, import errors, and argparse regressions. |
 | `skills-check.sh` | Lint for the `.claude/` toolkit surface (skills, subagents, settings): frontmatter shape (`description:` on every SKILL.md, `name:`+`description:` on every agent), topic-neutrality (no skill/agent body hard-codes this instance's topic token — read dynamically from `meta/topic/overview.md`, so `.claude/` survives `/fork-init`), and `settings.json` validity. |
 | `test_stopwords.py` | `STOPWORDS` shape + content-word regression test. |
+| `test_prose_entry_ids.py` | Prose-entry-ID checks regression test (fixtures only): pre-fix corpus prose — IDs in a significance, a location's "(q97, q98)", a cross-artifact "vc2", a slug id — errors from exactly the owning phase's check; source labels ("Q7", "H5120", "H1"), ID-typed pointer fields, verbatim payload, `primary_sources` stamps, and paths / URLs / wraps stay silent. |
 | `test_json_unicode_escapes.py` | `.json` source-reader regression test: `&amp;` decodes to `&`, surrogate pairs decode, an escaped backslash (`\\u0026`) and all other JSON escapes/syntax stay literal, `.txt` is read raw. |
 | `smoke.py` | Fixture-based `new.py` + validator smoke tests (single-process; `ProcessPoolExecutor` over fork). |
 | `file-size-check.sh` | Warn 50MB / error 100MB on git-tracked files (per `meta/sources-access.md` large-file discipline). |

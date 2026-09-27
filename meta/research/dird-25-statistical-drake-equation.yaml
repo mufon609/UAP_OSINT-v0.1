@@ -123,14 +123,14 @@ naming_quirks:
   added_date: '2026-06-07'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" (quoted in q1)'
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager"'
   source_path: government/dird-25-statistical-drake-equation-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-07'
   observed: Bennet
   canonical: Bennett
-  location: 'References, entry [3] — "Bennet, Jeffrey, and Shostak, Seth" (quoted sic in cited_works cw3)'
+  location: 'References, entry [3] — "Bennet, Jeffrey, and Shostak, Seth" (sic)'
   source_path: government/dird-25-statistical-drake-equation-2010.pdf
   resolution: preserve-as-sic-in-quotes
 description: |-

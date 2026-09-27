@@ -255,14 +255,14 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: SANCORP
   canonical: Sancorp Consulting, LLC
-  location: 'q22 (Document Archive entry title); headline'
+  location: 'Black Vault article, Document Archive entry title; headline'
   source_path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-09-26'
   observed: UFO Office AARO
   canonical: All-Domain Anomaly Resolution Office (AARO)
-  location: 'q22 (Document Archive entry title); headline'
+  location: 'Black Vault article, Document Archive entry title; headline'
   source_path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
   resolution: preserve-as-sic-in-quotes
 - id: nq3
@@ -276,7 +276,7 @@ naming_quirks:
   added_date: '2026-09-26'
   observed: SANCORP CONSULTING, LLC
   canonical: Sancorp Consulting, LLC
-  location: 'q14 (Request Description cell, Log # 1518)'
+  location: 'Request Description cell, Log # 1518'
   source_path: government/whs-foid-foia-log-fy23.xlsx
   resolution: preserve-as-sic-in-quotes
 description: 'A Freedom of Information Act (FOIA) ([`/documents/freedom-of-information-act`]) request by John Greenewald ([`/people/john-greenewald`]) of The Black Vault, Inc. ([`/organizations/the-black-vault`]) for a copy of the contract HQ003422C0094, made between the DoD ([`/organizations/dod`]) and Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]), together with all details and records generated about the contract: the contract itself, the submitted proposal, any status reports, updates, and amendments, across unclassified and classified records, with a date range for record search from 1/1/2022 to 7/19/2023. The request was received July 19, 2023 and assigned FOIA case number 23-F-1114. In a final response dated September 11, 2023, the Freedom of Information Division ([`/organizations/dod-freedom-of-information-division`]) stated that the Washington Headquarters Services, Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]), a component of the Office of the Secretary of Defense ([`/organizations/osd`]), located 125 pages responsive to the request. An Initial Denial Authority withheld 11 pages in their entirety under (b)(5) and found portions of the remaining 114 pages exempt under (b)(4) and (b)(6); fees were below the threshold for requiring payment. The FOIA log ([`/documents/whs-foid-foia-log-fy23`]) for the case records a final disposition of Granted / Denied in Part. The Black Vault published the release as a combined PDF of all documents released ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]). The Black Vault summary of the release states that the DoD contracted Sancorp to provide support services to the All-Domain Anomaly Resolution Office (AARO) ([`/organizations/aaro`]), and that the specific services required in the Performance Work Statement (PWS) included congressional and public affairs and FOIA support.'

@@ -420,7 +420,7 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry's competition block (q170) gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.
+### P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry's competition block gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.
 
 > <ns1:modNumber>P00011</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1152,7 +1152,7 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value (q170). Neither record explains the difference; both are kept as published.
+### Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value. Neither record explains the difference; both are kept as published.
 
 > "solicitation_procedures_description":"ONLY ONE SOURCE","extent_competed_description":"NOT AVAILABLE FOR COMPETITION","other_than_full_and_open":"OTH","other_than_full_and_open_description":"AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))"
 

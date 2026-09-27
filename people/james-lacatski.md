@@ -340,7 +340,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in WEAPONIZED PART 2 introducing the MIB sighting story (immediately followed by the description in q26), 2025-11-11 |
+| Attributed to | Lacatski in WEAPONIZED PART 2 introducing the MIB sighting story (immediately followed by his description of the image), 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [47:48]–[48:18] |
 

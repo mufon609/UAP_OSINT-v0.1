@@ -13,19 +13,26 @@ keeps those references from drifting:
   2. Every canonical phase (PHASES) is documented at least once in
      .claude/skills/build-protocol/SKILL.md ("Build phases") — so a phase
      newly added to _phases.py cannot ship undocumented.
+  3. Every check module under scripts/checks/ (non-underscore) exports a
+     CHECK_NAME registered in _phases.CHECK_PHASE — so a new check is
+     routed deliberately (route_failure.py names its owning role) rather
+     than falling through to the render default unreviewed.
 
 Modeled on build-md-spec.py: prints detail unless --quiet; exits non-zero
 on any mismatch (wired into pre-commit.sh).
 """
 
 import argparse
+import importlib
+import pkgutil
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from checks._phases import PHASE_CHOICES, PHASES  # noqa: E402
+import checks  # noqa: E402
+from checks._phases import CHECK_PHASE, PHASE_CHOICES, PHASES  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
@@ -76,6 +83,18 @@ def check():
         errors.append(".claude/skills/build-protocol/SKILL.md missing — "
                       "cannot verify phase documentation")
 
+    # 3. every check module is registered in CHECK_PHASE
+    for mod in pkgutil.iter_modules(checks.__path__):
+        if mod.name.startswith("_"):
+            continue
+        name = getattr(importlib.import_module(f"checks.{mod.name}"),
+                       "CHECK_NAME", None)
+        if name not in CHECK_PHASE:
+            errors.append(
+                f"scripts/checks/{mod.name}.py: CHECK_NAME {name!r} is not "
+                f"registered in scripts/checks/_phases.py CHECK_PHASE"
+            )
+
     return errors
 
 
@@ -100,7 +119,7 @@ def main():
 
     if not args.quiet:
         print("phase-routing parity OK — all --phase references valid; "
-              "all canonical phases documented.")
+              "all canonical phases documented; all checks routed.")
     return 0
 
 

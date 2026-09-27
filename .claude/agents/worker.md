@@ -105,7 +105,10 @@ naming the metadata field, never a `quotes[]` entry.
    direct|relayed, and `statement_date` (person artifacts). Do **not** nest a
    per-quote `source:` object or hand-key `id` — the bare-string top-level
    `source:` carries the path, and `merge-fragments.py` stamps each artifact
-   quote's `id` + `source: {path, location}` mechanically. On a transcript, do **not** emit `speaker_id` — the Builder
+   quote's `id` + `source: {path, location}` mechanically. A `significance`,
+   `context` or `location` names the source (section, page, timestamp), never
+   another quote's id — no "(q6)", "see q12", "continues q3" (build-protocol
+   "Prose names the source — never an entry ID"; gated at extract). On a transcript, do **not** emit `speaker_id` — the Builder
    derives it from the sibling. For a **person** artifact, an about-the-subject /
    institutional source yields `quotes: []` (per the voice gate above — route
    its content to `background_material[]` + `cross_ref_candidates[]` instead).

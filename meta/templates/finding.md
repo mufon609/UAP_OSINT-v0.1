@@ -88,7 +88,8 @@ type: finding
 ## What the Record Establishes
 
 <!-- Bullet list of explicit claims about what the convergence proves.
-     Anchor each claim to specific evidence rows by id (q1, q2, …).
+     Anchor each claim to the evidence rows it rests on, named by
+     source ("Hoyer's 2010 press release") — never by entry id.
      Cluster-neutral — what the convergence proves, full stop. -->
 
 -

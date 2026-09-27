@@ -350,7 +350,7 @@ quotes:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶10'
-  significance: Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role (q16).
+  significance: Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role.
   context: 'SAFIRE Project corporate team page, core team listing'
 - id: q31
   added_date: '2026-05-22'
@@ -489,7 +489,7 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: 'Paul Anderson bio ¶'
-  significance: Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements q16 (Anderson's DoD lead-scientist role on the same page).
+  significance: Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements Anderson's DoD lead-scientist role on the same page.
   context: 'Aureon Energy corporate team page, Dr. Paul Anderson VP-experiments bio'
 - id: q46
   added_date: '2026-05-22'

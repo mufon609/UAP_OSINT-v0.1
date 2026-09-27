@@ -167,7 +167,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 
 ---
 
-### Clearance scope — self-description of compartmented access and institutional trust (parallels written q9)
+### Clearance scope — self-description of compartmented access and institutional trust (as in written ¶10)
 
 > At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
 

@@ -157,7 +157,7 @@ quotes:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[3:19]–[3:58]'
-  significance: Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the same procedural framing he uses in the 2021 Mystery Wire interview at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q1.
+  significance: Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the procedural framing he uses at 0:46 of the 2021 Mystery Wire interview [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`].
   context: Lacatski continuing his answer to Corbell on how AAWSAP was structured at DIA
 - id: q3
   speaker_id: s3
@@ -267,7 +267,7 @@ quotes:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[49:20]–[50:12]'
-  significance: Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q4 ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
+  significance: Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
   context: Lacatski responding to a discussion of alleged forged documents that had circulated about AAWSAP — re-emphasizing the closed program structure
 - id: q13
   speaker_id: s4

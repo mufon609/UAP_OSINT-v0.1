@@ -26,6 +26,10 @@
 #      scripts/tests/test_json_unicode_escapes.py — .json source reader decodes
 #                                              \uXXXX (surrogate pairs too), leaves
 #                                              escaped backslash + other escapes raw
+#      scripts/tests/test_prose_entry_ids.py — internal entry IDs in artifact
+#                                              prose error from the owning phase's
+#                                              check; source labels, ID-typed
+#                                              pointers, verbatim text stay silent
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -158,6 +162,7 @@ steps=(
     $'test_speaker_attribution_consistency\tpython3 scripts/tests/test_speaker_attribution_consistency.py'
     $'test_image_source_disposition\tpython3 scripts/tests/test_image_source_disposition.py'
     $'test_json_unicode_escapes\tpython3 scripts/tests/test_json_unicode_escapes.py'
+    $'test_prose_entry_ids\tpython3 scripts/tests/test_prose_entry_ids.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'

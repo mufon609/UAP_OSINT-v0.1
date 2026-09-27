@@ -253,8 +253,8 @@ quotes:
       path: government/dird-14-superconductors-gravity-20100323.pdf
       location: Historical Timeline, high-voltage gravity-beam apparatus paragraph
     significance: The document's single most extraordinary specific claim — the high-voltage YBCO "gravity beam" discharge
-      allegedly toppling a pencil in an adjoining room behind a thick concrete wall. q12 names the "gravity beam" but the node
-      otherwise never describes it.
+      allegedly toppling a pencil in an adjoining room behind a thick concrete wall; the closing timeline verdict names the beam but
+      never describes it.
     statement_date: '2010-03-23'
     claim_group: podkletnov
   - id: q18
@@ -315,21 +315,21 @@ naming_quirks:
     observed: AAWSA
     canonical: AAWSAP (Advanced Aerospace Weapon System Applications Program)
     location: Administrative Note — 'Advanced Aerospace Weapon System Applications (AAWSA) Program' and 'AAWSA Program Manager'
-      lines (quote q15)
+      lines
     source_path: government/dird-14-superconductors-gravity-20100323.pdf
     resolution: preserve-as-sic-in-quotes
   - id: nq8
     added_date: '2026-06-03'
     observed: (b)(6)
     canonical: '[author identity withheld under FOIA exemption (b)(6)]'
-    location: title-page Author block / Administrative Note (Document Summary classification markings; quote q15 area)
+    location: title-page Author block / Administrative Note (Document Summary classification markings)
     source_path: government/dird-14-superconductors-gravity-20100323.pdf
     resolution: preserve-as-sic-in-quotes
   - id: nq9
     added_date: '2026-06-03'
     observed: (b)(3):10 USC 424
     canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-    location: title-page Prepared-by line / Administrative Note (Document Summary classification markings; quote q15)
+    location: title-page Prepared-by line / Administrative Note (Document Summary classification markings)
     source_path: government/dird-14-superconductors-gravity-20100323.pdf
     resolution: preserve-as-sic-in-quotes
 associated_entities:

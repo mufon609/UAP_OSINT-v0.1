@@ -400,49 +400,49 @@ naming_quirks:
   added_date: '2026-06-06'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" lines (quoted in q4)'
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" lines'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-06'
   observed: '[(b)(6)]'
   canonical: '[author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA products list is Dr. Bruce Towe, University of Arizona]'
-  location: 'Prepared by / Author block, Author line (quoted in q2)'
+  location: 'Prepared by / Author block, Author line'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-06'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'Prepared by / Author block and Administrative Note (quoted in q2, q4)'
+  location: 'Prepared by / Author block and Administrative Note'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-06-06'
   observed: MEMs
   canonical: MEMS (micro-electro-mechanical systems)
-  location: 'section "Conclusion" — "MEMs are characterized by small dimensions" (quoted in q29); same lowercase-s casing variant also in the section heading "Microcantilever MEMs Sensors"'
+  location: 'section "Conclusion" — "MEMs are characterized by small dimensions"; same lowercase-s casing variant also in the section heading "Microcantilever MEMs Sensors"'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-06-06'
   observed: 5-fluoruracil
   canonical: 5-fluorouracil
-  location: 'section "Drug-Delivery Pumps" — "5-fluoruracil used for cancer therapy" (quoted in q16)'
+  location: 'section "Drug-Delivery Pumps" — "5-fluoruracil used for cancer therapy"'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq6
   added_date: '2026-06-06'
   observed: theophyline
   canonical: theophylline
-  location: 'section "Drug-Delivery Pumps" — "theophyline for treatment of asthma" (quoted in q16)'
+  location: 'section "Drug-Delivery Pumps" — "theophyline for treatment of asthma"'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq7
   added_date: '2026-06-06'
   observed: solider
   canonical: soldier
-  location: 'section "BioMEMS Implantable Sensors" — "An exhausted solider will show a highly acidic blood pH" (quoted in q19)'
+  location: 'section "BioMEMS Implantable Sensors" — "An exhausted solider will show a highly acidic blood pH"'
   source_path: government/dird-20-biosensors-biomems-20100331.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:

@@ -129,7 +129,7 @@ quotes:
     path: government/dird-31-hypersonic-detection-tracking-2010.pdf
     location: 'section "Radio Reflection Detection", network-proposal paragraph'
   significance: 'A concrete proposal for a passive national radio-reflection tracking network for high-speed atmospheric objects.'
-  context: 'Same paragraph closes with the recommendation captured as q11.'
+  context: 'Same paragraph closes with an explicit recommendation that the detection technology be further developed.'
   statement_date: '2010-11-20'
   claim_group: detection-recommendations
 - id: q11
@@ -139,7 +139,7 @@ quotes:
   source:
     path: government/dird-31-hypersonic-detection-tracking-2010.pdf
     location: 'section "Radio Reflection Detection", network-proposal paragraph, closing sentence'
-  significance: 'Explicit development recommendation for radio-reflection detection (non-adjacent to q10 within the same paragraph; emitted separately per the contiguous-span rule).'
+  significance: 'Explicit development recommendation for radio-reflection detection (closes the network proposal non-adjacently; emitted separately per the contiguous-span rule).'
   context: 'Closing sentence of the radio-reflection network paragraph.'
   statement_date: '2010-11-20'
   claim_group: detection-recommendations
@@ -184,7 +184,7 @@ quotes:
     path: government/dird-31-hypersonic-detection-tracking-2010.pdf
     location: 'section "Commercial and Governmental IR Systems", DSP-capability paragraph, closing sentence'
   significance: 'Explicit classification boundary on the DSP constellation within an otherwise unclassified survey.'
-  context: 'Same DSP paragraph as q14; non-adjacent sentence, emitted separately per the contiguous-span rule.'
+  context: 'Same DSP paragraph as the 1972 meteor detection; non-adjacent sentence, emitted separately per the contiguous-span rule.'
   statement_date: '2010-11-20'
   claim_group: surveillance-infrastructure
 - id: q16
